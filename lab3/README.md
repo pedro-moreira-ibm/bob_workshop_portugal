@@ -245,15 +245,62 @@ factorial_digits(120)
 
 ## Step 4: Add the MCP Tools to watsonx Orchestrate (10 minutes)
 
-In this step, you will ask Bob to import the MCP tools into watsonx Orchestrate.
+In this step, you will connect your local project to a watsonx Orchestrate environment and import the MCP tools.
 
-Bob will use the watsonx Orchestrate command-line interface to:
-- Inspect the correct toolkit import command
+Before Bob can import the tools, you first need:
+- An IBM Cloud API key
+- The URL of your watsonx Orchestrate instance
+
+Bob will then:
+- Configure a watsonx Orchestrate environment
+- Authenticate to the environment
 - Import the MCP tools
-- Fix any naming or dependency errors
+- Fix any dependency or configuration issues
 - Verify that the tools are available in watsonx Orchestrate
 
-### 4.1: Ask Bob to Import the MCP Tools
+### 4.1: Generate an IBM Cloud API Key
+
+Go to your IBM Cloud account and generate an API key.
+
+Store the API key somewhere safe because you will use it in the next step.
+
+### 4.2: Retrieve Your watsonx Orchestrate Instance URL
+
+Open your watsonx Orchestrate environment in the browser.
+
+Copy the URL of your instance.
+
+Example:
+
+```text
+https://api.us-south.watson-orchestrate.cloud.ibm.com/instances/xxxxxxxx
+```
+
+### 4.3: Ask Bob to Configure the watsonx Orchestrate Environment
+
+For simplicity in this workshop, you can provide the instance URL and API key directly in the prompt.
+
+**⚠️ Note:** This is acceptable for a workshop environment, but in production environments credentials should be managed securely and never shared in prompts, screenshots, or logs.
+
+**Prompt for Bob:**
+
+```bash
+Create and configure a watsonx Orchestrate environment using this instance URL: <YOUR_INSTANCE_URL>
+
+Use this IBM Cloud API key: <YOUR_API_KEY>
+```
+
+Bob will:
+- Create the environment
+- Configure authentication
+- Verify connectivity
+- Activate the environment
+
+Click **Approve** whenever Bob asks for confirmation.
+
+### 4.4: Ask Bob to Import the MCP Tools
+
+Once the environment is configured, ask Bob to import the MCP tools.
 
 **Prompt for Bob:**
 
@@ -261,19 +308,15 @@ Bob will use the watsonx Orchestrate command-line interface to:
 Need to add these MCP tools into watsonx Orchestrate, you can use the command line “orchestrate toolkits” to accomplish that.
 ```
 
-Bob will create a plan.
+Bob will:
+- Inspect the watsonx Orchestrate CLI help
+- Identify the correct import command
+- Import the MCP tools
+- Fix any dependency or naming issues automatically
 
-Click **Approve**.
+Click **Approve** when Bob shows the plan.
 
-### 4.2: Let Bob Inspect the CLI
-
-Bob may run CLI help commands to identify the correct import syntax.
-
-This is expected.
-
-Bob should determine the right command for importing MCP tools into watsonx Orchestrate.
-
-### 4.3: Fix Import Issues
+### 4.5: Fix Import Issues
 
 During the import, Bob may encounter issues such as:
 - Tool names containing spaces
@@ -281,9 +324,9 @@ During the import, Bob may encounter issues such as:
 - Requirements file needing updates
 - Incorrect configuration values
 
-Allow Bob to fix these issues and re-run the import.
+Allow Bob to fix these issues and retry the import.
 
-### 4.4: Verify the Imported Tools
+### 4.6: Verify the Imported Tools
 
 Bob should confirm that the MCP tools were imported successfully.
 
