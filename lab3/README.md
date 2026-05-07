@@ -10,8 +10,8 @@ You will build a factorial agent that can:
 - Use MCP tools inside watsonx Orchestrate
 - Run with the `groq/openai/gpt-oss-120b` model
 
-**Duration**: 45 minutes  
-**Difficulty**: Intermediate
+<img width="1793" height="1145" alt="image" src="https://github.com/user-attachments/assets/4b96ca7c-8e8a-43f4-84a3-43bdbaaf90d3" />
+
 
 ## What You'll Build
 
