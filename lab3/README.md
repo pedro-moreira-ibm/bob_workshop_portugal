@@ -79,6 +79,8 @@ mcp-wxo
 
 Open this folder in IBM Bob.
 
+<img width="2960" height="2155" alt="image" src="https://github.com/user-attachments/assets/f4e869ab-ab12-4748-b52d-64cb8f379c77" />
+
 ### 1.2: Ask Bob to Create and Activate a Python Virtual Environment
 
 **Prompt for Bob:**
@@ -86,6 +88,8 @@ Open this folder in IBM Bob.
 ```bash
 Create a Python virtual environment for this project and activate it.
 ```
+<img width="2318" height="2128" alt="image" src="https://github.com/user-attachments/assets/924e68bf-355b-42ef-931e-223a7c70ef89" />
+
 
 Bob will:
 - Create the virtual environment
