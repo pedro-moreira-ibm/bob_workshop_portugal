@@ -105,13 +105,6 @@ Bob should confirm that:
 - Python is available
 - The project workspace is ready
 
-You should also see the virtual environment activated in the terminal.
-
-Example:
-
-```bash
-(venv)
-```
 
 **✅ Checkpoint**: Project folder is opened in Bob and the Python virtual environment is active.
 
