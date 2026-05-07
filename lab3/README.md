@@ -73,6 +73,8 @@ Bob will:
 
 Open the IBM Bob IDE and start a new workspace.
 
+<img width="1786" height="1525" alt="image" src="https://github.com/user-attachments/assets/78c698db-b6a7-4bce-84f8-732e54f72f99" />
+
 ### 1.2: Ask Bob to Create the Project Folder
 
 **Prompt for Bob:**
@@ -80,6 +82,9 @@ Open the IBM Bob IDE and start a new workspace.
 ```bash
 Hi Bob! For this project, create a directory ~/Documents/bob/mcp-wxo, and use my python virtual environment ~/.env/wxo-env.
 ```
+
+<img width="1788" height="1358" alt="image" src="https://github.com/user-attachments/assets/6c342c68-d69e-40c9-922a-9c6047aaa5a8" />
+
 
 Bob will ask for approval before running commands.
 
@@ -94,6 +99,9 @@ Activate the python virtual environment.
 ```
 
 Bob should activate the environment and confirm that it is ready.
+
+<img width="1789" height="1405" alt="image" src="https://github.com/user-attachments/assets/c46a9af2-2542-4586-bc78-3dc698ae81f4" />
+
 
 **✅ Checkpoint**: Project folder is created and the Python virtual environment is active.
 
@@ -118,6 +126,8 @@ The MCP server will include two mathematical tools:
 ```bash
 Create MCP Server using FastMCP with two mathematical tools. The first tool “factorial_value” calculates and returns the exact value of n! (the factorial of a given non-negative integer). The second tool “factorial_digits” returns only the number of decimal digits in n!, which is useful when the factorial is too large to display in full. You can have both tools share a common helper function to compute the factorial and avoid duplication of code.
 ```
+
+<img width="1783" height="1028" alt="image" src="https://github.com/user-attachments/assets/6d390af5-0eba-4a77-8d1f-54ecd765a7b6" />
 
 Bob will create a plan and ask for approval.
 
@@ -192,6 +202,8 @@ In this step, you will ask Bob to start the MCP server locally and create an MCP
 ```bash
 Please start the MCP Server, and test the 2 MCP tools with MCP client.
 ```
+<img width="1774" height="1058" alt="image" src="https://github.com/user-attachments/assets/1e55ad57-1366-450e-b566-2dd98e8637ab" />
+
 
 Bob will create a plan for:
 - Starting the MCP server
@@ -355,12 +367,18 @@ Search for:
 factorial_agent
 ```
 
+<img width="1785" height="1009" alt="image" src="https://github.com/user-attachments/assets/2efab59b-ac8c-4fde-ac87-d26981949abd" />
+
+
 ### 6.2: Confirm Agent Configuration
 
 Open the agent and verify:
 - The MCP tools are attached
 - The agent uses the Groq-hosted model
 - The tools are available to the agent
+
+<img width="1784" height="923" alt="image" src="https://github.com/user-attachments/assets/38a99824-e977-4872-b899-c8b011efc391" />
+
 
 ### 6.3: Test the First Tool
 
