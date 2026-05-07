@@ -61,49 +61,55 @@ Lab 3 Timeline (45 minutes)
 
 ## Step 1: Set Up the Python Project (5 minutes)
 
-In this step, you will ask IBM Bob to create the foundation for your MCP project.
+In this step, you will prepare the workspace for your project and ask IBM Bob to set up the Python environment.
 
 Bob will:
-- Create the project directory
-- Prepare the Python environment
-- Generate the initial project structure
-- Create a README file
+- Create and configure the Python virtual environment
+- Prepare the project structure
+- Create the initial README file
+- Get the environment ready for MCP development
 
-### 1.1: Open IBM Bob
+### 1.1: Create and Open the Project Folder
 
-Open the IBM Bob IDE and start a new workspace.
+Create a new folder on your machine called:
 
-<img width="1786" height="1525" alt="image" src="https://github.com/user-attachments/assets/78c698db-b6a7-4bce-84f8-732e54f72f99" />
+```text
+mcp-wxo
+```
 
-### 1.2: Ask Bob to Create the Project Folder
+Open this folder in IBM Bob.
+
+### 1.2: Ask Bob to Create and Activate a Python Virtual Environment
 
 **Prompt for Bob:**
 
 ```bash
-Hi Bob! For this project, create a directory ~/Documents/bob/mcp-wxo, and use my python virtual environment ~/.env/wxo-env.
+Create a Python virtual environment for this project and activate it.
 ```
 
-<img width="1788" height="1358" alt="image" src="https://github.com/user-attachments/assets/6c342c68-d69e-40c9-922a-9c6047aaa5a8" />
-
-
-Bob will ask for approval before running commands.
+Bob will:
+- Create the virtual environment
+- Activate it
+- Confirm the environment is ready
 
 Click **Run** or **Approve** when prompted.
 
-### 1.3: Activate the Python Virtual Environment
+### 1.3: Verify the Environment
 
-**Prompt for Bob:**
+Bob should confirm that:
+- The virtual environment is active
+- Python is available
+- The project workspace is ready
+
+You should also see the virtual environment activated in the terminal.
+
+Example:
 
 ```bash
-Activate the python virtual environment.
+(venv)
 ```
 
-Bob should activate the environment and confirm that it is ready.
-
-<img width="1789" height="1405" alt="image" src="https://github.com/user-attachments/assets/c46a9af2-2542-4586-bc78-3dc698ae81f4" />
-
-
-**✅ Checkpoint**: Project folder is created and the Python virtual environment is active.
+**✅ Checkpoint**: Project folder is opened in Bob and the Python virtual environment is active.
 
 ---
 
