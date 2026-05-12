@@ -165,28 +165,19 @@ I want groq/openai/gpt-oss-120b to be the agent LLM.
 
 <img width="3821" height="2217" alt="image" src="https://github.com/user-attachments/assets/b621c6c0-5757-4d67-8018-0ad1910b9b50" />
 
+Once again, BOB will use the official documentation to produce what was requested. Once its done, explore the agent file to verify that the agent is instructed to use the tool, as well as other behavior instructions that BOB considered relevant for this case and added.
 
-### 3.3: Run the End-to-End Tests
+<img width="3839" height="2222" alt="image" src="https://github.com/user-attachments/assets/db3d437c-7cca-49cd-b6d3-c19422f7e708" />
 
-Bob should run the MCP client and confirm that both tools work through the MCP protocol.
 
-Expected tests:
 
-```python
-factorial_value(5)
-# Expected result: 120
-
-factorial_digits(120)
-# Expected result: number of digits in 120!
-```
-
-**✅ Checkpoint**: MCP client successfully validates both tools through the MCP server.
+**✅ Checkpoint**: Agent and tool created
 
 ---
 
-## Step 4: Add the MCP Tools to watsonx Orchestrate (10 minutes)
+## Step 4: Add the agent and Tool to watsonx Orchestrate
 
-In this step, you will connect your local project to a watsonx Orchestrate environment and import the MCP tools.
+In this step, you will connect your local project to a watsonx Orchestrate environment and import the agent and tool.
 
 Before Bob can import the tools, you first need:
 - An IBM Cloud API key
@@ -217,7 +208,7 @@ Example:
 https://api.us-south.watson-orchestrate.cloud.ibm.com/instances/xxxxxxxx
 ```
 
-### 4.3: Ask Bob to Configure the watsonx Orchestrate Environment
+### 4.3: Ask Bob to import the agent and tool to the watsonx Orchestrate Environment
 
 For simplicity in this workshop, you can provide the instance URL and API key directly in the prompt.
 
@@ -226,9 +217,11 @@ For simplicity in this workshop, you can provide the instance URL and API key di
 **Prompt for Bob:**
 
 ```bash
-Create and configure a watsonx Orchestrate environment using this instance URL: <YOUR_INSTANCE_URL>
+Please import the agent and tool we created to my watsonx orchestrate instance. Use the credentials below.
 
-Use this IBM Cloud API key: <YOUR_API_KEY>
+URL: <YOUR_INSTANCE_URL>
+
+IBM Cloud API key: <YOUR_API_KEY>
 ```
 
 Bob will:
