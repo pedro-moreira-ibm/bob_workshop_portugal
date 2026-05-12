@@ -69,35 +69,8 @@ Open this folder in IBM Bob.
 
 <img width="3838" height="2220" alt="image" src="https://github.com/user-attachments/assets/85d39175-6237-4b3c-8c78-d39f7d13de37" />
 
----
 
-## 1.2: Ask Bob to Create and Activate a Python Virtual Environment
-
-**Prompt for Bob:**
-
-```bash
-Create a Python virtual environment for this project and activate it.
-```
-
-<img width="3813" height="2217" alt="image" src="https://github.com/user-attachments/assets/73b60df9-89bb-4b84-b726-c348435c6293" />
-
-Bob will:
-- Create the virtual environment
-- Activate it
-- Confirm that the environment is ready
-
-Click **Run** or **Approve** whenever prompted.
-
----
-
-## 1.3: Verify the Environment
-
-Bob should confirm that:
-- The virtual environment is active
-- Python is correctly installed
-- The project workspace is ready
-
-**✅ Checkpoint:** The project folder is open in Bob and the Python virtual environment is active.
+**✅ Checkpoint:** The project folder is open in Bob.
 
 ---
 
