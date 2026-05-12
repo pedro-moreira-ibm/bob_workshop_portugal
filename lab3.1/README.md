@@ -33,6 +33,7 @@ Before starting, ensure you have:
 - [ ] Access to a watsonx Orchestrate environment
 - [ ] Basic understanding of MCP tools and AI agents
 
+If you haven't completed setup, see [prerequisites.md](../prerequisites.md).
 ---
 
 ## Lab Structure
