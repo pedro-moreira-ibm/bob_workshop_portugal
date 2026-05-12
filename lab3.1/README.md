@@ -161,6 +161,8 @@ Whenever necessary, **approve** the commands that BOB wants to run.
 Please create an agent that uses the previously created tool whenever the user asks how much time is left until Christmas, answering in a Santa Claus style.
 
 I want groq/openai/gpt-oss-120b to be the agent LLM.
+
+Follow the watsonx Orchestrate ADK documentation MCP server as reference.
 ```
 
 <img width="3821" height="2217" alt="image" src="https://github.com/user-attachments/assets/b621c6c0-5757-4d67-8018-0ad1910b9b50" />
@@ -194,13 +196,23 @@ Bob will then:
 
 Go to your IBM Cloud account and generate an API key.
 
+<img width="3682" height="1954" alt="image" src="https://github.com/user-attachments/assets/623b0b38-6639-4855-9f55-ca5cadcd1257" />
+
+<img width="3636" height="1921" alt="image" src="https://github.com/user-attachments/assets/6c8c9e34-2913-4422-bc05-c197ea48f11b" />
+
 Store the API key somewhere safe because you will use it in the next step.
 
 ### 4.2: Retrieve Your watsonx Orchestrate Instance URL
 
 Open your watsonx Orchestrate environment in the browser.
 
+<img width="3654" height="1841" alt="image" src="https://github.com/user-attachments/assets/2d037624-70e7-40ad-a705-de51b8b054c5" />
+
+<img width="3671" height="1850" alt="image" src="https://github.com/user-attachments/assets/2955be47-cc4b-4c45-8561-68988a7d58c3" />
+
 Copy the URL of your instance.
+
+<img width="3711" height="1838" alt="image" src="https://github.com/user-attachments/assets/7c67b5ba-f3e5-48a5-83b9-2a459a37fa59" />
 
 Example:
 
@@ -208,49 +220,37 @@ Example:
 https://api.us-south.watson-orchestrate.cloud.ibm.com/instances/xxxxxxxx
 ```
 
-### 4.3: Ask Bob to import the agent and tool to the watsonx Orchestrate Environment
+### 4.3: Create and activate a watsonx Orchestrate in your terminal
 
-For simplicity in this workshop, you can provide the instance URL and API key directly in the prompt.
+Before we ask BOB to help us import the agent and tool to orchestrate, we should configure an enviornment in watsonx Orchestrate using the credentials collected previously. 
 
-**⚠️ Note:** This is acceptable for a workshop environment, but in production environments credentials should be managed securely and never shared in prompts, screenshots, or logs.
+Return to BOB and click on "new terminal"
+
+<img width="3839" height="1495" alt="image" src="https://github.com/user-attachments/assets/478f2b0d-3d05-49fe-a184-c3450a20729e" />
+
+
+**Command for the terminal:**
+
+```bash
+orchestrate env add -n wxo-bob -u <INSERT_YOUR_URL> --type ibm_iam --activate
+```
+
+When prompted, paste the API key. It's excpected it won't show up, even if you copied. This happens for security reasons. Just copy once and press Enter.
+
+You should be able to see the message that the environment has sucessfully created and is now active.
+
+<img width="3368" height="1975" alt="image" src="https://github.com/user-attachments/assets/820f856f-5c5f-4c93-acef-af0e2ee65c67" />
+
+### 4.4: Ask Bob to Import the agent and Tool to watsonx Orchestrate
+
+Now that the environment is configured, ask Bob to import the MCP tools.
 
 **Prompt for Bob:**
 
 ```bash
-Please import the agent and tool we created to my watsonx orchestrate instance. Use the credentials below.
-
-URL: <YOUR_INSTANCE_URL>
-
-IBM Cloud API key: <YOUR_API_KEY>
+Import the python tool and agent to my wxo-bob watsonx Orchestrate environment. Follow the watsonx Orchestrate ADK documentation MCP server to find the appropriate import commands.
 ```
-
-Bob will:
-- Create the environment
-- Configure authentication
-- Verify connectivity
-- Activate the environment
-
-Click **Approve** whenever Bob asks for confirmation.
-
-### 4.4: Ask Bob to Import the MCP Tools
-
-Once the environment is configured, ask Bob to import the MCP tools.
-
-**Prompt for Bob:**
-
-```bash
-Need to add these MCP tools into watsonx Orchestrate, you can use the command line “orchestrate toolkits” to accomplish that.
-```
-
-Bob will:
-- Inspect the watsonx Orchestrate CLI help
-- Identify the correct import command
-- Import the MCP tools
-- Fix any dependency or naming issues automatically
-
-Click **Approve** when Bob shows the plan.
-
-### 4.5: Fix Import Issues
+<img width="3839" height="2220" alt="image" src="https://github.com/user-attachments/assets/8e45f0fa-abc4-44ab-9d67-4f6befed053d" />
 
 During the import, Bob may encounter issues such as:
 - Tool names containing spaces
@@ -258,157 +258,43 @@ During the import, Bob may encounter issues such as:
 - Requirements file needing updates
 - Incorrect configuration values
 
-Allow Bob to fix these issues and retry the import.
+Allow Bob to fix these issues and retry the import. It will notify you once everything was imported sucessfully.
 
-### 4.6: Verify the Imported Tools
 
-Bob should confirm that the MCP tools were imported successfully.
+<img width="3839" height="2141" alt="image" src="https://github.com/user-attachments/assets/17d854d0-6eec-4e5c-b93e-17eb26d4de6e" />
 
-Expected result:
-- `factorial_value` is available in watsonx Orchestrate
-- `factorial_digits` is available in watsonx Orchestrate
 
-**✅ Checkpoint**: MCP tools are imported and ready to use in watsonx Orchestrate.
+**✅ Checkpoint**: agent and tool are imported and ready to use in watsonx Orchestrate.
 
 ---
 
-## Step 5: Create a watsonx Orchestrate Agent That Uses the MCP Tools (5 minutes)
-
-In this step, you will ask Bob to create an agent YAML file and import the agent into watsonx Orchestrate.
-
-The agent will use:
-- The imported MCP tools
-- The `groq/openai/gpt-oss-120b` model
-
-### 5.1: Ask Bob to Create the Agent YAML
-
-**Prompt for Bob:**
-
-```bash
-Create Agent YAML file, you can find the yaml specification at below page, use the following llm for the agent “groq/openai/gpt-oss-120b”
-
-https://developer.watson-orchestrate.ibm.com/agents/build_agent
-
-Then import the agent on watsonx Orchestrate using orchestrate command line.
-```
-
-Bob will:
-- Check the YAML specification
-- Create the agent YAML file
-- Add the MCP tools to the agent
-- Configure the model
-- Import the agent using the CLI
-
-Click **Approve** when Bob shows the plan.
-
-### 5.2: Let Bob Fix YAML Errors
-
-If the first import fails, Bob should read the error message and update the YAML file.
-
-Common issues may include:
-- Incorrect YAML fields
-- Missing required properties
-- Incorrect tool references
-- Incorrect model format
-
-Allow Bob to fix and re-import the agent.
-
-### 5.3: Verify the Agent Import
-
-Bob should confirm that the agent was imported successfully.
-
-Expected agent name:
-
-```bash
-factorial_agent
-```
-
-**✅ Checkpoint**: The `factorial_agent` is created in watsonx Orchestrate.
-
----
-
-## Step 6: Verify the Agent in watsonx Orchestrate (5 minutes)
-
-In this step, you will manually verify that the agent works in watsonx Orchestrate.
-
-### 6.1: Open watsonx Orchestrate
-
-Log in to your watsonx Orchestrate environment.
-
-Go to:
-
-```bash
-Manage Agents
-```
-
-Search for:
-
-```bash
-factorial_agent
-```
-
-<img width="1785" height="1009" alt="image" src="https://github.com/user-attachments/assets/2efab59b-ac8c-4fde-ac87-d26981949abd" />
+## Step 5: Access your watsonx Orchestrate UI and try the agent there
 
 
-### 6.2: Confirm Agent Configuration
-
-Open the agent and verify:
-- The MCP tools are attached
-- The agent uses the Groq-hosted model
-- The tools are available to the agent
-
-<img width="1784" height="923" alt="image" src="https://github.com/user-attachments/assets/38a99824-e977-4872-b899-c8b011efc391" />
+### 5.1: Launch watsonx Orchestrate
 
 
-### 6.3: Test the First Tool
+<img width="3710" height="1824" alt="image" src="https://github.com/user-attachments/assets/9151dd76-0570-4388-96ff-616e5bceab0c" />
 
-Ask the agent:
 
-```bash
-What is the factorial value of 5?
-```
+### 5.2: Go to the Build Agent tab
 
-Expected result:
+Open the Build Tab
 
-```bash
-120
-```
+<img width="3704" height="1833" alt="image" src="https://github.com/user-attachments/assets/05811452-1acd-4d9b-971b-26ac553d1669" />
 
-The agent should call the `factorial_value` MCP tool.
+Verify that your agent and tool were imported
 
-### 6.4: Test the Second Tool
 
-Ask the agent:
+<img width="3779" height="2031" alt="image" src="https://github.com/user-attachments/assets/1726e663-be7a-48c3-9c7f-06dd3321a38d" />
 
-```bash
-How many factorial digits are there on factorial 120?
-```
+### 5.3: Open the agent, inspect it and try it!
 
-The agent should call the `factorial_digits` MCP tool.
 
-**✅ Checkpoint**: The agent correctly calls both MCP tools from watsonx Orchestrate.
+<img width="3839" height="2054" alt="image" src="https://github.com/user-attachments/assets/4fa466e9-e1db-423d-87d6-8e2ec6c2e3bc" />
 
----
 
-## Optional Step 7: Configure Bob with watsonx Orchestrate MCP Servers
-
-This optional step improves Bob’s ability to work with watsonx Orchestrate projects.
-
-You can configure Bob to access MCP servers such as:
-
-### `wxo-docs`
-
-Provides access to public documentation for the watsonx Orchestrate ADK.
-
-### `orchestrate-adk`
-
-Provides access to the watsonx Orchestrate software development kit for creating agents and tools.
-
-This helps Bob:
-- Find the right documentation faster
-- Understand the watsonx Orchestrate CLI
-- Generate better agent and tool configurations
-- Reduce manual troubleshooting
+**✅ Checkpoint**: everything was imported to watsonx Orchestrate and is sucessfully working.
 
 ---
 
@@ -416,156 +302,9 @@ This helps Bob:
 
 You've successfully completed Lab 3! You've learned to:
 
-- ✅ Use IBM Bob to build an MCP project
-- ✅ Create MCP tools with FastMCP
-- ✅ Test MCP tools with unit tests
-- ✅ Validate MCP tools using an MCP client
+- ✅ Use IBM Bob to build tools and agents project
+- ✅ Configure and use MCP servers in BOB
 - ✅ Import MCP tools into watsonx Orchestrate
-- ✅ Create an agent YAML file
-- ✅ Deploy and test an agent in watsonx Orchestrate
+- ✅ Test an agent in watsonx Orchestrate
 
-## What You've Built
 
-```text
-mcp-wxo/
-├── README.md
-├── requirements.txt
-├── server.py
-├── client.py
-├── tests/
-│   └── test_factorial_tools.py
-├── agent.yaml
-└── docs/
-    └── usage.md
-```
-
-## Key Takeaways
-
-### IBM Bob as a Development Partner
-
-Bob can:
-- Create the project structure
-- Write the MCP server
-- Generate tests
-- Debug issues
-- Create documentation
-- Import tools and agents
-- Verify the final workflow
-
-### MCP Tools
-
-MCP tools allow agents to connect to external capabilities in a structured way.
-
-In this lab, your tools were simple mathematical tools, but the same pattern can be used for:
-- Internal APIs
-- Databases
-- Document search
-- Business applications
-- Automation workflows
-
-### watsonx Orchestrate Integration
-
-watsonx Orchestrate allows you to:
-- Import tools
-- Create agents
-- Connect agents to models
-- Test agent behavior
-- Build reusable AI workflows
-
-### Agent YAML Files
-
-Agent YAML files define:
-- Agent name
-- Agent description
-- LLM configuration
-- Tool access
-- Agent behavior
-
-This makes agents easier to version, review, and deploy.
-
-## Troubleshooting
-
-### MCP Server Issues
-
-**Problem**: FastMCP is not installed
-
-```bash
-pip install fastmcp
-```
-
-**Problem**: MCP server does not start
-
-Check:
-- Virtual environment is activated
-- Dependencies are installed
-- Server file has no syntax errors
-- Correct Python version is being used
-
-### MCP Client Issues
-
-**Problem**: Client cannot connect to server
-
-Check:
-- MCP server is running
-- Client points to the correct server command or endpoint
-- No dependency is missing
-- Server logs do not show errors
-
-### watsonx Orchestrate Import Issues
-
-**Problem**: Tool name cannot contain spaces
-
-Use tool names with underscores:
-
-```bash
-factorial_value
-factorial_digits
-```
-
-**Problem**: Missing dependency during import
-
-Update `requirements.txt` and retry the import.
-
-**Problem**: Agent YAML import fails
-
-Check:
-- YAML indentation
-- Required fields
-- Tool names
-- Model name
-- watsonx Orchestrate agent specification
-
-### Agent Testing Issues
-
-**Problem**: Agent does not call the right tool
-
-Try a more direct prompt:
-
-```bash
-Use the factorial_value tool to calculate the factorial value of 5.
-```
-
-**Problem**: Agent cannot access tools
-
-Check:
-- Tools were imported successfully
-- Tools are attached to the agent
-- Agent was re-imported after tool changes
-
-## Additional Resources
-
-- https://developer.watson-orchestrate.ibm.com/
-- https://developer.watson-orchestrate.ibm.com/agents/build_agent
-- https://modelcontextprotocol.io/
-
-## Feedback
-
-How was this lab? We'd love to hear:
-- Was the MCP flow clear?
-- Did Bob help reduce manual work?
-- Were the watsonx Orchestrate steps easy to follow?
-- What other tools would you like to connect through MCP?
-
----
-
-**Last Updated: February 2026**
