@@ -2,36 +2,22 @@
 
 ## Overview
 
-In this lab, you'll use IBM Bob to build and deploy MCP tools, import them into watsonx Orchestrate, and create an AI agent that can use those tools.
+In this lab, you'll use IBM Bob to build an agent and tool and import them into watsonx Orchestrate, using as reference the official documentation via the watsonx Orchestrate MCP.
 
-You will build a factorial agent that can:
-- Calculate the exact value of a factorial
-- Calculate the number of digits in a large factorial
-- Use MCP tools inside watsonx Orchestrate
-- Run with the `groq/openai/gpt-oss-120b` model
+You will build a simple agent that can:
+- Calculate how many time until christmas 2026 we have left
+- Answer like santa claus style
 
-<img width="1793" height="1145" alt="image" src="https://github.com/user-attachments/assets/4b96ca7c-8e8a-43f4-84a3-43bdbaaf90d3" />
-
-
-## What You'll Build
-
-A complete AI agent workflow with:
-- **MCP Server**: Built with FastMCP
-- **Tools**: `factorial_value` and `factorial_digits`
-- **MCP Client**: Used to validate the tools end to end
-- **watsonx Orchestrate Integration**: MCP tools imported into watsonx Orchestrate
-- **AI Agent**: A `factorial_agent` using the MCP tools
 
 ## Learning Objectives
 
 By the end of this lab, you will:
 - ✅ Use IBM Bob as an AI development partner
-- ✅ Build an MCP server with FastMCP
-- ✅ Create and test MCP tools
-- ✅ Validate tools using an MCP client
+- ✅ Connect and leverage an MCP server in BOB
+- ✅ Build agents and tools with BOB
+- ✅ Import agents and tools to watsonx orchestrate
 - ✅ Import MCP tools into watsonx Orchestrate
-- ✅ Create an agent YAML file
-- ✅ Deploy and verify an agent in watsonx Orchestrate
+
 
 ## Prerequisites
 
@@ -43,7 +29,7 @@ Before starting, ensure you have:
 - [ ] Access to a watsonx Orchestrate environment
 - [ ] Basic understanding of MCP tools and agents
 
-If you haven't completed setup, see [prerequisites.md](../prerequisites.md).
+
 
 ## Lab Structure
 
@@ -59,7 +45,7 @@ Lab 3 Timeline (45 minutes)
 
 ---
 
-## Step 1: Set Up the Python Project (5 minutes)
+## Step 1: Set Up the Python Project
 
 In this step, you will prepare the workspace for your project and ask IBM Bob to set up the Python environment.
 
@@ -74,12 +60,12 @@ Bob will:
 Create a new folder on your machine called:
 
 ```text
-mcp-wxo
+wxo-bob
 ```
 
 Open this folder in IBM Bob.
 
-<img width="2960" height="2155" alt="image" src="https://github.com/user-attachments/assets/f4e869ab-ab12-4748-b52d-64cb8f379c77" />
+<img width="3838" height="2220" alt="image" src="https://github.com/user-attachments/assets/85d39175-6237-4b3c-8c78-d39f7d13de37" />
 
 ### 1.2: Ask Bob to Create and Activate a Python Virtual Environment
 
@@ -88,7 +74,7 @@ Open this folder in IBM Bob.
 ```bash
 Create a Python virtual environment for this project and activate it.
 ```
-<img width="2318" height="2128" alt="image" src="https://github.com/user-attachments/assets/924e68bf-355b-42ef-931e-223a7c70ef89" />
+<img width="3813" height="2217" alt="image" src="https://github.com/user-attachments/assets/73b60df9-89bb-4b84-b726-c348435c6293" />
 
 
 Bob will:
@@ -110,120 +96,75 @@ Bob should confirm that:
 
 ---
 
-## Step 2: Build the MCP Server with Two Tools (10 minutes)
+## Step 2: Set up the watsonx Orchestrate documentation MCP
 
-In this step, you will ask Bob to create an MCP server using FastMCP.
+In this step, you will connect the watsonx Orchestrate documentation MCP to BOB, which will be essential to make sure the tools and agents are created according to the expected format and accepted by orchestrate.
 
-The MCP server will include two mathematical tools:
+### 2.1: Go to BOB Settings and open the MCP tab
 
-1. `factorial_value`  
-   Calculates and returns the exact value of `n!`.
+<img width="3818" height="2212" alt="image" src="https://github.com/user-attachments/assets/3437d789-9c72-4061-bd57-ef53c1508c38" />
 
-2. `factorial_digits`  
-   Returns only the number of decimal digits in `n!`, which is useful when the factorial is too large to display in full.
 
-### 2.1: Ask Bob to Create the MCP Server
+### 2.2: Search for "orchestrate" in the marketplace and open the watsonx Orchestrate ADK Docs MCP
 
-**Prompt for Bob:**
+<img width="3837" height="2220" alt="image" src="https://github.com/user-attachments/assets/6e76b258-1089-4917-93a3-2e07de6efa67" />
 
-```bash
-Create MCP Server using FastMCP with two mathematical tools. The first tool “factorial_value” calculates and returns the exact value of n! (the factorial of a given non-negative integer). The second tool “factorial_digits” returns only the number of decimal digits in n!, which is useful when the factorial is too large to display in full. You can have both tools share a common helper function to compute the factorial and avoid duplication of code.
-```
 
-<img width="1783" height="1028" alt="image" src="https://github.com/user-attachments/assets/6d390af5-0eba-4a77-8d1f-54ecd765a7b6" />
+### 2.3: Install the Server
 
-Bob will create a plan and ask for approval.
+Click on "Install"
 
-Click **Approve**.
+<img width="3818" height="1375" alt="image" src="https://github.com/user-attachments/assets/c8f04fe8-0291-4b40-966d-a5298c93239b" />
 
-### 2.2: Install FastMCP
+When asked for the Instalattion scope, feel free to select what suits you best. If you use Orchestrate on a regular basis, then select Global, as this is a very useful MCP. However, if you are only trying this for a one-time, it's recommendable to select project scope only, so we don't overload BOB context and affect its future performance.
 
-Bob should identify that FastMCP is required and ask for permission to install it.
+<img width="3816" height="2213" alt="image" src="https://github.com/user-attachments/assets/0d9cfd72-e80d-4a8c-a293-bd52b1cc87bd" />
 
-Click **Run** when Bob asks to install dependencies.
 
-### 2.3: Review the MCP Server Code
+### 2.4: Confirm the MCP was sucessfully installed
 
-Bob should create MCP server code with:
-- A shared helper function to calculate factorials
-- A `factorial_value` tool
-- A `factorial_digits` tool
-- Basic validation for non-negative integers
+Navigate to the MCP tab again and confirm you can now see a green dot next to the mcp, which means it was sucessfully installed and is now active.
 
-Expected tool behavior:
+<img width="3424" height="1971" alt="image" src="https://github.com/user-attachments/assets/a9a4fecf-2006-4965-baca-2d32f626b12c" />
 
-```python
-factorial_value(5)
-# Returns: 120
 
-factorial_digits(120)
-# Returns the number of digits in 120!
-```
-
-### 2.4: Ask Bob to Create Tests
-
-Bob should also create unit tests for the MCP tools.
-
-If needed, use this prompt:
-
-```bash
-Create unit tests for both MCP tools and verify that they work correctly, including error handling for invalid inputs.
-```
-
-### 2.5: Let Bob Fix Issues Automatically
-
-Bob may find errors while running the tests.
-
-Allow Bob to:
-- Debug the implementation
-- Fix the code
-- Re-run the tests
-- Confirm that all tests pass
-
-### 2.6: Generate Documentation
-
-Ask Bob to document the project.
-
-**Prompt for Bob:**
-
-```bash
-Generate clear documentation for this MCP server, including setup instructions, tool descriptions, and example usage.
-```
-
-**✅ Checkpoint**: MCP server, tools, tests, and documentation are created successfully.
+**✅ Checkpoint**: Orchestrate documentation MCP server configured and activated successfully.
 
 ---
 
-## Step 3: Start the MCP Server and Validate with an MCP Client (10 minutes)
+## Step 3: Use BOB to create a tool and an agent
 
-In this step, you will ask Bob to start the MCP server locally and create an MCP client to test the tools end to end.
+In this step, you will ask Bob to create a python tool and an agent that uses it in watsonx orchestrate
 
-### 3.1: Ask Bob to Start the MCP Server
+### 3.1: Ask Bob to create the tool
 
 **Prompt for Bob:**
 
 ```bash
-Please start the MCP Server, and test the 2 MCP tools with MCP client.
+Please create a python tool that calculates how much days we have left until christmas of 2026, following the watsonx Orchestrate ADK documentation MCP server as reference.
 ```
-<img width="1774" height="1058" alt="image" src="https://github.com/user-attachments/assets/1e55ad57-1366-450e-b566-2dd98e8637ab" />
+<img width="3824" height="2220" alt="image" src="https://github.com/user-attachments/assets/86759582-df42-4027-bc52-63e7960a5d1e" />
 
 
-Bob will create a plan for:
-- Starting the MCP server
-- Creating an MCP client
-- Connecting the client to the server
-- Testing both tools
+Bob will access the MCP to understand the expected format that orchestrate expects, and then build the tool according.
 
-Click **Approve**.
+<img width="3833" height="2230" alt="image" src="https://github.com/user-attachments/assets/555054f4-515a-4b33-aa40-07c6f0d2eff6" />
 
-### 3.2: Review the MCP Client
 
-Bob should create MCP client code that:
-- Connects to the local MCP server
-- Calls `factorial_value`
-- Calls `factorial_digits`
-- Tests valid and invalid inputs
-- Confirms error handling works correctly
+Whenever necessary, **approve** the commands that BOB wants to run.
+
+### 3.2: Ask BOB to create an agent, that will use the tool
+
+**Prompt for Bob:**
+
+```bash
+Please create an agent that uses the previously created tool whenever the user asks how much time is left until Christmas, answering in a Santa Claus style.
+
+I want groq/openai/gpt-oss-120b to be the agent LLM.
+```
+
+<img width="3821" height="2217" alt="image" src="https://github.com/user-attachments/assets/b621c6c0-5757-4d67-8018-0ad1910b9b50" />
+
 
 ### 3.3: Run the End-to-End Tests
 
