@@ -140,7 +140,12 @@ In this step, you will use Bob to generate:
 ---
 
 ## 3.1: Change BOB Mode to "Advanced"
-## 3.1: Ask Bob to Create the Tool
+
+First, make sure you’ve selected “Advanced” mode in BOB. This mode is well suited for coding tasks like the ones BOB will be asked to perform in the following steps.
+
+<img width="3383" height="1970" alt="image" src="https://github.com/user-attachments/assets/764bf5fd-a458-403a-8a17-07a4a5c39693" />
+
+## 3.2: Ask Bob to Create the Tool
 
 **Prompt for Bob:**
 
@@ -148,7 +153,7 @@ In this step, you will use Bob to generate:
 Please create a python tool that calculates how much days we have left until christmas of 2026, following the watsonx Orchestrate ADK documentation MCP server as reference.
 ```
 
-<img width="3824" height="2220" alt="image" src="https://github.com/user-attachments/assets/86759582-df42-4027-bc52-63e7960a5d1e" />
+<img width="3398" height="1977" alt="image" src="https://github.com/user-attachments/assets/3e0819cf-859c-4e99-a60b-e2c0ae25c4c2" />
 
 Bob will use the MCP server to understand the expected watsonx Orchestrate tool format and generate the tool accordingly.
 
