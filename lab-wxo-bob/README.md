@@ -262,7 +262,7 @@ Bob will let you know once the installation was successful.
 
 Open a new terminal in Bob.
 
-<img width="3839" height="1495" alt="image" src="https://github.com/user-attachments/assets/478f2b0d-3d05-49fe-a184-c3450a20729e" />
+<img width="3410" height="1979" alt="image" src="https://github.com/user-attachments/assets/3ff13ef4-ba93-443b-a785-d6afdff1c176" />
 
 **Command for the terminal:**
 
@@ -276,7 +276,7 @@ It is expected that the key will not appear while typing. This is normal and don
 
 After pressing Enter, you should see a confirmation message indicating that the environment was successfully created and activated.
 
-<img width="3368" height="1975" alt="image" src="https://github.com/user-attachments/assets/820f856f-5c5f-4c93-acef-af0e2ee65c67" />
+<img width="3393" height="1961" alt="image" src="https://github.com/user-attachments/assets/872a6df6-5729-4759-84d3-c53918a77aef" />
 
 ---
 
@@ -290,7 +290,7 @@ Now that the environment is configured, ask Bob to import the assets into watson
 Import the python tool and agent to my wxo-bob watsonx Orchestrate environment. Follow the watsonx Orchestrate ADK documentation MCP server to find the appropriate import commands.
 ```
 
-<img width="3839" height="2220" alt="image" src="https://github.com/user-attachments/assets/8e45f0fa-abc4-44ab-9d67-4f6befed053d" />
+<img width="3400" height="1969" alt="image" src="https://github.com/user-attachments/assets/516e3db9-92c5-41e3-9abc-a0085c9273c3" />
 
 During the import process, Bob may need to resolve issues such as:
 - Tool names containing spaces
@@ -299,8 +299,6 @@ During the import process, Bob may need to resolve issues such as:
 - Configuration adjustments
 
 Allow Bob to apply fixes and retry the import if necessary.
-
-<img width="3839" height="2141" alt="image" src="https://github.com/user-attachments/assets/17d854d0-6eec-4e5c-b93e-17eb26d4de6e" />
 
 **✅ Checkpoint:** The agent and tool were successfully imported into watsonx Orchestrate.
 
@@ -326,7 +324,10 @@ Navigate to the **Build** tab.
 
 Verify that both the agent and tool are available.
 
-<img width="3779" height="2031" alt="image" src="https://github.com/user-attachments/assets/1726e663-be7a-48c3-9c7f-06dd3321a38d" />
+<img width="3570" height="1970" alt="image" src="https://github.com/user-attachments/assets/2e48ef18-b6c9-4a6c-bb4f-a30422918a4d" />
+
+<img width="3573" height="1972" alt="image" src="https://github.com/user-attachments/assets/6a316333-6dd4-4209-96be-5c0eb6124886" />
+
 
 ---
 
@@ -334,7 +335,17 @@ Verify that both the agent and tool are available.
 
 Open the agent, inspect its configuration, and test it directly from the UI.
 
-<img width="3839" height="2054" alt="image" src="https://github.com/user-attachments/assets/4fa466e9-e1db-423d-87d6-8e2ec6c2e3bc" />
+**Prompt for the agent:**
+
+```bash
+How many days left until Christmas?
+```
+
+<img width="3703" height="1965" alt="image" src="https://github.com/user-attachments/assets/bcf66ecb-108f-4818-b041-41c70f2bf3b4" />
+
+You can also click on "Show Reasoning" in order to verify and better understand how the agent used the tool to reach its answer.
+
+<img width="3684" height="1958" alt="image" src="https://github.com/user-attachments/assets/294f5c4b-2fe2-4728-896d-127cd235a487" />
 
 **✅ Checkpoint:** The agent and tool are successfully working inside watsonx Orchestrate.
 
@@ -342,7 +353,7 @@ Open the agent, inspect its configuration, and test it directly from the UI.
 
 # Congratulations! 🎉
 
-You have successfully completed Lab 3.
+You have successfully completed the Bob x watsonx Orchestrate Lab.
 
 In this lab, you learned how to:
 - ✅ Use IBM Bob to build AI agents and tools
