@@ -157,13 +157,13 @@ Please create a python tool that calculates how much days we have left until chr
 
 Bob will use the MCP server to understand the expected watsonx Orchestrate tool format and generate the tool accordingly.
 
-<img width="3833" height="2230" alt="image" src="https://github.com/user-attachments/assets/555054f4-515a-4b33-aa40-07c6f0d2eff6" />
+<img width="3836" height="2222" alt="image" src="https://github.com/user-attachments/assets/4ff1a424-b50e-4050-a2a2-a8a12d31f866" />
 
 Approve any commands Bob requests to run.
 
 ---
 
-## 3.2: Ask Bob to Create the Agent
+## 3.3: Ask Bob to Create the Agent
 
 **Prompt for Bob:**
 
@@ -175,7 +175,7 @@ I want groq/openai/gpt-oss-120b to be the agent LLM.
 Follow the watsonx Orchestrate ADK documentation MCP server as reference.
 ```
 
-<img width="3821" height="2217" alt="image" src="https://github.com/user-attachments/assets/b621c6c0-5757-4d67-8018-0ad1910b9b50" />
+<img width="3417" height="1973" alt="image" src="https://github.com/user-attachments/assets/d77325e0-83a8-4faa-9d40-a76e703ec81f" />
 
 Bob will once again use the MCP documentation server as reference to generate the agent.
 
@@ -183,7 +183,7 @@ After the generation is complete, inspect the generated agent file and verify:
 - The tool is correctly connected to the agent
 - The instructions and behavior match the intended use case
 
-<img width="3839" height="2222" alt="image" src="https://github.com/user-attachments/assets/db3d437c-7cca-49cd-b6d3-c19422f7e708" />
+<img width="3820" height="2225" alt="image" src="https://github.com/user-attachments/assets/85948868-29d7-4744-915d-4b09a5b4d2c9" />
 
 **✅ Checkpoint:** The agent and tool were successfully created.
 
@@ -213,7 +213,9 @@ Go to your IBM Cloud account and generate an API key.
 
 <img width="3636" height="1921" alt="image" src="https://github.com/user-attachments/assets/6c8c9e34-2913-4422-bc05-c197ea48f11b" />
 
-Store the API key securely because you will use it in the next steps.
+
+**Important:** Store the API key securely because you will use it in the next steps.
+
 
 ---
 
@@ -229,17 +231,36 @@ Copy the instance URL.
 
 <img width="3711" height="1838" alt="image" src="https://github.com/user-attachments/assets/7c67b5ba-f3e5-48a5-83b9-2a459a37fa59" />
 
-Example:
 
-```text
-https://api.us-south.watson-orchestrate.cloud.ibm.com/instances/xxxxxxxx
-```
+**Example:** https://api.us-south.watson-orchestrate.cloud.ibm.com/instances/xxxxxxxx
+
 
 ---
 
-## 4.3: Create and Activate a watsonx Orchestrate Environment
+## 4.3: Install the watsonx Orchestrate ADK
 
-Return to Bob and open a new terminal.
+Before you start working with watsonx Orchestrate, you need to make sure you have installed the ADK (Agent Development Kit), which is a comprehensive set of CLI utilities and Python modules that enables you to create, test, and deploy agents and tools for watsonx Orchestrate.
+
+Luckily, we can also ask Bob to help us with that! Let's start a new task for this.
+
+**Prompt for Bob:**
+
+```bash
+Install the watsonx Orchestrate ADK
+```
+
+<img width="3413" height="1969" alt="image" src="https://github.com/user-attachments/assets/70d1bf43-5602-4c7e-b9cf-3eb47b186cb8" />
+
+Bob will let you know once the installation was successful.
+
+<img width="3410" height="1980" alt="image" src="https://github.com/user-attachments/assets/87c9b373-7c3d-40a4-838b-db6794d75e46" />
+
+
+---
+
+## 4.4: Create and Activate a watsonx Orchestrate Environment
+
+Open a new terminal in Bob.
 
 <img width="3839" height="1495" alt="image" src="https://github.com/user-attachments/assets/478f2b0d-3d05-49fe-a184-c3450a20729e" />
 
@@ -259,7 +280,7 @@ After pressing Enter, you should see a confirmation message indicating that the 
 
 ---
 
-## 4.4: Ask Bob to Import the Agent and Tool
+## 4.5: Ask Bob to Import the Agent and Tool
 
 Now that the environment is configured, ask Bob to import the assets into watsonx Orchestrate.
 
