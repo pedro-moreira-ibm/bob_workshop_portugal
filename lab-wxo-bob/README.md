@@ -87,7 +87,7 @@ This MCP server will allow Bob to use the official watsonx Orchestrate documenta
 
 Go to **Settings** and open the **MCP** tab.
 
-<img width="3818" height="2212" alt="image" src="https://github.com/user-attachments/assets/3437d789-9c72-4061-bd57-ef53c1508c38" />
+<img width="3418" height="1979" alt="image" src="https://github.com/user-attachments/assets/297ff9bb-02bb-4419-87c5-5ba52265e34e" />
 
 ---
 
@@ -96,12 +96,12 @@ Go to **Settings** and open the **MCP** tab.
 Search for:
 
 ```text
-orchestrate
+watsonx Orchestrate ADK Docs
 ```
 
-Open the **watsonx Orchestrate ADK Docs MCP**.
+Open the **watsonx Orchestrate ADK Docs**.
 
-<img width="3837" height="2220" alt="image" src="https://github.com/user-attachments/assets/6e76b258-1089-4917-93a3-2e07de6efa67" />
+<img width="3391" height="1958" alt="image" src="https://github.com/user-attachments/assets/4d4fd84d-f8bd-44a0-b4bc-351e9a7b6f84" />
 
 ---
 
@@ -109,7 +109,7 @@ Open the **watsonx Orchestrate ADK Docs MCP**.
 
 Click **Install**.
 
-<img width="3818" height="1375" alt="image" src="https://github.com/user-attachments/assets/c8f04fe8-0291-4b40-966d-a5298c93239b" />
+<img width="3392" height="1963" alt="image" src="https://github.com/user-attachments/assets/d77b6b12-6570-4863-9148-71f4ad364fe1" />
 
 When prompted for the installation scope:
 - Select **Global** if you regularly work with watsonx Orchestrate
@@ -117,7 +117,7 @@ When prompted for the installation scope:
 
 Using Project scope can help keep Bob's context lighter and more focused.
 
-<img width="3816" height="2213" alt="image" src="https://github.com/user-attachments/assets/0d9cfd72-e80d-4a8c-a293-bd52b1cc87bd" />
+<img width="3399" height="1977" alt="image" src="https://github.com/user-attachments/assets/19a1c3ba-37cd-4824-80c8-d02d520f13b6" />
 
 ---
 
@@ -125,7 +125,7 @@ Using Project scope can help keep Bob's context lighter and more focused.
 
 Return to the MCP tab and confirm that a green dot appears next to the MCP server, indicating that it is installed and active.
 
-<img width="3424" height="1971" alt="image" src="https://github.com/user-attachments/assets/a9a4fecf-2006-4965-baca-2d32f626b12c" />
+<img width="3398" height="1965" alt="image" src="https://github.com/user-attachments/assets/feda3dff-c83f-4553-935d-42c26c9ed009" />
 
 **✅ Checkpoint:** The watsonx Orchestrate documentation MCP server is installed and active.
 
@@ -139,6 +139,7 @@ In this step, you will use Bob to generate:
 
 ---
 
+## 3.1: Change BOB Mode to "Advanced"
 ## 3.1: Ask Bob to Create the Tool
 
 **Prompt for Bob:**
