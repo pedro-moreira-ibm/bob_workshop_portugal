@@ -1,4 +1,4 @@
-# Lab 3: Code Translation - Python to JavaScript
+# Lab 2: Code Translation - Python to JavaScript
 
 ## Overview
 
@@ -704,15 +704,4 @@ How was this lab? We'd love to hear:
 
 ---
 
-**Congratulations on completing all three Bob Bootcamp Labs!** 🎓
-
-You've mastered:
-- Building applications with Bob (Lab 1)
-- Security analysis and fixes (Lab 2)
-- Code translation between languages (Lab 3)
-
-**You're now ready to use Bob for real-world development projects!**
-
----
-
-*Last Updated: December 2025*
+**Congratulations on completing Bob Lab 2!** 🎓
