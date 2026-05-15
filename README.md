@@ -1,13 +1,15 @@
-# Bob Bootcamp: Hands-On Labs
+# Bob Workshop Portugal: Hands-On Labs
 
-Welcome to the Bob Bootcamp hands-on labs! This comprehensive training series will teach you how to leverage IBM Bob's AI-powered development capabilities through practical, real-world exercises.
+Welcome to the Bob Workshop Portugal hands-on labs. This repository contains practical labs for IBM Bob and watsonx Orchestrate, organized by topic.
 
 ## 🎯 Overview
 
-These labs are designed to give you hands-on experience with Bob's core features through six progressive exercises:
+These labs are designed to give you hands-on experience with Bob's core features through four practical tracks:
 
-1. **Lab 1: Building Applications** - Create a full-stack todo application
-2. **Lab 2: Security & Code Analysis** - Identify and fix security vulnerabilities
+1. **AskHR with watsonx Orchestrate** - Build an HR-focused agent experience
+2. **Lab 1: Building Applications** - Create a full-stack todo application
+3. **Lab 2: Security & Code Analysis** - Identify and fix security vulnerabilities
+4. **Bob with watsonx Orchestrate** - Build and import an agent and tool
 
 **Total Learning Time**: ~5 hours
 
@@ -21,7 +23,6 @@ These labs are designed to give you hands-on experience with Bob's core features
 - **BobShell**: Command-line interface and automation
 - **Code Analysis**: Understanding and improving existing codebases
 - **Security Awareness**: Identifying and fixing vulnerabilities
-- **Code Translation**: Converting code between languages
 - **Custom Modes**: Creating specialized Bob modes
 - **MCP Development**: Building custom MCP servers
 
@@ -63,6 +64,15 @@ For detailed setup instructions, see [prerequisites.md](prerequisites.md).
 
 ## 📚 Lab Structure
 
+#### AskHR with watsonx Orchestrate
+**Focus**: Agent orchestration for HR workflows
+
+Build and test an HR agent that combines knowledge, tools, and enterprise workflow automation in watsonx Orchestrate.
+
+**[Open AskHR Lab →](watsonx-orchestrate-labs/ask-hr/README.md)**
+
+---
+
 #### Lab 1: Building a Todo Application (45 minutes)
 **Focus**: Creation and Development
 
@@ -81,7 +91,7 @@ Learn to use Bob's different modes to build a complete full-stack application fr
 - ✅ Literate coding for documentation
 - ✅ GitHub MCP for version control
 
-**[Start Lab 1 →](lab1/README.md)**
+**[Start Lab 1 →](bob-labs/lab1/README.md)**
 
 ---
 
@@ -103,9 +113,18 @@ Use Bob to analyze existing code, identify security vulnerabilities, and impleme
 - ✅ Multi-file code analysis
 - ✅ Security best practices
 
-**[Start Lab 2 →](lab2/README.md)**
+**[Start Lab 2 →](bob-labs/lab2/README.md)**
+
+---
+
+#### Bob with watsonx Orchestrate
+**Focus**: Agent and tool creation with IBM Bob
+
+Use IBM Bob together with the watsonx Orchestrate documentation MCP to generate, import, and validate an agent and a Python tool.
+
+**[Open Bob with watsonx Orchestrate Lab →](bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md)**
 
 ---
 
 *Last Updated: December 2025*  
-*Version: 2.0 - Extended Series*
+*Version: 2.1 - Reorganized Repository Structure*

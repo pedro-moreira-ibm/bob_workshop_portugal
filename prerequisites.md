@@ -76,7 +76,7 @@ sudo apt install python3-pip  # Ubuntu/Debian
 
 ### 2. Node.js 14 or Higher
 
-Node.js is required for JavaScript development and Lab 3.
+Node.js is required for JavaScript development and the frontend-focused labs in this repository.
 
 #### Installation
 
@@ -558,7 +558,7 @@ Once you've completed all setup steps:
 4. ✅ Set up GitHub account and MCP
 5. ✅ Create a test project to verify everything works
 
-**Ready to start?** → [Return to Main README](README.md) → [Start Lab 1](lab1/README.md)
+**Ready to start?** → [Return to Main README](README.md) → [Start Lab 1](bob-labs/lab1/README.md)
 
 ---
 

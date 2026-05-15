@@ -4,7 +4,7 @@
 
 In this lab, you'll use Bob to analyze existing code, identify security vulnerabilities, and implement fixes. You'll learn to recognize common security issues like SQL injection, XSS, and hardcoded secrets, then use Bob's different modes to fix them.
 
-> **🔍 Bob Differentiator: [Bob Findings](../bob-differentiators.md#3--bob-findings-automated-analysis-engine)**
+> **🔍 Bob Differentiator: Bob Findings**
 > This lab showcases Bob Findings, Bob's automated security and code quality analysis engine. Unlike simple linters, Bob Findings provides continuous, proactive analysis with specific remediation recommendations, severity ratings, and code examples. It's like having a security expert reviewing your code in real-time!
 
 **Duration**: 45 minutes
@@ -126,7 +126,7 @@ Change from Ask to **Plan Mode** (🎯).
 ### 2.2: Request Security Analysis
 
 > **💡 Using Bob Findings**
-> Bob Findings can automatically scan your code for security vulnerabilities, code quality issues, and compliance violations. The analysis you're about to request demonstrates Bob's [Security Vulnerability Detection](../bob-differentiators.md#security-vulnerability-detection) capabilities, which go beyond basic static analysis to provide context-aware recommendations.
+> Bob Findings can automatically scan your code for security vulnerabilities, code quality issues, and compliance violations. The analysis you're about to request demonstrates Bob's security vulnerability detection capabilities, which go beyond basic static analysis to provide context-aware recommendations.
 
 **Prompt for Bob:**
 
@@ -475,7 +475,7 @@ You've successfully completed Lab 2! You've learned to:
 - ✅ Use Code mode to fix security issues
 
 > **🎯 Bob Findings in Action**
-> In this lab, you experienced Bob's [automated security analysis](../bob-differentiators.md#security-vulnerability-detection) capabilities. Bob Findings continuously monitors your code for vulnerabilities and provides actionable remediation guidance. This proactive approach helps you catch security issues before they reach production, reducing risk and technical debt.
+> In this lab, you experienced Bob's automated security analysis capabilities. Bob Findings continuously monitors your code for vulnerabilities and provides actionable remediation guidance. This proactive approach helps you catch security issues before they reach production, reducing risk and technical debt.
 
 ## Security Best Practices Learned
 
@@ -553,7 +553,7 @@ element.textContent = userInput
 ## Next Steps
 
 ### Continue Learning
-- **[Lab 3: Code Translation →](../lab3/README.md)** - Learn to translate code between languages
+- **[Bob with watsonx Orchestrate →](../../bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md)** - Build and import an agent and tool with IBM Bob
 
 ### Practice More
 Try finding and fixing these additional vulnerabilities:
@@ -605,6 +605,6 @@ How was this lab? We'd love to hear:
 
 ---
 
-**Ready for the next challenge?** → [Start Lab 3: Code Translation](../lab3/README.md)
+**Ready for the next challenge?** → [Open Bob with watsonx Orchestrate](../../bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md)
 
 *Last Updated: December 2025*

@@ -47,11 +47,11 @@ To access IBM Cloud, click on the IBM Cloud Login.
 
 - Log in to IBM Cloud (cloud.ibm.com). Navigate to top left hamburger menu, then to Resource List. Open the AI/Machine Learning section. You should see a **watsonx Orchestrate** service, click to open.
 
-  <img width="1000" alt="image" src="/environment-setup/assets/cloud-resource-list.png">
+  <img width="1000" alt="image" src="../../../environment-setup/assets/cloud-resource-list.png">
 
 - Click the "Launch watsonx Orchestrate" button.
 
-   <img width="1000" alt="image" src="/environment-setup/assets/cloud-wxo.png">
+   <img width="1000" alt="image" src="../../../environment-setup/assets/cloud-wxo.png">
 
 - Welcome to watsonx Orchestrate. Open the hamburger menu, click on the down arrow next to **Build**.  Then click on **Agent Builder**:
 
@@ -110,7 +110,7 @@ Next, you will go through the process of configuring your agent. The Product Age
    
    <img width="1000" alt="image" src="hands-on-lab-assets/step_7_v3.png">
      
-1. Download the [Employee Benefits.pdf](/ask-hr/assets/Employee-Benefits.pdf) onto your system, then upload the file here. You can download the pdf by clicking on [Employee Benefits.pdf](/ask-hr/assets/Employee-Benefits.pdf) and then click on download icon in opened page as shown in image below.
+1. Download the [Employee Benefits.pdf](Employee-Benefits.pdf) onto your system, then upload the file here. You can download the pdf by clicking on [Employee Benefits.pdf](Employee-Benefits.pdf) and then click on download icon in opened page as shown in image below.
       <img width="1000" alt="image" src="hands-on-lab-assets/step_7.1_v3.png">
 
       
@@ -150,7 +150,7 @@ Next, you will go through the process of configuring your agent. The Product Age
 
    <img width="1000" alt="image" src="hands-on-lab-assets/step_11_v3.png">
 
-1. Drag and drop or click to upload the [hr.yaml](/ask-hr/assets/hr.yaml) file, then click on **Next**:
+1. Drag and drop or click to upload the [hr.yaml](hr.yaml) file, then click on **Next**:
 
    <img width="1000" alt="image" src="hands-on-lab-assets/step_12_v3.png">    
 
@@ -194,7 +194,7 @@ Ask the agent for your profile data.
 Show me my profile data.
 ```
 
-When asked for your name, you should choose a name of one of the company's employees (e.g. "Victoria Baker"). Find the employees list by downloading the [Users_Data](/ask-hr/assets/users_data.xlsx) file.
+When asked for your name, you should choose a name of one of the company's employees (e.g. "Victoria Baker"). Find the employees list by downloading the [Users_Data](users_data.xlsx) file.
 
 After that, ask the agent to update your job title.
 

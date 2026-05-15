@@ -21,7 +21,7 @@
 
 ## Introduction
 
-This document contains the documentation for the setup of the environment to prepare for the step-by-step walkthrough of the [Retail use case](../retail/).
+This document contains the documentation for the setup of the environment to prepare for the step-by-step walkthrough of the Retail use case materials provided separately from this repository.
 
 The use case takes you through the creation of tools and agents using the [IBM watsonx Orchestrate Agent Development Kit (ADK)](https://developer.watson-orchestrate.ibm.com/). This toolkit can be installed on a local machine or accessed via virtual machine and brings with it the core components of watsonx Orchestrate, as container images that are running in a container runtime like Docker or Rancher. It also includes a CLI that can be used to manage a locally running instance as well as remote instances running in the cloud.
 
@@ -294,4 +294,4 @@ Click on the Plus sign as shown in the image above. Name your key "default". Aft
 
 To complete the setup for this use case, we will add the Tavily API key to the .env file as before, with an editor of your choice. Add your key to the `TAVILY_API_KEY` variable.
 
-This is it! You are now ready to proceed to the [detailed lab instructions](../retail/retail.md).
+This is it! You are now ready to proceed to the detailed retail lab instructions provided separately from this repository.

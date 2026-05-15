@@ -34,7 +34,7 @@ Before starting, ensure you have:
 - [ ] GitHub account (for MCP integration)
 - [ ] Text editor or IDE open
 
-If you haven't completed setup, see [prerequisites.md](../prerequisites.md).
+If you haven't completed setup, see [prerequisites.md](../../prerequisites.md).
 
 ## Lab Structure
 
@@ -55,8 +55,8 @@ Lab 1 Timeline (45 minutes)
 
 Bob has three distinct modes, each optimized for different tasks:
 
-> **🎯 Bob Differentiator: [Customizable Modes](../bob-differentiators.md#1--extensible-architecture)**
-> Bob's mode system is one of its key differentiators. Unlike other AI assistants, Bob allows you to create custom modes tailored to your team's specific workflows. The three built-in modes you'll use in this lab are just the beginning—you can create specialized modes for code review, documentation, architecture design, and more. Learn more in [Lab 6](../lab6/README.md).
+> **🎯 Bob Differentiator: Customizable Modes**
+> Bob's mode system is one of its key differentiators. Unlike other AI assistants, Bob allows you to create custom modes tailored to your team's specific workflows. The three built-in modes you'll use in this lab are just the beginning.
 
 #### 🎯 Plan Mode
 **When to use**: Planning, designing, strategizing
@@ -432,7 +432,7 @@ Once in Advanced mode, you can use all the same code editing features while also
 
 ### 4.2: Understanding MCP Servers
 
-> **🔧 Bob Differentiator: [MCP Server Integration](../bob-differentiators.md#mcp-server-integration)**
+> **🔧 Bob Differentiator: MCP Server Integration**
 > Bob's MCP (Model Context Protocol) integration is a powerful differentiator that allows you to connect external tools and services directly into your workflow. Unlike other AI assistants that work in isolation, Bob can integrate with your company's internal APIs, databases, documentation systems, and more. This means Bob adapts to YOUR environment, not the other way around.
 
 **MCP (Model Context Protocol)** allows Bob to interact with external services like GitHub.
@@ -590,7 +590,7 @@ bob-todo-app/
 - **Architect**: Perfect for planning and design decisions
 - **Code**: Best for implementation and file creation
 - **Ask**: Great for learning and understanding
-- **Custom Modes**: Create your own specialized modes ([Learn more](../bob-differentiators.md#customizable-modes))
+- **Custom Modes**: Create your own specialized modes
 
 ### Auto-Approvals
 - Speeds up development significantly
@@ -606,10 +606,10 @@ bob-todo-app/
 - Streamlines version control
 - Natural language git operations
 - Integrates seamlessly with Bob
-- **Extensible**: Part of Bob's [MCP Server Integration](../bob-differentiators.md#mcp-server-integration) capability
+- **Extensible**: Part of Bob's MCP Server Integration capability
 
 > **💡 Behind the Scenes: Intelligent Resource Optimization**
-> While you've been building this app, Bob has been automatically selecting the right AI model for each task—using powerful models for complex architecture decisions and lighter models for simple file operations. This [automatic model selection](../bob-differentiators.md#automatic-model-selection) optimizes both quality and cost without you having to think about it. You can save up to 60% on AI costs while maintaining excellent results!
+> While you've been building this app, Bob has been automatically selecting the right AI model for each task, using powerful models for complex architecture decisions and lighter models for simple file operations. This optimizes both quality and cost without adding extra steps to the workflow.
 
 ## Next Steps
 
@@ -623,7 +623,6 @@ Try these improvements:
 
 ### Continue Learning
 - **[Lab 2: Security Analysis →](../lab2/README.md)** - Learn to identify and fix security vulnerabilities
-- **[Lab 3: Code Translation →](../lab3/README.md)** - Translate code between languages
 
 ## Troubleshooting
 

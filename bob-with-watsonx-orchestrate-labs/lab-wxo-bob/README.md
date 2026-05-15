@@ -1,4 +1,4 @@
-# Lab 3: Building AI Agents with IBM Bob and watsonx Orchestrate
+# Bob with watsonx Orchestrate: Building AI Agents with IBM Bob
 
 ## Overview
 
@@ -33,13 +33,13 @@ Before starting, ensure you have:
 - [ ] Access to a watsonx Orchestrate environment
 - [ ] Basic understanding of MCP tools and AI agents
 
-If you haven't completed setup, see [prerequisites.md](../prerequisites.md).
+If you haven't completed setup, see [prerequisites.md](../../prerequisites.md).
 ---
 
 ## Lab Structure
 
 ```text
-Lab 3 Timeline 
+Workshop Timeline
 ├── Step 1: Set Up the Python Project
 ├── Step 2: Configure the watsonx Orchestrate Documentation MCP
 ├── Step 3: Use Bob to Create a Tool and an Agent
