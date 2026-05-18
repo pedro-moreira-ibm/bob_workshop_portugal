@@ -1,130 +1,66 @@
 # Bob Workshop Portugal: Hands-On Labs
 
-Welcome to the Bob Workshop Portugal hands-on labs. This repository contains practical labs for IBM Bob and watsonx Orchestrate, organized by topic.
+This repository is structured as a guided workshop path across watsonx Orchestrate, Bob, and then both together.
 
-## 🎯 Overview
+## Workshop Flow
 
-These labs are designed to give you hands-on experience with Bob's core features through four practical tracks:
+1. Start with [AskHR in `watsonx-orchestrate-labs`](watsonx-orchestrate-labs/ask-hr/README.md) to explore an HR agent experience built in watsonx Orchestrate.
+2. Move into [Bob Lab 1 in `bob-labs`](bob-labs/lab1/README.md) to build a full-stack todo application with Bob.
+3. Continue with [Bob Lab 2 in `bob-labs`](bob-labs/lab2/README.md) to use Bob for Python-to-JavaScript code translation.
+4. Finish with [Bob with watsonx Orchestrate](bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md) to combine both platforms in a final agent-and-tool workflow.
 
-1. **AskHR with watsonx Orchestrate** - Build an HR-focused agent experience
-2. **Lab 1: Building Applications** - Create a full-stack todo application
-3. **Lab 2: Security & Code Analysis** - Identify and fix security vulnerabilities
-4. **Bob with watsonx Orchestrate** - Build and import an agent and tool
+## What You Will Practice
 
-**Total Learning Time**: ~5 hours
+- Building and testing an HR agent in watsonx Orchestrate
+- Using Bob's Plan, Code, and Ask modes across different tasks
+- Working with GitHub MCP and documentation MCP servers
+- Building a Flask + JavaScript + SQLite application
+- Translating code between Python and JavaScript with Bob
+- Generating and importing watsonx Orchestrate agents and tools
 
-## 🚀 What You'll Learn
+## Repository Structure
 
-### Bob's Core Features
-- **Multiple Modes**: Plan, Code, and Ask modes for different tasks
-- **Auto-approvals**: Rapid development with automated confirmations
-- **Literate Coding**: Self-documenting code with inline explanations
-- **MCP Servers**: Integration with GitHub and custom services
-- **BobShell**: Command-line interface and automation
-- **Code Analysis**: Understanding and improving existing codebases
-- **Security Awareness**: Identifying and fixing vulnerabilities
-- **Custom Modes**: Creating specialized Bob modes
-- **MCP Development**: Building custom MCP servers
+```text
+.
+├── watsonx-orchestrate-labs/
+│   └── ask-hr/
+├── bob-labs/
+│   ├── lab0-prerequisites/
+│   ├── lab1/
+│   └── lab2/
+├── bob-with-watsonx-orchestrate-labs/
+│   └── lab-wxo-bob/
+└── environment-setup/
+```
 
-### Technical Skills
-- Full-stack web development (Python Flask + JavaScript)
-- REST API design and implementation
-- Security best practices (SQL injection, XSS, secrets management)
-- Cross-language development patterns
-- Command-line automation and scripting
-- Java modernization (Java 8 → 17/21)
-- MCP server development
-- CI/CD integration
+## Before You Start
 
-## 📋 Prerequisites
+If you are starting the Bob track, review [bob-labs/lab0-prerequisites/README.md](bob-labs/lab0-prerequisites/README.md). For shared environment guidance, see [environment-setup/README.md](environment-setup/README.md).
 
-Before starting these labs, ensure you have:
+## Lab Sequence
 
-### Required Software
-- **Python 3.8+** - [Download](https://www.python.org/downloads/)
-- **Node.js 14+** - [Download](https://nodejs.org/)
-- **Git 2.x+** - [Download](https://git-scm.com/)
-- **Bob** - Installed and configured
-- **Text Editor/IDE** - VS Code recommended
+### 1. AskHR with watsonx Orchestrate
 
-### Required Knowledge
-- Basic Python syntax and concepts
-- Basic JavaScript syntax and concepts
-- HTML/CSS fundamentals
-- REST API concepts
-- Git basics
-- Command line usage
+Start the workshop in [`watsonx-orchestrate-labs/ask-hr`](watsonx-orchestrate-labs/ask-hr/README.md).
 
-### Account Setup
-- GitHub account (for Lab 1)
-- Bob account configured
-- GitHub MCP server connected (optional but recommended)
+This exercise focuses on a watsonx Orchestrate HR use case. You will review the business scenario, understand the architecture, and follow the hands-on guide to work with an agent that handles profile data, benefits knowledge, and time-off flows.
 
-For detailed setup instructions, see [prerequisites.md](prerequisites.md).
+### 2. Bob Lab 1: Build a Todo Application
 
-## 📚 Lab Structure
+Continue with [`bob-labs/lab1`](bob-labs/lab1/README.md).
 
-#### AskHR with watsonx Orchestrate
-**Focus**: Agent orchestration for HR workflows
+Before starting the Bob labs, review [`bob-labs/lab0-prerequisites`](bob-labs/lab0-prerequisites/README.md).
 
-Build and test an HR agent that combines knowledge, tools, and enterprise workflow automation in watsonx Orchestrate.
+This lab uses Bob to plan and implement a full-stack todo application. It covers project planning, backend creation with Flask, frontend implementation in JavaScript, and GitHub integration through MCP.
 
-**[Open AskHR Lab →](watsonx-orchestrate-labs/ask-hr/README.md)**
+### 3. Bob Lab 2: Translate Python to JavaScript
 
----
+Continue with [`bob-labs/lab2`](bob-labs/lab2/README.md).
 
-#### Lab 1: Building a Todo Application (45 minutes)
-**Focus**: Creation and Development
+This lab uses Bob to analyze an existing Python script, plan a translation strategy, and implement an equivalent JavaScript version while preserving behavior and applying language-specific patterns.
 
-Learn to use Bob's different modes to build a complete full-stack application from scratch.
+### 4. Final Lab: Bob with watsonx Orchestrate
 
-**What You'll Build**:
-- Python Flask REST API backend
-- JavaScript frontend with modern UI
-- SQLite database integration
-- GitHub repository with version control
+Finish with [`bob-with-watsonx-orchestrate-labs/lab-wxo-bob`](bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md).
 
-**Bob Features**:
-- ✅ Plan Mode for planning
-- ✅ Code Mode for implementation
-- ✅ Auto-approvals for rapid development
-- ✅ Literate coding for documentation
-- ✅ GitHub MCP for version control
-
-**[Start Lab 1 →](bob-labs/lab1/README.md)**
-
----
-
-#### Lab 2: Security Analysis & Fixes (45 minutes)
-**Focus**: Code Analysis and Security
-
-Use Bob to analyze existing code, identify security vulnerabilities, and implement fixes.
-
-**What You'll Analyze**:
-- SQL injection vulnerabilities
-- Cross-site scripting (XSS) issues
-- Hardcoded secrets and credentials
-- Input validation problems
-
-**Bob Features**:
-- ✅ Ask Mode for code understanding
-- ✅ Plan Mode for analysis and planning
-- ✅ Code Mode for implementing fixes
-- ✅ Multi-file code analysis
-- ✅ Security best practices
-
-**[Start Lab 2 →](bob-labs/lab2/README.md)**
-
----
-
-#### Bob with watsonx Orchestrate
-**Focus**: Agent and tool creation with IBM Bob
-
-Use IBM Bob together with the watsonx Orchestrate documentation MCP to generate, import, and validate an agent and a Python tool.
-
-**[Open Bob with watsonx Orchestrate Lab →](bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md)**
-
----
-
-*Last Updated: December 2025*  
-*Version: 2.1 - Reorganized Repository Structure*
+This lab brings the two tracks together. You will use Bob plus the watsonx Orchestrate documentation MCP server to generate a Python tool and an agent, then import and validate both assets inside watsonx Orchestrate.

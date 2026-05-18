@@ -4,7 +4,6 @@
 
 In this lab, you'll learn to use Bob's AI-powered features to build a complete full-stack todo application from scratch. You'll experience Bob's different modes, auto-approvals, literate coding, and GitHub integration.
 
-**Duration**: 45 minutes  
 **Difficulty**: Beginner to Intermediate
 
 ## What You'll Build
@@ -18,7 +17,7 @@ A full-stack todo application with:
 ## Learning Objectives
 
 By the end of this lab, you will:
-- ✅ Understand Bob's three modes (Architect, Code, Ask)
+- ✅ Understand Bob's three modes (Plan, Code, Ask)
 - ✅ Use auto-approvals for rapid development
 - ✅ Practice literate coding techniques
 - ✅ Integrate GitHub using MCP servers
@@ -26,30 +25,33 @@ By the end of this lab, you will:
 
 ## Prerequisites
 
-Before starting, ensure you have:
-- [ ] Python 3.8+ installed
-- [ ] Node.js 14+ installed (for npm)
-- [ ] Git installed and configured
-- [ ] Bob installed and running
-- [ ] GitHub account (for MCP integration)
-- [ ] Text editor or IDE open
+Before starting, review [Lab 0: Bob Labs Prerequisites](../lab0-prerequisites/README.md).
 
-If you haven't completed setup, see [prerequisites.md](../../prerequisites.md).
+For this lab specifically, make sure you have:
+- [ ] IBM Bob access
+- [ ] Python 3.8+
+- [ ] Node.js 14+
+- [ ] A local workspace for Bob
+
+If you plan to complete the GitHub integration portion, also make sure you have:
+- [ ] Git
+- [ ] A GitHub account
+- [ ] GitHub MCP configured in Bob, if that is part of your workshop setup
 
 ## Lab Structure
 
-```
-Lab 1 Timeline (45 minutes)
-├── Step 1: Introduction & Planning (5 min)
-├── Step 2: Backend Development (15 min)
-├── Step 3: Frontend Development (15 min)
-├── Step 4: GitHub Integration (5 min)
-└── Step 5: Testing & Verification (5 min)
+```text
+Lab Flow
+├── Step 1: Introduction and planning
+├── Step 2: Backend development
+├── Step 3: Frontend development
+├── Step 4: GitHub integration
+└── Step 5: Testing and verification
 ```
 
 ---
 
-## Step 1: Introduction to Bob Modes (5 minutes)
+## Step 1: Introduction to Bob Modes
 
 ### Understanding Bob's Modes
 
@@ -130,13 +132,13 @@ After your clarifications, Bob should provide:
 
 ---
 
-## Step 2: Backend Development with Code Mode (15 minutes)
+## Step 2: Backend Development with Code Mode
 
 Now let's build the Flask backend using Bob's Code mode.
 
 ### 2.1: Switch to Code Mode
 
-Change from Architect to Code mode in Bob's interface.
+Change from Plan to Code mode in Bob's interface.
 
 ### 2.2: Create Backend Structure
 
@@ -275,7 +277,7 @@ The server should start on `http://localhost:5000`
 
 ---
 
-## Step 3: Frontend Development (15 minutes)
+## Step 3: Frontend Development
 
 Now let's create the user interface using JavaScript.
 
@@ -412,7 +414,7 @@ xdg-open index.html
 
 ---
 
-## Step 4: GitHub Integration with MCP (10 minutes)
+## Step 4: GitHub Integration with MCP
 
 Now let's use Bob's GitHub MCP server to manage version control.
 
@@ -484,7 +486,7 @@ Include a README.md describing the project.
 
 ---
 
-## Step 5: Testing & Verification (5 minutes)
+## Step 5: Testing & Verification
 
 Let's test the complete application end-to-end.
 
@@ -560,7 +562,7 @@ python
 
 You've successfully completed Lab 1! You've learned to:
 
-- ✅ Use Bob's Architect mode for planning
+- ✅ Use Bob's Plan mode for planning
 - ✅ Use Bob's Code mode for implementation
 - ✅ Enable and use auto-approvals
 - ✅ Apply literate coding principles
@@ -587,7 +589,7 @@ bob-todo-app/
 ## Key Takeaways
 
 ### Bob's Modes
-- **Architect**: Perfect for planning and design decisions
+- **Plan**: Perfect for planning and design decisions
 - **Code**: Best for implementation and file creation
 - **Ask**: Great for learning and understanding
 - **Custom Modes**: Create your own specialized modes
@@ -622,7 +624,7 @@ Try these improvements:
 5. Add search and filter functionality
 
 ### Continue Learning
-- **[Lab 2: Security Analysis →](../lab2/README.md)** - Learn to identify and fix security vulnerabilities
+- **[Lab 2: Code Translation →](../lab2/README.md)** - Translate a Python script into JavaScript with Bob
 
 ## Troubleshooting
 
@@ -697,7 +699,6 @@ git commit -m "Initial commit"
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [JavaScript Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [SQLAlchemy Documentation](https://docs.sqlalchemy.org/)
-- [Bob Documentation](https://bob-docs-url)
 
 ## Feedback
 
@@ -708,6 +709,4 @@ How was this lab? We'd love to hear your thoughts:
 
 ---
 
-**Ready for the next challenge?** → [Start Lab 2: Security Analysis](../lab2/README.md)
-
-**Last Updated: February 2026**
+**Ready for the next challenge?** → [Start Lab 2: Code Translation](../lab2/README.md)

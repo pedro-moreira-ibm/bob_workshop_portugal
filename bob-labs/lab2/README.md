@@ -7,7 +7,6 @@ In this lab, you'll learn to use Bob to translate code from one programming lang
 > **🧠 Bob Differentiator: Intelligent Resource Optimization**
 > During this lab, Bob will automatically select the right AI model for each translation task. Complex language feature mappings use powerful models for accuracy, while simple syntax conversions use lighter models for speed. This automatic model selection happens transparently, optimizing both quality and cost.
 
-**Duration**: 45 minutes
 **Difficulty**: Intermediate
 
 ## What You'll Translate
@@ -24,7 +23,7 @@ A Python data processing script that:
 
 By the end of this lab, you will:
 - ✅ Use Ask mode to analyze source code
-- ✅ Use Architect mode to plan translation strategy
+- ✅ Use Plan mode to plan translation strategy
 - ✅ Use Code mode to implement translation
 - ✅ Understand language-specific patterns
 - ✅ Map Python features to JavaScript equivalents
@@ -33,26 +32,31 @@ By the end of this lab, you will:
 
 ## Prerequisites
 
-Before starting, ensure you have:
-- [ ] Completed Lab 1 and Lab 2 (or familiar with Bob's modes)
-- [ ] Python 3.8+ installed
-- [ ] Node.js 14+ installed
-- [ ] Bob installed and running
-- [ ] Understanding of both Python and JavaScript basics
+Before starting, review [Lab 0: Bob Labs Prerequisites](../lab0-prerequisites/README.md).
+
+For this lab specifically, make sure you have:
+- [ ] IBM Bob access
+- [ ] Python 3.8+
+- [ ] Node.js 14+
+- [ ] A local workspace for Bob
+
+Helpful but not required:
+- [ ] Completion of Lab 1
+- [ ] Basic familiarity with Python and JavaScript
 
 ## Lab Structure
 
-```
-Lab 3 Timeline (45 minutes)
-├── Step 1: Analyze Python Code (10 min)
-├── Step 2: Plan Translation Strategy (10 min)
-├── Step 3: Implement Translation (20 min)
-└── Step 4: Verify & Compare (5 min)
+```text
+Lab Flow
+├── Step 1: Analyze the Python code
+├── Step 2: Plan the translation strategy
+├── Step 3: Implement the translation
+└── Step 4: Verify and compare
 ```
 
 ---
 
-## Step 1: Analyze Python Code with Ask Mode (10 minutes)
+## Step 1: Analyze Python Code with Ask Mode
 
 ### Understanding the Source Code
 
@@ -60,7 +64,7 @@ Let's examine the Python data processor that we'll be translating.
 
 ### 1.1: Review the Python Code
 
-Open `lab3/source/data_processor.py` and review the code structure.
+Open `bob-labs/lab2/source/data_processor.py` and review the code structure.
 
 **Key Features to Notice:**
 - Class-based design
@@ -79,7 +83,7 @@ Open Bob and switch to **Ask Mode** (❓).
 **Prompt for Bob:**
 
 ```
-Analyze the Python code in lab3/source/data_processor.py and explain:
+Analyze the Python code in bob-labs/lab2/source/data_processor.py and explain:
 1. What is the overall purpose of this code?
 2. What are the main components and their responsibilities?
 3. What Python-specific features are being used?
@@ -126,7 +130,7 @@ Consider:
 
 ---
 
-## Step 2: Plan Translation Strategy with Plan Mode (10 minutes)
+## Step 2: Plan Translation Strategy with Plan Mode
 
 Now let's create a detailed translation plan.
 
@@ -197,14 +201,14 @@ List the packages and their purposes.
 - `fs` (built-in): For file operations
 - No additional packages needed (keep it simple)
 
-**💡 Key Learning**: Architect mode helps create a clear roadmap before coding.
+**💡 Key Learning**: Plan mode helps create a clear roadmap before coding.
 
 > **💡 Context Management at Work**
 > As you work through this translation, Bob is using dynamic context window compression to efficiently manage both the Python source code and JavaScript target code in memory. This allows Bob to maintain full context of both codebases while minimizing token usage and costs.
 
 ---
 
-## Step 3: Implement Translation with Code Mode (20 minutes)
+## Step 3: Implement Translation with Code Mode
 
 Now let's translate the code using Bob's Code mode.
 
@@ -386,7 +390,7 @@ module.exports = DataProcessor;
 
 ---
 
-## Step 4: Verify & Compare (5 minutes)
+## Step 4: Verify & Compare
 
 Let's test both versions and compare the results.
 
@@ -406,7 +410,7 @@ Diana,28,88.7,B
 ### 4.2: Run Python Version
 
 ```bash
-cd lab3/source
+cd bob-labs/lab2/source
 python data_processor.py
 ```
 
@@ -436,11 +440,11 @@ Results saved to statistics.json
 
 ### 4.3: Run JavaScript Version
 
-**Note**: Bob created the JavaScript translation in the `lab3/` directory (not in a separate target folder).
+**Note**: This repository includes a reference JavaScript translation in `bob-labs/lab2/solution/`. If Bob generated the files in a different location in your own workspace, adapt the commands accordingly.
 
 ```bash
-# Navigate to lab3 directory where the translated JavaScript file is located
-cd lab3
+# Navigate to the reference solution directory
+cd bob-labs/lab2/solution
 npm install
 node data_processor.js
 ```
@@ -477,7 +481,7 @@ Both versions should produce identical output:
 
 ## Congratulations! 🎉
 
-You've successfully completed Lab 3! You've learned to:
+You've successfully completed Lab 2! You've learned to:
 
 - ✅ Analyze code structure across languages
 - ✅ Plan translation strategies systematically
@@ -640,6 +644,9 @@ Try translating:
 - Create libraries that work in both languages
 - Build APIs that can be consumed by either
 - Develop tools that leverage strengths of each
+
+### Continue the Workshop
+- [Final Lab: Bob with watsonx Orchestrate](../../bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md)
 
 ## Troubleshooting
 
