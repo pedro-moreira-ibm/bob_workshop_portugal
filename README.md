@@ -2,7 +2,7 @@
 
 This repository is structured as a guided workshop path across watsonx Orchestrate, Bob, and then both together.
 
-<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/f35bb774-a725-4915-a508-8c17ba0373cd" />
+<img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/a3ec6b18-1fc1-45e1-af30-ccf72ff3dd2e" />
 
 ## Workshop Flow
 
