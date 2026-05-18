@@ -4,8 +4,8 @@
 
 In this lab, you'll learn to use Bob to translate code from one programming language to another while maintaining functionality and applying language-specific best practices. You'll translate a Python data processing script to JavaScript (Node.js).
 
-> **🧠 Bob Differentiator: [Intelligent Resource Optimization](../bob-differentiators.md#2--intelligent-resource-optimization)**
-> During this lab, Bob will automatically select the right AI model for each translation task. Complex language feature mappings use powerful models for accuracy, while simple syntax conversions use lighter models for speed. This [automatic model selection](../bob-differentiators.md#automatic-model-selection) happens transparently, optimizing both quality and cost.
+> **🧠 Bob Differentiator: Intelligent Resource Optimization**
+> During this lab, Bob will automatically select the right AI model for each translation task. Complex language feature mappings use powerful models for accuracy, while simple syntax conversions use lighter models for speed. This automatic model selection happens transparently, optimizing both quality and cost.
 
 **Duration**: 45 minutes
 **Difficulty**: Intermediate
