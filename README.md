@@ -2,6 +2,8 @@
 
 This repository is structured as a guided workshop path across watsonx Orchestrate, Bob, and then both together.
 
+<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/f35bb774-a725-4915-a508-8c17ba0373cd" />
+
 ## Workshop Flow
 
 1. Start with [AskHR in `watsonx-orchestrate-labs`](watsonx-orchestrate-labs/ask-hr/README.md) to explore an HR agent experience built in watsonx Orchestrate.
