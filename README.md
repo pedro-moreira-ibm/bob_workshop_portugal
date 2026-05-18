@@ -2,13 +2,15 @@
 
 This repository is structured as a guided workshop path across watsonx Orchestrate, Bob, and then both together.
 
-<img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/a3ec6b18-1fc1-45e1-af30-ccf72ff3dd2e" />
-
 ## Workshop Flow
 
 1. Start with [AskHR in `watsonx-orchestrate-labs`](watsonx-orchestrate-labs/ask-hr/README.md) to explore an HR agent experience built in watsonx Orchestrate.
 2. Move into [Bob Labs](bob-labs) to build a full-stack todo application and try Python-to-JavaScript code translation with Bob. 
 3. Finish with [Bob with watsonx Orchestrate](bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md) to combine both platforms in a final agent-and-tool workflow.
+
+
+<img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/a3ec6b18-1fc1-45e1-af30-ccf72ff3dd2e" />
+
 
 ## What You Will Practice
 
