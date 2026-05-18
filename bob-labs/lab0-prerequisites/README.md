@@ -2,14 +2,6 @@
 
 This page covers the practical setup for the Bob labs in this repository.
 
-It is relevant for:
-- [`bob-labs/lab1`](../lab1/README.md)
-- [`bob-labs/lab2`](../lab2/README.md)
-- [`bob-with-watsonx-orchestrate-labs/lab-wxo-bob`](../../bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md)
-
-It is not needed for:
-- [`watsonx-orchestrate-labs/ask-hr`](../../watsonx-orchestrate-labs/ask-hr/README.md)
-
 ## What You Need
 
 ### Required for the Bob Labs
