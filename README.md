@@ -5,9 +5,8 @@ This repository is structured as a guided workshop path across watsonx Orchestra
 ## Workshop Flow
 
 1. Start with [AskHR in `watsonx-orchestrate-labs`](watsonx-orchestrate-labs/ask-hr/README.md) to explore an HR agent experience built in watsonx Orchestrate.
-2. Move into [Bob Lab 1 in `bob-labs`](bob-labs/lab1/README.md) to build a full-stack todo application with Bob.
-3. Continue with [Bob Lab 2 in `bob-labs`](bob-labs/lab2/README.md) to use Bob for Python-to-JavaScript code translation.
-4. Finish with [Bob with watsonx Orchestrate](bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md) to combine both platforms in a final agent-and-tool workflow.
+2. Move into [Bob Labs](bob-labs) to build a full-stack todo application and try Python-to-JavaScript code translation with Bob. 
+3. Finish with [Bob with watsonx Orchestrate](bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md) to combine both platforms in a final agent-and-tool workflow.
 
 ## What You Will Practice
 
@@ -45,21 +44,17 @@ Start the workshop in [`watsonx-orchestrate-labs/ask-hr`](watsonx-orchestrate-la
 
 This exercise focuses on a watsonx Orchestrate HR use case. You will review the business scenario, understand the architecture, and follow the hands-on guide to work with an agent that handles profile data, benefits knowledge, and time-off flows.
 
-### 2. Bob Lab 1: Build a Todo Application
-
-Continue with [`bob-labs/lab1`](bob-labs/lab1/README.md).
+### 2. Bob Labs: Build a Todo Application and try Python-to-JavaScript code translation
 
 Before starting the Bob labs, review [`bob-labs/lab0-prerequisites`](bob-labs/lab0-prerequisites/README.md).
 
-This lab uses Bob to plan and implement a full-stack todo application. It covers project planning, backend creation with Flask, frontend implementation in JavaScript, and GitHub integration through MCP.
+Then, explore and follow the hands-on labs available in this folder:
 
-### 3. Bob Lab 2: Translate Python to JavaScript
+Lab 1: This lab uses Bob to plan and implement a full-stack todo application. It covers project planning, backend creation with Flask, frontend implementation in JavaScript, and GitHub integration through MCP.
 
-Continue with [`bob-labs/lab2`](bob-labs/lab2/README.md).
+Lab 2: This lab uses Bob to analyze an existing Python script, plan a translation strategy, and implement an equivalent JavaScript version while preserving behavior and applying language-specific patterns.
 
-This lab uses Bob to analyze an existing Python script, plan a translation strategy, and implement an equivalent JavaScript version while preserving behavior and applying language-specific patterns.
-
-### 4. Final Lab: Bob with watsonx Orchestrate
+### 3. Final Lab: Bob with watsonx Orchestrate
 
 Finish with [`bob-with-watsonx-orchestrate-labs/lab-wxo-bob`](bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md).
 
