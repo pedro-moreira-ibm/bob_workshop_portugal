@@ -200,7 +200,7 @@ List the packages and their purposes.
 **💡 Key Learning**: Architect mode helps create a clear roadmap before coding.
 
 > **💡 Context Management at Work**
-> As you work through this translation, Bob is using [dynamic context window compression](../bob-differentiators.md#dynamic-context-window-compression) to efficiently manage both the Python source code and JavaScript target code in memory. This allows Bob to maintain full context of both codebases while minimizing token usage and costs.
+> As you work through this translation, Bob is using dynamic context window compression to efficiently manage both the Python source code and JavaScript target code in memory. This allows Bob to maintain full context of both codebases while minimizing token usage and costs.
 
 ---
 
@@ -488,7 +488,7 @@ You've successfully completed Lab 3! You've learned to:
 - ✅ Verify translated code correctness
 
 > **🎯 Intelligent Optimization in Action**
-> Throughout this lab, Bob's [intelligent resource optimization](../bob-differentiators.md#2--intelligent-resource-optimization) was working behind the scenes. Bob automatically selected frontier-class models for complex translation decisions (like mapping Python's context managers to JavaScript's async patterns) and lighter models for straightforward syntax conversions. This optimization can reduce AI costs by up to 60% while maintaining high-quality results!
+> Throughout this lab, Bob's intelligent resource optimization was working behind the scenes. Bob automatically selected frontier-class models for complex translation decisions (like mapping Python's context managers to JavaScript's async patterns) and lighter models for straightforward syntax conversions. This optimization can reduce AI costs by up to 60% while maintaining high-quality results!
 
 ## Translation Patterns Learned
 
@@ -677,23 +677,6 @@ node --version
 const path = require('path');
 const filePath = path.join(__dirname, 'data.csv');
 ```
-
-## Additional Resources
-
-### Python Resources
-- [Python Documentation](https://docs.python.org/)
-- [Type Hints Guide](https://docs.python.org/3/library/typing.html)
-- [CSV Module](https://docs.python.org/3/library/csv.html)
-
-### JavaScript Resources
-- [Node.js Documentation](https://nodejs.org/docs/)
-- [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [csv-parser](https://www.npmjs.com/package/csv-parser)
-
-### Translation Guides
-- [Python to JavaScript Cheat Sheet](https://github.com/topics/python-to-javascript)
-- [Async Patterns](https://javascript.info/async-await)
-- [JSDoc Guide](https://jsdoc.app/)
 
 ## Feedback
 
