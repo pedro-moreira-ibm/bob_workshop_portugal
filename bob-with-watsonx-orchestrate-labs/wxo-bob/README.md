@@ -178,17 +178,17 @@ Before importing anything, you will need:
 - An IBM Cloud API key
 - Your watsonx Orchestrate instance URL
 
-Bob will then help:
+Bob will help you with:
 - Configure the watsonx Orchestrate environment
-- Authenticate to the environment
+- Authenticate into the environment
 - Import the tool and agent
-- Resolve any dependency or configuration issues
+- Resolve any dependencies or configuration issues
 
 ---
 
 ## 4.1: Generate an IBM Cloud API key
 
-Go to your IBM Cloud account and generate an API key.
+Go to your [IBM Cloud account](https://cloud.ibm.com/) and generate an API key.
 
 <img width="3682" height="1954" alt="image" src="https://github.com/user-attachments/assets/623b0b38-6639-4855-9f55-ca5cadcd1257" />
 
@@ -201,9 +201,9 @@ Go to your IBM Cloud account and generate an API key.
 
 ---
 
-## 4.2: Retrieve your watsonx Orchestrate instance URL
+## 4.2: Retrieve your watsonx Orchestrate URL
 
-Open your watsonx Orchestrate environment in the browser.
+Open your watsonx Orchestrate environment.
 
 <img width="3654" height="1841" alt="image" src="https://github.com/user-attachments/assets/2d037624-70e7-40ad-a705-de51b8b054c5" />
 
@@ -223,7 +223,7 @@ Copy the instance URL.
 
 Before you start working with watsonx Orchestrate, you need to make sure you have installed the ADK (Agent Development Kit), which is a comprehensive set of CLI utilities and Python modules that enables you to create, test, and deploy agents and tools for watsonx Orchestrate.
 
-Luckily, we can also ask Bob to help us with that! Let's start a new task for this.
+You can do this manually or you can ask Bob to help you with that!
 
 **Prompt for Bob:**
 
@@ -240,7 +240,7 @@ Bob will let you know once the installation was successful.
 
 ---
 
-## 4.4: Create and activate a watsonx Orchestrate environment
+## 4.4: Create and activate your watsonx Orchestrate environment
 
 Open a new terminal in Bob.
 
