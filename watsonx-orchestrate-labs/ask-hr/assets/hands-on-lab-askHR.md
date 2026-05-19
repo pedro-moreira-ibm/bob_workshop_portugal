@@ -6,11 +6,9 @@
 - [Description of the use case](#description-of-the-use-case)
 - [Architecture](#architecture)
 - [Instructions](#instructions)
-  - [Access your environment](#access-your-environment)
-  - [Open Agent Builder](#open-agent-builder)
-  - [Create HR Agent](#create-hr-agent)
+  - [Open watsonx Orchestrate](#open-watsonx-orchestrate)
+  - [Create the HR Agent](#create-the-hr-agent)
   - [Test HR Agent in Preview](#test-hr-agent-in-preview)
-  - [Adjust the Instructions of the Agent and keep exploring](#adjust-the-instructions-of-the-agent-and-keep-exploring)
   - [Deploy and make your Agent available](#deploy-and-make-your-agent-available)
 - [Conclusion](#conclusion)
 
