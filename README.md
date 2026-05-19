@@ -36,9 +36,6 @@ This repository is structured as a guided workshop path across watsonx Orchestra
 └── environment-setup/
 ```
 
-## Before You Start
-
-If you are starting the Bob track, review [bob-labs/lab0-prerequisites/README.md](bob-labs/lab0-prerequisites/README.md). For shared environment guidance, see [environment-setup/README.md](environment-setup/README.md).
 
 ## Lab Sequence
 
