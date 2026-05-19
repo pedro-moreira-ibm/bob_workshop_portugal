@@ -192,6 +192,7 @@ Go to your IBM Cloud account and generate an API key.
 
 <img width="3636" height="1921" alt="image" src="https://github.com/user-attachments/assets/6c8c9e34-2913-4422-bc05-c197ea48f11b" />
 
+<img width="3666" height="1942" alt="image" src="https://github.com/user-attachments/assets/36965ebe-7944-4b4e-9268-e075822dcc86" />
 
 **Important:** Store the API key securely because you will use it in the next steps.
 
