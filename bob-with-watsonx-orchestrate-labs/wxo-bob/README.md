@@ -33,11 +33,11 @@ Workshop Flow
 
 ---
 
-# Step 1: Set Up the Python Project
+# Step 1: Set up the python project
 
 In this step, you will prepare the project workspace.
 
-## 1.1: Create and Open the Project Folder
+## 1.1: Create and open the project folder
 
 Create a new folder on your computer:
 
@@ -54,7 +54,7 @@ Open this folder in IBM Bob.
 
 ---
 
-# Step 2: Configure the watsonx Orchestrate Documentation MCP
+# Step 2: Configure the watsonx Orchestrate documentation MCP
 
 In this step, you will connect the watsonx Orchestrate documentation MCP server to Bob.
 
@@ -62,7 +62,7 @@ This MCP server will allow Bob to use the official watsonx Orchestrate documenta
 
 ---
 
-## 2.1: Open the MCP Marketplace in Bob
+## 2.1: Open the MCP marketplace in Bob
 
 Go to **Settings** and open the **MCP** tab.
 
@@ -84,7 +84,7 @@ Open the **watsonx Orchestrate ADK Docs**.
 
 ---
 
-## 2.3: Install the MCP Server
+## 2.3: Install the MCP server
 
 Click **Install**.
 
@@ -100,7 +100,7 @@ Using Project scope can help keep Bob's context lighter and more focused.
 
 ---
 
-## 2.4: Verify the MCP Server is Active
+## 2.4: Verify the MCP server is active
 
 Return to the MCP tab and confirm that a green dot appears next to the MCP server, indicating that it is installed and active.
 
@@ -110,7 +110,7 @@ Return to the MCP tab and confirm that a green dot appears next to the MCP serve
 
 ---
 
-# Step 3: Use Bob to Create a Tool and an Agent
+# Step 3: Use Bob to create a tool and an agent
 
 In this step, you will use Bob to generate:
 - A Python tool
@@ -118,13 +118,13 @@ In this step, you will use Bob to generate:
 
 ---
 
-## 3.1: Change BOB Mode to "Advanced"
+## 3.1: Change BOB mode to "Advanced"
 
 First, make sure you’ve selected “Advanced” mode in BOB. This mode is well suited for coding tasks like the ones BOB will be asked to perform in the following steps.
 
 <img width="3383" height="1970" alt="image" src="https://github.com/user-attachments/assets/764bf5fd-a458-403a-8a17-07a4a5c39693" />
 
-## 3.2: Ask Bob to Create the Tool
+## 3.2: Ask Bob to create the tool
 
 **Prompt for Bob:**
 
@@ -142,7 +142,7 @@ Approve any commands Bob requests to run.
 
 ---
 
-## 3.3: Ask Bob to Create the Agent
+## 3.3: Ask Bob to create the agent
 
 **Prompt for Bob:**
 
@@ -168,7 +168,7 @@ After the generation is complete, inspect the generated agent file and verify:
 
 ---
 
-# Step 4: Import the Agent and Tool into watsonx Orchestrate
+# Step 4: Import the agent and tool into watsonx Orchestrate
 
 In this step, you will connect your local project to a watsonx Orchestrate environment and import the generated assets.
 
@@ -184,7 +184,7 @@ Bob will then help:
 
 ---
 
-## 4.1: Generate an IBM Cloud API Key
+## 4.1: Generate an IBM Cloud API key
 
 Go to your IBM Cloud account and generate an API key.
 
@@ -199,7 +199,7 @@ Go to your IBM Cloud account and generate an API key.
 
 ---
 
-## 4.2: Retrieve Your watsonx Orchestrate Instance URL
+## 4.2: Retrieve your watsonx Orchestrate instance URL
 
 Open your watsonx Orchestrate environment in the browser.
 
@@ -238,7 +238,7 @@ Bob will let you know once the installation was successful.
 
 ---
 
-## 4.4: Create and Activate a watsonx Orchestrate Environment
+## 4.4: Create and activate a watsonx Orchestrate environment
 
 Open a new terminal in Bob.
 
@@ -260,7 +260,7 @@ After pressing Enter, you should see a confirmation message indicating that the 
 
 ---
 
-## 4.5: Ask Bob to Import the Agent and Tool
+## 4.5: Ask Bob to import the agent and tool
 
 Now that the environment is configured, ask Bob to import the assets into watsonx Orchestrate.
 
@@ -284,7 +284,7 @@ Allow Bob to apply fixes and retry the import if necessary.
 
 ---
 
-# Step 5: Access watsonx Orchestrate and Test the Agent
+# Step 5: Access watsonx Orchestrate and test the agent
 
 ---
 
@@ -296,7 +296,7 @@ Launch your watsonx Orchestrate environment.
 
 ---
 
-## 5.2: Open the Build Tab
+## 5.2: Open the 'Build' tab
 
 Navigate to the **Build** tab.
 
@@ -311,7 +311,7 @@ Verify that both the agent and tool are available.
 
 ---
 
-## 5.3: Open and Test the Agent
+## 5.3: Open and test the agent
 
 Open the agent, inspect its configuration, and test it directly from the UI.
 
