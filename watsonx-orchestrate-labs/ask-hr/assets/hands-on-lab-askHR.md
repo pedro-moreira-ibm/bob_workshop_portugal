@@ -28,20 +28,6 @@ In this lab we will build an HR agent in watsonx Orchestrate, leveraging tools a
 
 ## Instructions
 
-### **Access your environment**
-
-Access your environment (URL provided by your instructor) and enter the workshop password provided by your instructor. 
-
-<div align="center">
-  <img width="1318" height="737" alt="image" src="https://github.com/user-attachments/assets/73d85c62-7eee-445d-91d8-f3a37635377e" />
-</div>
-
-To access IBM Cloud, click on the IBM Cloud Login.
-
-<div align="center">
-<img width="920" height="902" alt="image" src="https://github.com/user-attachments/assets/7386b2ed-4800-414e-ae6c-f0e24d71cffa" />
-</div>
-
 ### Open Agent Builder
 
 - Log in to IBM Cloud (cloud.ibm.com). Navigate to top left hamburger menu, then to Resource List. Open the AI/Machine Learning section. You should see a **watsonx Orchestrate** service, click to open.
