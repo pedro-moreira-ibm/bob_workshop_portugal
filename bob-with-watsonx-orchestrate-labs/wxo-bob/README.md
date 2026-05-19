@@ -93,7 +93,7 @@ When prompted for the installation scope, you have 2 options:
 - Select **Global** if you regularly work with watsonx Orchestrate. The MCP will be configured across all workspaces and you can reuse it in the future.
 - Select **Project** if you only plan to use it for this lab. The MCP will be available only for this project.
 
-Using Project scope can help keep Bob's context lighter and more focused.
+NOTE: Using Project scope can help keep Bob's context lighter and more focused. For more info, check this [documentation](https://bob.ibm.com/docs/ide/configuration/mcp/mcp-in-bob)
 
 <img width="3399" height="1977" alt="image" src="https://github.com/user-attachments/assets/19a1c3ba-37cd-4824-80c8-d02d520f13b6" />
 
