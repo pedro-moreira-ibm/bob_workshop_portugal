@@ -121,6 +121,9 @@ In this step, you will use Bob to generate:
 
 First, make sure you’ve selected “Advanced” mode in Bob. This mode is well suited for coding tasks like the ones Bob will be asked to perform in the following steps.
 
+> **🎯Customizable Modes**
+> Unlike other AI assistants, Bob allows you to create [custom modes](https://bob.ibm.com/docs/ide/features/modes#customizing-modes) tailored to your team's specific workflows.
+
 <img width="3383" height="1970" alt="image" src="https://github.com/user-attachments/assets/764bf5fd-a458-403a-8a17-07a4a5c39693" />
 
 ## 3.2: Ask Bob to create the tool
