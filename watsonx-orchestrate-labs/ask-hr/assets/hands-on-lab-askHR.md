@@ -28,7 +28,7 @@ In this lab we will build an HR agent in watsonx Orchestrate, leveraging tools a
 
 ## Instructions
 
-### Open Agent Builder
+### Open watsonx Orchestrate
 
 - Log in to [IBM Cloud](cloud.ibm.com).
   
@@ -38,7 +38,7 @@ In this lab we will build an HR agent in watsonx Orchestrate, leveraging tools a
 
   <img width="1000" alt="image" src="../../../environment-setup/assets/cloud-resource-list.png">
 
-- Click the "Launch watsonx Orchestrate" button.
+- Click "Launch watsonx Orchestrate" button.
 
    <img width="1000" alt="image" src="../../../environment-setup/assets/cloud-wxo.png">
 
@@ -46,7 +46,7 @@ In this lab we will build an HR agent in watsonx Orchestrate, leveraging tools a
 
    <img width="1000" alt="image" src="hands-on-lab-assets/step_1_v2.png">
 
-### Create HR Agent
+### Create the HR Agent
 1. Click on **Create agent +**:
 
    <img width="1000" alt="image" src="hands-on-lab-assets/step_2_v2.png">
@@ -160,9 +160,7 @@ Next, you will go through the process of configuring your agent. The Product Age
    When the user requests time off, convert the dates to YYYY-MM-DD format, e.g. 5/22/2025 should be converted to 2025-05-22 before passing the date to the post_request_time_off tool.
    ```
 
-      - **Behavior**: The Behavior section of the agent configuration is where you provide instructions to the agent to define how it responds to user requests and situations. You can configure rules that dictate when and how the agent should take action. These rules help the agent behave in a predictable and consistent manner, delivering a seamless user experience.
-
-      > **Note:** For more details, please consult the [Adding instructions to agents](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/current?topic=agents-adding-instructions) documentation.
+      - **Behavior**: The Behavior section of the agent configuration is where you provide instructions to the agent to define how it responds to user requests and situations. You can configure rules that dictate when and how the agent should take action. These rules help the agent behave in a predictable and consistent manner, delivering a seamless user experience. **Note:** For more details, please consult the [Adding instructions to agents](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/current?topic=agents-adding-instructions) documentation.
 
 
 1. Turn on the toggle button for **Chat with documents**. Select **None** in **Citations show in webchat**. Turn on the toggle button for **Show agent**. Click on **Deploy** in the top right corner to deploy your agent:
