@@ -55,10 +55,7 @@ Lab Flow
 
 ### Understanding Bob's Modes
 
-Bob has three distinct modes, each optimized for different tasks:
-
-> **🎯 Bob Differentiator: Customizable Modes**
-> Bob's mode system is one of its key differentiators. Unlike other AI assistants, Bob allows you to create custom modes tailored to your team's specific workflows. The three built-in modes you'll use in this lab are just the beginning.
+Bob has several distinct modes, each optimized for different tasks. Some examples are:
 
 #### 🎯 Plan Mode
 **When to use**: Planning, designing, strategizing
@@ -80,6 +77,9 @@ Bob has three distinct modes, each optimized for different tasks:
 - Get documentation
 - Understand errors
 - Learn best practices
+
+> **🎯 Bob Differentiator: Customizable Modes**
+> Bob's mode system is one of its key differentiators. Unlike other AI assistants, Bob allows you to create custom modes tailored to your team's specific workflows. The three built-in modes you'll use in this lab are just the beginning.
 
 ### Switching Between Modes
 
