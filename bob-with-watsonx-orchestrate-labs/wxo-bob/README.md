@@ -89,9 +89,9 @@ Click **Install**.
 
 <img width="3392" height="1963" alt="image" src="https://github.com/user-attachments/assets/d77b6b12-6570-4863-9148-71f4ad364fe1" />
 
-When prompted for the installation scope:
-- Select **Global** if you regularly work with watsonx Orchestrate
-- Select **Project** if you only plan to use it for this lab
+When prompted for the installation scope, you have 2 options:
+- Select **Global** if you regularly work with watsonx Orchestrate. The MCP will be configured across all workspaces and you can reuse it in the future.
+- Select **Project** if you only plan to use it for this lab. The MCP will be available only for this project.
 
 Using Project scope can help keep Bob's context lighter and more focused.
 
