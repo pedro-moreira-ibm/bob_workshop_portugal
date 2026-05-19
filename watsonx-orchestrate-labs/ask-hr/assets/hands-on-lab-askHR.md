@@ -202,7 +202,7 @@ Now, update your address.
 Update my address to 222 Main St, San Francisco, CA 94105
 ```
 
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step13_3.png">
+<img width="2475" height="1390" alt="image" src="https://github.com/user-attachments/assets/ed14f872-e12c-474e-9571-0a90c5b1ee50" />
 
 Request the time off by sending the message below:
 ```
@@ -224,45 +224,6 @@ Show my profile data.
   <img width="1524" height="724" alt="image" src="https://github.com/user-attachments/assets/8705a4dc-a798-490d-a402-191b9964aaa6" />
 </div>
 
-
-### (Optional) Adjust the Instructions of the Agent and keep exploring
-
-Let's make some small adjustments on the Instructions of the Agent. For example, let's ask our agent to always present our profile data in a table for easier readability.
-
-1. Scroll down to the **Behavior** section (Section 1 in the image below). Insert the new instructions into the **Instructions** field:
-
-   ```
-   Use your knowledge base to answer general questions about employee benefits.
-
-   Use the tools to get or update user specific information.
-
-   When user asks to show profile data or check time off balance or update title/address or request time off for the very first time,  first ask the user for their name, then invoke the tool and then use the same name in the whole session without asking for the name again.
-   
-   When the user requests time off, convert the dates to YYYY-MM-DD format, e.g. 5/22/2025 should be converted to 2025-05-22 before passing the date to the post_request_time_off tool.
-   
-   When user asks to see, change or update data, present the final information in a table for an easier readability and before that table, write something similar to “This is the information associated to your current profile.”.
-   ```
-
-   <img width="1000" alt="image" src="hands-on-lab-assets/step_14_v3.png">
-
-Refresh the Preview chat to make sure the new instructions are loaded.
-
-<div align="center">
-  <img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/06f252b0-991a-4021-8ec1-5eb7184c506c" />
-</div>
-
-<p>Ask the agent for your profile data. 
-
-```
-Show me my profile data.
-```
-
-
-You should now see the data in a nice and clean table.
-
-<div align="center">
-  <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/0c52d30b-8880-461b-a153-01e05686f20a" />
-</div>
 
 Once again, request time off and after define a start and end date. Feel free to use the example below.
 
