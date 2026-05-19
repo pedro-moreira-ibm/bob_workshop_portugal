@@ -24,7 +24,7 @@ In this lab, you will work with an HR agent that can:
 
 The AskHR solution uses watsonx Orchestrate as the coordination layer for the HR experience.
 
-<img alt="AskHR architecture" src="assets/arch_diagm.png">
+<img width="1494" height="912" alt="image" src="https://github.com/user-attachments/assets/b53c3498-eff3-4945-9cdb-fb74d622b460" />
 
 ### Main Components
 
