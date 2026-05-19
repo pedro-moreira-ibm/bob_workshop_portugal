@@ -47,7 +47,7 @@ wxo-bob
 
 Open this folder in IBM Bob.
 
-<img width="3838" height="2220" alt="image" src="https://github.com/user-attachments/assets/85d39175-6237-4b3c-8c78-d39f7d13de37" />
+<img width="2486" height="1449" alt="image" src="https://github.com/user-attachments/assets/80209735-042f-4615-ae79-134adf91519f" />
 
 
 **✅ Checkpoint:** The project folder is open in Bob.
