@@ -293,7 +293,7 @@ Allow Bob to apply fixes and retry the import if necessary.
 
 ## 5.1: Open watsonx Orchestrate
 
-Open your watsonx Orchestrate environment.
+Return to your [IBM Cloud](https://cloud.ibm.com/) and open your watsonx Orchestrate environment.
 
 <img width="3654" height="1841" alt="image" src="https://github.com/user-attachments/assets/2d037624-70e7-40ad-a705-de51b8b054c5" />
 
