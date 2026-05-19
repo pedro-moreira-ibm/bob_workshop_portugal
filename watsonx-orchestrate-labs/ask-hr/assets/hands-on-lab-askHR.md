@@ -195,16 +195,13 @@ After that, ask the agent to update your job title.
 ```
 I'd like to update my title to Sr AI Engineer.
 ```
-<img width="1000" alt="image" src="hands-on-lab-assets/hr_step13_2.png">
+<img width="830" height="318" alt="image" src="https://github.com/user-attachments/assets/9a14815b-64ad-45dd-abd6-140fbb2cbd17" />
 
-Try the command below and update your address.
+Now, update your address.
 ```
 Update my address to 222 Main St, San Francisco, CA 94105
 ```
-After that, you can ask what is your time off balance.
-```
-What is my time off balance?
-```
+
 <img width="1000" alt="image" src="hands-on-lab-assets/hr_step13_3.png">
 
 Request the time off by sending the message below:
