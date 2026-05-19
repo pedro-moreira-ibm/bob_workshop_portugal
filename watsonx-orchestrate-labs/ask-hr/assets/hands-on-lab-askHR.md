@@ -163,9 +163,6 @@ Next, you will go through the process of configuring your agent. The Product Age
       - **Behavior**: The Behavior section of the agent configuration is where you provide instructions to the agent to define how it responds to user requests and situations. You can configure rules that dictate when and how the agent should take action. These rules help the agent behave in a predictable and consistent manner, delivering a seamless user experience. **Note:** For more details, please consult the [Adding instructions to agents](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/current?topic=agents-adding-instructions) documentation.
 
 
-1. Turn on the toggle button for **Chat with documents**. Select **None** in **Citations show in webchat**. Turn on the toggle button for **Show agent**. Click on **Deploy** in the top right corner to deploy your agent:
-
-   <img width="1000" alt="image" src="hands-on-lab-assets/step_14_v3.png">
 
 ### Test HR Agent in Preview
 Test your agent in the preview chat on the right side by asking the following questions and validating the responses.  They should look similar to what is shown in the screenshots below:
@@ -234,7 +231,7 @@ When the agent answers, click on "Show Reasoning" and confirm that the agent is 
 
    AI agents don’t always act alone. They can also interact with other agents and tools to solve more complex tasks. For instance, an AI agent might call on a weather service (a tool) to check the forecast, or coordinate with another AI agent that handles scheduling.
 
-   In these examples, reasoning includes deciding which tools or agents to use, when, and how to communicate with them.<br>
+   In these examples, reasoning includes deciding which tools or agents to use, when, and how to communicate with them.  
 
 
 Now, let's make a completely different question and again analyze the reasoning of the agent.
