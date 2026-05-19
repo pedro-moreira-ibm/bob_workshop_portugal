@@ -33,7 +33,7 @@ The AskHR solution uses watsonx Orchestrate as the coordination layer for the HR
 - **Knowledge grounding**: Company benefits documents are used to answer policy and benefits questions with grounded responses.
 - **Underlying HCM systems**: Connected systems provide the employee data that the agent reads or updates.
 
-## Hands-On Guide
+## Hands-on Lab
 
 The detailed implementation steps for this lab are in this [hands-on lab](assets/hands-on-lab-askHR.md).
 
