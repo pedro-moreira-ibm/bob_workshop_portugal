@@ -42,7 +42,7 @@ In this step, you will prepare the project workspace.
 Create a new folder on your computer:
 
 ```text
-wxo-bob
+wxo-Bob
 ```
 
 Open this folder in IBM Bob.
@@ -93,7 +93,7 @@ When prompted for the installation scope, you have 2 options:
 - Select **Global** if you regularly work with watsonx Orchestrate. The MCP will be configured across all workspaces and you can reuse it in the future.
 - Select **Project** if you only plan to use it for this lab. The MCP will be available only for this project.
 
-NOTE: Using Project scope can help keep Bob's context lighter and more focused. For more info, check this [documentation](https://bob.ibm.com/docs/ide/configuration/mcp/mcp-in-bob)
+NOTE: For more info, check this [documentation](https://Bob.ibm.com/docs/ide/configuration/mcp/mcp-in-Bob).
 
 <img width="3399" height="1977" alt="image" src="https://github.com/user-attachments/assets/19a1c3ba-37cd-4824-80c8-d02d520f13b6" />
 
@@ -117,9 +117,9 @@ In this step, you will use Bob to generate:
 
 ---
 
-## 3.1: Change BOB mode to "Advanced"
+## 3.1: Change Bob mode to "Advanced"
 
-First, make sure you’ve selected “Advanced” mode in BOB. This mode is well suited for coding tasks like the ones BOB will be asked to perform in the following steps.
+First, make sure you’ve selected “Advanced” mode in Bob. This mode is well suited for coding tasks like the ones Bob will be asked to perform in the following steps.
 
 <img width="3383" height="1970" alt="image" src="https://github.com/user-attachments/assets/764bf5fd-a458-403a-8a17-07a4a5c39693" />
 
@@ -246,7 +246,7 @@ Open a new terminal in Bob.
 **Command for the terminal:**
 
 ```bash
-orchestrate env add -n wxo-bob -u <INSERT_YOUR_URL> --type ibm_iam --activate
+orchestrate env add -n wxo-Bob -u <INSERT_YOUR_URL> --type ibm_iam --activate
 ```
 
 When prompted, paste your API key.
@@ -266,7 +266,7 @@ Now that the environment is configured, ask Bob to import the assets into watson
 **Prompt for Bob:**
 
 ```bash
-Import the python tool and agent to my wxo-bob watsonx Orchestrate environment. Follow the watsonx Orchestrate ADK documentation MCP server to find the appropriate import commands.
+Import the python tool and agent to my wxo-Bob watsonx Orchestrate environment. Follow the watsonx Orchestrate ADK documentation MCP server to find the appropriate import commands.
 ```
 
 <img width="3400" height="1969" alt="image" src="https://github.com/user-attachments/assets/516e3db9-92c5-41e3-9abc-a0085c9273c3" />
