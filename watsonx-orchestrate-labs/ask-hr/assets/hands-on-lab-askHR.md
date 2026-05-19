@@ -204,17 +204,6 @@ Update my address to 222 Main St, San Francisco, CA 94105
 
 <img width="2475" height="1390" alt="image" src="https://github.com/user-attachments/assets/ed14f872-e12c-474e-9571-0a90c5b1ee50" />
 
-Request the time off by sending the message below:
-```
-Request time off
-```
-
-<div align="center">
-  <img width="1550" height="1186" alt="image" src="https://github.com/user-attachments/assets/cca08ba8-68c2-4e9f-9555-31961ab9f08f" />
-</div>
-
-Please note that your start and end date may differ from the image presented above.
-
 Check again your profile data to see all the changes you made.
 ```
 Show my profile data.
@@ -225,7 +214,8 @@ Show my profile data.
 </div>
 
 
-Once again, request time off and after define a start and end date. Feel free to use the example below.
+
+Now, request time off and after define a start and end date.
 
 ```
 Request time off
