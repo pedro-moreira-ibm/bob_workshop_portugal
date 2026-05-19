@@ -129,7 +129,7 @@ First, make sure you’ve selected “Advanced” mode in BOB. This mode is well
 **Prompt for Bob:**
 
 ```bash
-Please create a python tool that calculates how much days we have left until christmas of 2026, following the watsonx Orchestrate ADK documentation MCP server as reference.
+Please create a single python tool that calculates how much days we have left until christmas of 2026, following the watsonx Orchestrate ADK documentation MCP server as reference.
 ```
 
 <img width="3398" height="1977" alt="image" src="https://github.com/user-attachments/assets/3e0819cf-859c-4e99-a60b-e2c0ae25c4c2" />
