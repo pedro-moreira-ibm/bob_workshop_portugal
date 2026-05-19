@@ -39,7 +39,7 @@ In this step, you will prepare the project workspace.
 
 ## 1.1: Create and Open the Project Folder
 
-Create a new folder on your machine called:
+Create a new folder on your computer:
 
 ```text
 wxo-bob
