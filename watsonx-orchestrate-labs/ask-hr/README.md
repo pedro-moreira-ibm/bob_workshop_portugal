@@ -37,6 +37,3 @@ The AskHR solution uses watsonx Orchestrate as the coordination layer for the HR
 
 The detailed implementation steps for this lab are in [assets/hands-on-lab-askHR.md](assets/hands-on-lab-askHR.md).
 
-## Next Lab
-
-After completing AskHR, continue to [Bob Lab 1: Building a Todo Application](../../bob-labs/lab1/README.md).
