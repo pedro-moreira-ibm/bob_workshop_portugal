@@ -35,5 +35,5 @@ The AskHR solution uses watsonx Orchestrate as the coordination layer for the HR
 
 ## Hands-On Guide
 
-The detailed implementation steps for this lab are in [assets/hands-on-lab-askHR.md](assets/hands-on-lab-askHR.md).
+The detailed implementation steps for this lab are in this [hands-on lab](assets/hands-on-lab-askHR.md).
 
