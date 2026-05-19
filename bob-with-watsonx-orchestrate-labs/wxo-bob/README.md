@@ -1,4 +1,4 @@
-# Final Lab: Bob with watsonx Orchestrate
+# Bob with watsonx Orchestrate
 
 ## Overview
 
