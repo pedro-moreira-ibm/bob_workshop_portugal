@@ -171,13 +171,3 @@ You do not need to preinstall the watsonx Orchestrate ADK for this workshop. The
 - General comfort using a terminal
 
 These help participants move faster, but they are not strict prerequisites.
-
-## Short Version
-
-If someone asks what they need before starting the Bob labs, the short answer is:
-
-1. Access to Bob.
-2. Python, pip, and virtual environment support installed.
-3. Node.js and npm installed.
-4. Bob and a terminal ready.
-5. Git and GitHub only if they plan to do the GitHub part of Lab 1.
