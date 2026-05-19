@@ -2,11 +2,10 @@
 
 ## Overview
 
-This lab closes the workshop by combining Bob and watsonx Orchestrate. You will use IBM Bob to build an agent and a Python tool, then import both into watsonx Orchestrate using the official watsonx Orchestrate documentation MCP server as reference.
+This workshop combines Bob and watsonx Orchestrate. You will use IBM Bob to build an agent and a tool, then import both into watsonx Orchestrate using the official watsonx Orchestrate documentation MCP server as reference.
 
 You will build a simple AI agent capable of:
 - Calculating how much time is left until Christmas 2026
-- Responding in a Santa Claus style
 
 ---
 
@@ -14,19 +13,10 @@ You will build a simple AI agent capable of:
 
 By the end of this lab, you will be able to:
 
-- ✅ Use IBM Bob as an AI development assistant
-- ✅ Connect and use an MCP server in Bob
+- ✅ Use Bob as an AI development agent
+- ✅ Connect to an MCP server
 - ✅ Build agents and tools with Bob
 - ✅ Import agents and tools into watsonx Orchestrate
-- ✅ Import MCP-based tools into watsonx Orchestrate
-
----
-
-## Prerequisites
-
-Before starting, review [Lab 0: Bob Labs Prerequisites](../../bob-labs/lab0-prerequisites/README.md).
-
-The watsonx Orchestrate access details, API key flow, and environment configuration are covered inside this lab. You do not need the watsonx Orchestrate ADK installed in advance if you can install it during the lab.
 
 ---
 
