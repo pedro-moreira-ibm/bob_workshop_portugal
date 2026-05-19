@@ -234,7 +234,7 @@ When the agent answers, click on "Show Reasoning" and confirm that the agent is 
 
    AI agents don’t always act alone. They can also interact with other agents and tools to solve more complex tasks. For instance, an AI agent might call on a weather service (a tool) to check the forecast, or coordinate with another AI agent that handles scheduling.
 
-   In these examples, reasoning includes deciding which tools or agents to use, when, and how to communicate with them. <br>
+   In these examples, reasoning includes deciding which tools or agents to use, when, and how to communicate with them.<br>
 
 
 Now, let's make a completely different question and again analyze the reasoning of the agent.
