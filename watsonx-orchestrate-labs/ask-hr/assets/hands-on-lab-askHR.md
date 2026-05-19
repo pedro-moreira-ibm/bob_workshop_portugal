@@ -24,8 +24,7 @@ In this lab we will build an HR agent in watsonx Orchestrate, leveraging tools a
 
 ## Architecture
 
-<img width="1000" alt="image" src="arch_diagm.png">
-
+<img width="1668" height="1062" alt="image" src="https://github.com/user-attachments/assets/1b91c902-241c-4afe-a99f-c531b7578765" />
 
 ## Instructions
 
