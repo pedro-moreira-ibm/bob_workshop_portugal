@@ -66,7 +66,7 @@ This MCP server will allow Bob to use the official watsonx Orchestrate documenta
 
 Go to **Settings** and open the **MCP** tab.
 
-<img width="3418" height="1979" alt="image" src="https://github.com/user-attachments/assets/297ff9bb-02bb-4419-87c5-5ba52265e34e" />
+<img width="2515" height="1462" alt="image" src="https://github.com/user-attachments/assets/c2a7456f-439c-44e8-8f4f-b657305796f6" />
 
 ---
 
