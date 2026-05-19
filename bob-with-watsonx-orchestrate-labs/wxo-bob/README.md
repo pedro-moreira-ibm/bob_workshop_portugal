@@ -35,12 +35,7 @@ Workshop Flow
 
 # Step 1: Set Up the Python Project
 
-In this step, you will prepare the project workspace and configure the Python environment.
-
-Bob will help you:
-- Create and configure the Python virtual environment
-- Prepare the project structure
-- Initialize the project workspace
+In this step, you will prepare the project workspace.
 
 ## 1.1: Create and Open the Project Folder
 
