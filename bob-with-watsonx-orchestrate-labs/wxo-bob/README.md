@@ -194,7 +194,7 @@ Go to your IBM Cloud account and generate an API key.
 
 <img width="3666" height="1942" alt="image" src="https://github.com/user-attachments/assets/36965ebe-7944-4b4e-9268-e075822dcc86" />
 
-**Important:** Store the API key securely because you will use it in the next steps.
+**Important:** Copy the API key and paste it somewhere, because you will use it in the next steps.
 
 
 ---
@@ -212,7 +212,7 @@ Copy the instance URL.
 <img width="3711" height="1838" alt="image" src="https://github.com/user-attachments/assets/7c67b5ba-f3e5-48a5-83b9-2a459a37fa59" />
 
 
-**Example:** https://api.us-south.watson-orchestrate.cloud.ibm.com/instances/xxxxxxxx
+**Important:** Copy the URL and paste it somewhere, because you will use it in the next steps.
 
 
 ---
