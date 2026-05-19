@@ -2,6 +2,14 @@
 
 This page covers the practical setup for the Bob labs in this repository.
 
+It is relevant for:
+- [`bob-labs/lab1`](../lab1/README.md)
+- [`bob-labs/lab2`](../lab2/README.md)
+- [`bob-with-watsonx-orchestrate-labs/lab-wxo-bob`](../../bob-with-watsonx-orchestrate-labs/lab-wxo-bob/README.md)
+
+It is not needed for:
+- [`watsonx-orchestrate-labs/ask-hr`](../../watsonx-orchestrate-labs/ask-hr/README.md)
+
 ## What You Need
 
 ### Required for the Bob Labs
@@ -47,7 +55,23 @@ sudo apt-get install -y python3 python3-pip python3-venv nodejs npm git
 python3 -m pip install --upgrade pip
 ```
 
-### macOS with Homebrew
+If you are using another Linux distribution, install the equivalent packages for Python 3, `pip`, `venv`, Node.js, `npm`, and Git using your distribution's package manager.
+
+### macOS
+
+For most attendees, the easiest macOS setup is:
+
+1. Install Python from [python.org](https://www.python.org/downloads/)
+2. Install Node.js LTS from [nodejs.org](https://nodejs.org/)
+3. Install Git from [git-scm.com](https://git-scm.com/downloads)
+4. Close and reopen your terminal
+5. Run:
+
+```bash
+python3 -m pip install --upgrade pip
+```
+
+If you already use Homebrew, this is also fine:
 
 ```bash
 brew install python@3.11 node git
@@ -171,3 +195,13 @@ You do not need to preinstall the watsonx Orchestrate ADK for this workshop. The
 - General comfort using a terminal
 
 These help participants move faster, but they are not strict prerequisites.
+
+## Short Version
+
+If someone asks what they need before starting the Bob labs, the short answer is:
+
+1. Access to Bob.
+2. Python, pip, and virtual environment support installed.
+3. Node.js and npm installed.
+4. Bob and a terminal ready.
+5. Git and GitHub only if they plan to do the GitHub part of Lab 1.
