@@ -251,12 +251,13 @@ Open a new terminal in Bob.
 ```bash
 orchestrate env add -n wxo-Bob -u <INSERT_YOUR_URL> --type ibm_iam --activate
 ```
+NOTE: replace the <INSERT_YOUR_URL> with the actual watsonx Orchestrate URL you saved in step 4.2.
 
-When prompted, paste your API key.
+In the terminal you will be asked for your API key. Paste the key you saved in step 4.1.
 
-It is expected that the key will not appear while typing. This is normal and done for security reasons.
+It is expected that the key will not appear after pasting. This is normal and done for security reasons. Just press Enter.
 
-After pressing Enter, you should see a confirmation message indicating that the environment was successfully created and activated.
+After that, you should see a confirmation message indicating that the environment was successfully created and activated.
 
 <img width="3393" height="1961" alt="image" src="https://github.com/user-attachments/assets/872a6df6-5729-4759-84d3-c53918a77aef" />
 
@@ -286,11 +287,17 @@ Allow Bob to apply fixes and retry the import if necessary.
 
 ---
 
-# Step 5: Access watsonx Orchestrate and test the agent
+# Step 5: Test your agent in watsonx Orchestrate
 
 ---
 
 ## 5.1: Open watsonx Orchestrate
+
+Open your watsonx Orchestrate environment.
+
+<img width="3654" height="1841" alt="image" src="https://github.com/user-attachments/assets/2d037624-70e7-40ad-a705-de51b8b054c5" />
+
+<img width="3671" height="1850" alt="image" src="https://github.com/user-attachments/assets/2955be47-cc4b-4c45-8561-68988a7d58c3" />
 
 Launch your watsonx Orchestrate environment.
 
