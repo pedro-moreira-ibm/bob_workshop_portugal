@@ -9,17 +9,6 @@ You will build a simple AI agent capable of:
 
 ---
 
-## Learning Objectives
-
-By the end of this lab, you will be able to:
-
-- ✅ Use Bob as an AI development agent
-- ✅ Connect to an MCP server
-- ✅ Build agents and tools with Bob
-- ✅ Import agents and tools into watsonx Orchestrate
-
----
-
 ## Lab Flow
 
 ```text
@@ -305,24 +294,26 @@ Launch your watsonx Orchestrate environment.
 
 ---
 
-## 5.2: Open the 'Build' tab
+## 5.2: Verify that your agent and tool were imported
 
-Navigate to the **Build** tab.
+In watsonx Orchestrate , navigate to the **Build** tab.
 
 <img width="3704" height="1833" alt="image" src="https://github.com/user-attachments/assets/05811452-1acd-4d9b-971b-26ac553d1669" />
 
-Verify that both the agent and tool are available.
+Click on "All agents".
 
 <img width="3570" height="1970" alt="image" src="https://github.com/user-attachments/assets/2e48ef18-b6c9-4a6c-bb4f-a30422918a4d" />
+
+Click on "All tools".
 
 <img width="3573" height="1972" alt="image" src="https://github.com/user-attachments/assets/6a316333-6dd4-4209-96be-5c0eb6124886" />
 
 
 ---
 
-## 5.3: Open and test the agent
+## 5.3: Open and test your agent
 
-Open the agent, inspect its configuration, and test it directly from the UI.
+Open your agent, inspect its configuration, and test it directly from watsonx Orchestrate.
 
 **Prompt for the agent:**
 
@@ -342,11 +333,12 @@ You can also click on "Show Reasoning" in order to verify and better understand 
 
 # Congratulations! 🎉
 
-You have successfully completed the Bob x watsonx Orchestrate Lab.
+You have successfully completed the lab using Bob with watsonx Orchestrate.
 
 In this lab, you learned how to:
-- ✅ Use IBM Bob to build AI agents and tools
+- ✅ Use Bob as an AI development agent
 - ✅ Configure and use MCP servers in Bob
-- ✅ Generate watsonx Orchestrate-compatible assets
-- ✅ Import tools and agents into watsonx Orchestrate
-- ✅ Validate and test an AI agent in watsonx Orchestrate
+- ✅ Build agents and tools with Bob
+- ✅ Import agents and tools into watsonx Orchestrate
+- ✅ Validate and test the AI agent in watsonx Orchestrate
+
