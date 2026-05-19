@@ -258,9 +258,7 @@ After completing your tests and once you’re ready to make the agent available 
 
 
 # Congratulations 🎉 You’ve reached the end of the workshop! 
-If you have any questions, please reach out to the instructors.
 
-## Conclusion
 
 This lab provided a hands-on, structured approach to building and testing AI agents in the human resources domain, using a realistic enterprise dataset.
 
