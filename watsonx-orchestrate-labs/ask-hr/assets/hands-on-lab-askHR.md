@@ -234,9 +234,9 @@ Show my profile data.
 </div>
 
 
-### Adjust the Instructions of the Agent and keep exploring
+### (Optional) Adjust the Instructions of the Agent and keep exploring
 
-Let's make some small adjustments on the Instructions of the Agent. More precisely, let's try to better organize the profile data, and instruct the agent to present the data in a table for easier readability.
+Let's make some small adjustments on the Instructions of the Agent. For example, let's ask our agent to always present our profile data in a table for easier readability.
 
 1. Scroll down to the **Behavior** section (Section 1 in the image below). Insert the new instructions into the **Instructions** field:
 
