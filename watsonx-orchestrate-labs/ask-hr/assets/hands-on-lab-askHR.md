@@ -181,10 +181,10 @@ Ask the agent for your profile data.
 Show me my profile data.
 ```
 
-When asked for your name, check the photo below to identify the name assigned to your team (e.g. Team 1 should use Daniel Anderson). This fictional but dynamic database was prepopulated before the workshop and loaded from this original [Users_Data](users_data.xlsx) excel. 
+When asked for your name, check the photo below to identify the name assigned to your team (e.g. Team 1 should use Daniel Anderson). This fictional but dynamic database was prepopulated before the workshop. 
 
 
-<img width="2911" height="1370" alt="image" src="https://github.com/user-attachments/assets/cb2538dc-b876-47d5-ba3a-af4df9f2d5cf" />
+<img width="2906" height="1445" alt="image" src="https://github.com/user-attachments/assets/760e31ae-4b4c-4d62-a50e-f6f141b10bee" />
 
 For this tutorial, we used “Victoria Baker” as the employee example.
 
