@@ -182,7 +182,7 @@ Go to your [IBM Cloud account](https://cloud.ibm.com/) and generate an API key.
 
 <img width="3666" height="1942" alt="image" src="https://github.com/user-attachments/assets/36965ebe-7944-4b4e-9268-e075822dcc86" />
 
-**Important:** Copy the API key and paste it somewhere, because you will use it in the next steps.
+⚠️ **Important:** Copy the API key and paste it somewhere, because you will use it in the next steps.
 
 
 ---
@@ -200,7 +200,7 @@ Copy the instance URL.
 <img width="3711" height="1838" alt="image" src="https://github.com/user-attachments/assets/7c67b5ba-f3e5-48a5-83b9-2a459a37fa59" />
 
 
-**Important:** Copy the URL and paste it somewhere, because you will use it in the next steps.
+⚠️ **Important:** Copy the URL and paste it somewhere, because you will use it in the next steps.
 
 
 ---
@@ -237,7 +237,7 @@ Open a new terminal in Bob.
 ```bash
 orchestrate env add -n wxo-Bob -u <INSERT_YOUR_URL> --type ibm_iam --activate
 ```
-NOTE: replace the <INSERT_YOUR_URL> with the actual watsonx Orchestrate URL you saved in step 4.2.
+⚠️ NOTE: replace the <INSERT_YOUR_URL> with the actual watsonx Orchestrate URL you saved in step 4.2.
 
 In the terminal you will be asked for your API key. Paste the key you saved in step 4.1.
 
