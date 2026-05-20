@@ -38,7 +38,7 @@ Open this folder in IBM Bob.
 
 <img width="2532" height="1468" alt="image" src="https://github.com/user-attachments/assets/f9d06884-0c45-4cb0-a6ed-dbf9a682e140" />
 
-## Step 1: Introduction to Bob Modes
+## Step 2: Introduction to Bob Modes
 
 ### Understanding Bob Modes
 
@@ -70,7 +70,7 @@ Bob has several distinct modes, each optimized for different tasks. The three bu
 Bob's mode system is one of its key differentiators. Bob allows you to create custom modes tailored to your team's specific workflows.
 
 
-### 1.1: Plan your project
+### 2.2: Plan your project
 
 **Switch to Plan Mode** and ask Bob:
 
