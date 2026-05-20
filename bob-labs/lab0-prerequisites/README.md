@@ -54,6 +54,9 @@ python3 -m pip install --upgrade pip
 For most attendees, the easiest Windows setup is:
 
 1. Install Python from [python.org](https://www.python.org/downloads/release/python-31210/)
+
+<img width="3579" height="1910" alt="image" src="https://github.com/user-attachments/assets/4b2809ae-0602-4dff-8077-81740fc5f99d" />
+
 2. Install Node.js LTS from [nodejs.org](https://nodejs.org/)
 3. Open a new terminal and run:
 
