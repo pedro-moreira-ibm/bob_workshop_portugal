@@ -57,6 +57,8 @@ For most attendees, the easiest Windows setup is:
 
 <img width="3579" height="1910" alt="image" src="https://github.com/user-attachments/assets/4b2809ae-0602-4dff-8077-81740fc5f99d" />
 
+<img width="3566" height="1884" alt="image" src="https://github.com/user-attachments/assets/40998d9c-79ff-4667-9e6c-298e4fa4be1d" />
+
 2. Install Node.js LTS from [nodejs.org](https://nodejs.org/)
 3. Open a new terminal and run:
 
