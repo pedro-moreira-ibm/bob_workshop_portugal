@@ -253,7 +253,7 @@ Include:
 
 ### 4.2: Understanding Literate Coding
 
-**Literate coding** means writing code that explains itself through comments and clear structure.
+**Literate coding** means writing code that explains itself through clear structure, meaningful naming, and helpful comments. The goal is not only to make code functional, but also easy to understand and maintain over time. This approach improves collaboration between developers while also helping functional teams understand how the application behaves.
 
 **Prompt for Bob:**
 
