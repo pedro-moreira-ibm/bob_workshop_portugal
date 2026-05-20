@@ -40,7 +40,7 @@ Open this folder in IBM Bob.
 
 ## Step 2: Introduction to Bob Modes
 
-### Understanding Bob Modes
+### 2.1: Understanding Bob Modes
 
 Bob has several distinct modes, each optimized for different tasks. The three built-in modes you'll use in this lab are:
 
@@ -83,6 +83,11 @@ Please help me plan:
 4. Technology stack recommendations
 ```
 
+<img width="3416" height="1907" alt="image" src="https://github.com/user-attachments/assets/5467210e-dd35-4146-bcbd-cd8be568cd6f" />
+
+<img width="3382" height="1893" alt="image" src="https://github.com/user-attachments/assets/d246000d-bd95-4ad7-bc4a-8aa0d79d903d" />
+
+
 **Bob's Interactive Approach:**
 
 Before providing a plan, Bob will ask clarifying questions to understand your requirements better. This is a key differentiator—Bob lets you drive the process while making helpful suggestions.
@@ -99,6 +104,8 @@ Bob might ask:
 - No user authentication
 - Basic CRUD operations only
 
+<img width="3394" height="1902" alt="image" src="https://github.com/user-attachments/assets/c986ef37-efdd-448b-8415-f2124bfaaeea" />
+
 This collaborative approach ensures Bob builds exactly what you need, not what it assumes you want.
 
 **Expected Response from Bob:**
@@ -109,19 +116,20 @@ After your clarifications, Bob should provide:
 - Database schema for To Dos (id, title, description, completed, created_at)
 - Recommendations for Flask, SQLite, CORS, etc.
 
-**💡 Tip**: Take notes on Bob's recommendations. You'll use this plan in the next steps.
 
 ---
 
-## Step 2: Backend Development with Code Mode
+## Step 3: Backend Development with Code Mode
 
 Now let's build the Flask backend using Bob's Code mode.
 
-### 2.1: Switch to Code Mode
+### 3.1: Switch to Code Mode
 
 Change from Plan to Code mode in Bob's interface.
 
-### 2.2: Create Backend Structure
+<img width="3399" height="1906" alt="image" src="https://github.com/user-attachments/assets/3b06ce22-f6ba-463f-860d-1d6f427509e8" />
+
+### 3.2: Create Backend Structure
 
 **Prompt for Bob:**
 
@@ -135,22 +143,14 @@ Create a Flask backend for the To Do app with the following files:
 The To Do model should have: id, title, description, completed (boolean), created_at (timestamp)
 ```
 
+<img width="3379" height="1894" alt="image" src="https://github.com/user-attachments/assets/fb1e4254-f985-45b3-8980-619b8676c187" />
+
 **What Bob Will Create:**
 
 Bob should generate these files in the `backend/` directory. Review each file as Bob creates them.
 
-### 2.3: Understanding Auto-Approvals
 
-**Auto-approvals** allow Bob to make multiple changes without asking for confirmation each time.
-
-To enable auto-approvals:
-1. Look for auto-approval settings in Bob
-2. Enable for this session
-3. Bob will now create multiple files rapidly
-
-**⚠️ Important**: Review the files after Bob creates them to ensure they match your requirements.
-
-### 2.4: Implement REST API Endpoints
+### 3.3: Implement REST API Endpoints
 
 **Prompt for Bob:**
 
@@ -163,6 +163,8 @@ Implement the following REST API endpoints in app.py:
 
 Include proper error handling and JSON responses.
 ```
+
+<img width="3401" height="1907" alt="image" src="https://github.com/user-attachments/assets/5b6faca1-c3ce-4a85-9690-3ecb76f4e5fa" />
 
 ### 2.5: Review Generated Code
 
