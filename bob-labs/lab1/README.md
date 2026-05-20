@@ -215,7 +215,9 @@ Let's ask Bob to run the backend.
 Run the backend application.
 ```
 
-Bob should let you know that backend application is now running successfully on http://localhost:5000. 
+While Bob solves the request, you might see the option to "Proceed while running". By clicking it, you allow Bob to work on independent tasks while a command run when possible.
+
+Once finished, Bob should let you know that backend application is now running successfully on http://localhost:5000.
 
 <img width="3432" height="1892" alt="image" src="https://github.com/user-attachments/assets/c65e73a7-f54e-4fbf-b996-8da7d1578e29" />
 
