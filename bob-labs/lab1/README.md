@@ -420,9 +420,9 @@ In real projects, teams typically reduce these variations by providing more deta
 ---
 
 
-# Congratulations 🎉 You’ve reached the end of the lab! 
+# Congratulations 🎉 You’ve reached the end of this lab! 
 
-You've successfully completed Lab 1! You've learned to:
+You've successfully completed this lab! You've learned to:
 
 - ✅ Use Bob modes for different tasks
 - ✅ Apply literate coding principles
