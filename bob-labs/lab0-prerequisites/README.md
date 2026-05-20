@@ -45,12 +45,6 @@ For most attendees, the easiest macOS setup is:
 python3 -m pip install --upgrade pip
 ```
 
-If you already use Homebrew, you can also follow the command below:
-
-```bash
-brew install python@3.11 node git
-python3 -m pip install --upgrade pip
-```
 
 ### Windows
 
