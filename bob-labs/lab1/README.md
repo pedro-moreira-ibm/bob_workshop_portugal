@@ -352,7 +352,7 @@ Test the fronted of your app by right-clicking the `index.html` file and then se
 
 ## Step 4: Test the full app
 
-Go ahead and start exploring and trying the frontend you opened in the previous step.
+Go ahead and start trying the frontend you opened in the previous step.
 
 If it's not working properly, it probably means the backend is not running, which you can solve by running the application.
 
