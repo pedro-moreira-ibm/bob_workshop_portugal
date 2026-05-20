@@ -226,7 +226,7 @@ Bob should let you know that backend application is now running successfully on 
 
 ## Step 4: Frontend Development
 
-Now let's create the user interface using JavaScript.
+Now, let's create the frontend (user interface).
 
 ### 4.1: Create Frontend Structure
 
@@ -263,9 +263,9 @@ Add detailed comments that would help a beginner understand the code.
 
 ### 4.3 (Optional): Review Frontend Code
 
-Bob should create files similar to this:
+Example:
 
-**app.js** (with literate coding):
+**app.js**:
 ```javascript
 /**
  * To Do Application - Frontend JavaScript
@@ -340,9 +340,9 @@ async function createTo Do(title, description) {
 // Additional functions with detailed explanations...
 ```
 
-### 3.4: Test Frontend
+### 4.4: Test Frontend 
 
-Test the fronted of your app by right-clicking the `index.html` file and then selecting "Open with Live Server".
+Test the fronted of your application by right-clicking the `index.html` file and then selecting "Open with Live Server".
 
 <img width="3423" height="1905" alt="image" src="https://github.com/user-attachments/assets/32e91123-8189-40b9-85f7-7fcb80f30b1f" />
 
@@ -351,22 +351,13 @@ Test the fronted of your app by right-clicking the `index.html` file and then se
 <img width="3748" height="2135" alt="image" src="https://github.com/user-attachments/assets/9272bd5f-358a-45ef-9340-70d8c068b200" />
 
 
-**✅ Checkpoint**: Frontend loads and displays the UI.
+**✅ Checkpoint**: Frontend loads and displays the User Interface.
 
 ---
 
-## Step 4: Test the full app
+## Step 5: Test your application
 
-Go ahead and start trying the frontend you opened in the previous step.
-
-If it's not working properly, it probably means the backend is not running, which you can solve by running the application.
-
-```
-# Run the application
-python app.py
-```
-
-<img width="3426" height="1898" alt="image" src="https://github.com/user-attachments/assets/0a64c41b-cf94-432e-843a-4e15eeaeecf2" />
+Explore and try the frontend you opened in the previous step.
 
 **Examples of what you can try in your newly created app:**
 
@@ -388,6 +379,8 @@ python app.py
 1. Refresh the browser
 2. ✅ To Dos persist (stored in database)
 
+
+**NOTE**: If the application is not working, it probably means the backend is not running anymore. You can ask Bob to run it for you like you did previously in step 3.6.
 
 ---
 
