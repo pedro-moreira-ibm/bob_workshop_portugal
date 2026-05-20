@@ -40,15 +40,14 @@ If you plan to complete the GitHub integration portion, also make sure you have:
 
 ## Lab Structure
 
-```text
-Lab Flow
-├── Step 1: Introduction and planning
-├── Step 2: Backend development
-├── Step 3: Frontend development
-├── Step 4: GitHub integration
-└── Step 5: Testing and verification
-```
+## Lab Flow
 
+- [Introduction to Bob Modes](#step-1-introduction-to-bob-modes)
+- [Backend Development with Code Mode](#step-2-backend-development-with-code-mode)
+- [Frontend Development](#step-3-frontend-development)
+- [GitHub Integration with MCP](#step-4-github-integration-with-mcp)
+- [Testing & Verification](#step-5-testing--verification)
+  
 ---
 
 ## Step 1: Introduction to Bob Modes
