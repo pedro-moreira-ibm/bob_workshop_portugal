@@ -11,17 +11,6 @@ You will build a simple AI agent capable of:
 
 ## Lab Flow
 
-```text
-Workshop Flow
-├── Step 1: Set Up the Python Project
-├── Step 2: Configure the watsonx Orchestrate Documentation MCP
-├── Step 3: Use Bob to Create a Tool and an Agent
-├── Step 4: Import the Agent and Tool into watsonx Orchestrate
-└── Step 5: Access watsonx Orchestrate and Test the Agent
-```
-
-## Lab Flow
-
 - [Set up the python project](#step-1-set-up-the-python-project)
 - [Configure the watsonx Orchestrate documentation MCP](#step-2-configure-the-watsonx-orchestrate-documentation-mcp)
 - [Use Bob to create a tool and an agent](#step-3-use-bob-to-create-a-tool-and-an-agent)
