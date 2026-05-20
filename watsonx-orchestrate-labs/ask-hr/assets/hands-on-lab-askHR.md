@@ -1,7 +1,7 @@
 
 # 🧑‍💼 AskHR: Automate HR tasks with Agentic AI
 
-## Table of Contents
+## Lab Structure
 
 - [Description of the use case](#description-of-the-use-case)
 - [Architecture](#architecture)
