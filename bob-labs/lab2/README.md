@@ -44,15 +44,13 @@ Helpful but not required:
 - [ ] Completion of Lab 1
 - [ ] Basic familiarity with Python and JavaScript
 
+
 ## Lab Structure
 
-```text
-Lab Flow
-├── Step 1: Analyze the Python code
-├── Step 2: Plan the translation strategy
-├── Step 3: Implement the translation
-└── Step 4: Verify and compare
-```
+- [Analyze Python Code with Ask Mode](#step-1-analyze-python-code-with-ask-mode)
+- [Plan Translation Strategy with Plan Mode](#step-2-plan-translation-strategy-with-plan-mode)
+- [Implement Translation with Code Mode](#step-3-implement-translation-with-code-mode)
+- [Verify & Compare](#step-4-verify--compare)
 
 ---
 
