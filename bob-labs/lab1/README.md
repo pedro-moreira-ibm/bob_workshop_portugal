@@ -340,9 +340,9 @@ async function createTo Do(title, description) {
 // Additional functions with detailed explanations...
 ```
 
-### 4.4: Test Frontend 
+### 4.4: Open the frontend 
 
-Test the fronted of your application by right-clicking the `index.html` file and then selecting "Open with Live Server".
+Open your application's frontend by right-clicking the `index.html` file and then selecting "Open with Live Server".
 
 <img width="3423" height="1905" alt="image" src="https://github.com/user-attachments/assets/32e91123-8189-40b9-85f7-7fcb80f30b1f" />
 
@@ -379,10 +379,16 @@ Explore and try the frontend you opened in the previous step.
 1. Refresh the browser
 2. ✅ To Dos persist (stored in database)
 
-
-**NOTE**: If the application is not working, it probably means the backend is not running anymore. You can ask Bob to run it for you like you did previously in step 3.6.
-
 <img width="3787" height="2170" alt="image" src="https://github.com/user-attachments/assets/3b1c6356-c4b9-43bc-bc86-644f27933fd3" />
+
+⚠️**NOTE**⚠️: If your tests are not successful, it means the application's backend is not running anymore. You can ask Bob to rerun the backend for you like you did previously in step 3.6.
+
+**Prompt for Bob:**
+
+```bash
+Run the backend application.
+```
+
 
 ---
 
