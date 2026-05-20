@@ -217,6 +217,8 @@ Run the backend application.
 
 While Bob solves the request, you might see the option to "Proceed while running". By clicking it, you allow Bob to work on independent tasks while a command run when possible.
 
+<img width="888" height="1887" alt="image" src="https://github.com/user-attachments/assets/80265b0c-871e-40af-af4d-7fbe7223da74" />
+
 Once finished, Bob should let you know that backend application is now running successfully on http://localhost:5000.
 
 <img width="3432" height="1892" alt="image" src="https://github.com/user-attachments/assets/c65e73a7-f54e-4fbf-b996-8da7d1578e29" />
