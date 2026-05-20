@@ -32,8 +32,11 @@ If you are using another Linux distribution, install the equivalent packages for
 For most attendees, the easiest macOS setup is:
 
 1. Install Python from [python.org](https://www.python.org/downloads/release/python-31210/)
+
+<img width="3572" height="1904" alt="image" src="https://github.com/user-attachments/assets/2bdc4d7f-dc7a-452f-8fcd-b0f5286d17f4" />
+
 2. Install Node.js LTS from [nodejs.org](https://nodejs.org/)
-3. Open a new terminal and run:
+3.  Open a new terminal and run:
 
 ```bash
 python3 -m pip install --upgrade pip
