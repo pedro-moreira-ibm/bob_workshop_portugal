@@ -60,6 +60,9 @@ For most attendees, the easiest Windows setup is:
 <img width="3566" height="1884" alt="image" src="https://github.com/user-attachments/assets/40998d9c-79ff-4667-9e6c-298e4fa4be1d" />
 
 2. Install Node.js LTS from [nodejs.org](https://nodejs.org/)
+
+<img width="3157" height="1931" alt="image" src="https://github.com/user-attachments/assets/33622ea0-bd89-420d-9026-0f6a2645fd0b" />
+
 3. Open a new terminal and run:
 
 ```powershell
