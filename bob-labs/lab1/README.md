@@ -382,6 +382,8 @@ Explore and try the frontend you opened in the previous step.
 
 **NOTE**: If the application is not working, it probably means the backend is not running anymore. You can ask Bob to run it for you like you did previously in step 3.6.
 
+<img width="3787" height="2170" alt="image" src="https://github.com/user-attachments/assets/3b1c6356-c4b9-43bc-bc86-644f27933fd3" />
+
 ---
 
 ## Congratulations! 🎉
