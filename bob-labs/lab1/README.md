@@ -348,11 +348,25 @@ async function createTo Do(title, description) {
 
 ### 4.4: Open the frontend 
 
+**For Windows Users**:
+
 Open your application's frontend by right-clicking the `index.html` file and then selecting "Open with Live Server".
 
 <img width="3423" height="1905" alt="image" src="https://github.com/user-attachments/assets/32e91123-8189-40b9-85f7-7fcb80f30b1f" />
 
 <img width="3428" height="1910" alt="image" src="https://github.com/user-attachments/assets/3f0c75d7-c387-4e97-866c-6fba81726bc7" />
+
+**For macOS Users**:
+
+Right-click the `index.html` file and select "Reveal in Finder"
+
+<img width="1914" height="1046" alt="image" src="https://github.com/user-attachments/assets/c61134bf-6dc1-4379-bbdb-ac1cc56fb489" />
+
+Then just open the file in your browser of choice.
+
+<img width="2340" height="1000" alt="image" src="https://github.com/user-attachments/assets/bc0b4c8d-631e-46b9-aa54-6932c780013c" / 
+
+The frontend should now be open, as shown below. Keep in mind that your frontend may look different, since the prompts we provided to Bob were not very detailed. This gave Bob flexibility to make certain implementation and design decisions independently.
 
 <img width="3748" height="2135" alt="image" src="https://github.com/user-attachments/assets/9272bd5f-358a-45ef-9340-70d8c068b200" />
 
@@ -395,6 +409,15 @@ Explore and try the frontend you opened in the previous step.
 Run the backend application.
 ```
 
+---
+
+## Step 6: Compare your application with the other participants
+
+Do the applications look the same? Are there any differences?
+
+Differences are completely normal and even expected. Since the prompts used in this exercise were intentionally high-level, Bob had flexibility in how certain features and design elements were implemented.
+
+In real projects, teams typically reduce these variations by providing more detailed prompts, design guidelines, and specification/rules files. These artifacts help standardize implementations and ensure greater consistency across applications.
 
 ---
 
