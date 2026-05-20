@@ -9,7 +9,7 @@ You will build a simple AI agent capable of:
 
 ---
 
-## Lab Flow
+## Lab Structure
 
 - [Set up the python project](#step-1-set-up-the-python-project)
 - [Configure the watsonx Orchestrate documentation MCP](#step-2-configure-the-watsonx-orchestrate-documentation-mcp)
