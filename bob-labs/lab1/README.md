@@ -377,9 +377,7 @@ The frontend should now be open, as shown below. Keep in mind that your frontend
 
 ## Step 5: Test your application
 
-Explore and try the frontend you opened in the previous step.
-
-**Examples of what you can try in your newly created app:**
+Explore and try the frontend you opened in the previous step. Some testing examples:
 
 **Create a To Do:**
 1. Enter a title: "Learn Bob"
