@@ -24,8 +24,6 @@ A full-stack To Do application with:
 
 ## Step 1: Set up your project
 
-In this step, you will prepare the project workspace.
-
 ### 1.1: Create and open the project folder
 
 Create a new folder on your computer:
