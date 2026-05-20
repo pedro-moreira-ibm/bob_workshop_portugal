@@ -60,10 +60,10 @@ Go to **Settings** and open the **MCP** tab.
 Search for:
 
 ```text
-watsonx Orchestrate ADK Docs
+watsonx Orchestrate ADK 
 ```
 
-Open the **watsonx Orchestrate ADK Docs**.
+Open the **watsonx Orchestrate ADK Documentation MCP**.
 
 <img width="3391" height="1958" alt="image" src="https://github.com/user-attachments/assets/4d4fd84d-f8bd-44a0-b4bc-351e9a7b6f84" />
 
