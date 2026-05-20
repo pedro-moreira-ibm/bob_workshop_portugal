@@ -22,7 +22,7 @@ A full-stack To Do application with:
   
 ---
 
-## Step 1: Set up the python project
+## Step 1: Set up your project
 
 In this step, you will prepare the project workspace.
 
