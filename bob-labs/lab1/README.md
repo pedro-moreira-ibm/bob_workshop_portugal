@@ -1,42 +1,16 @@
-# Lab 1: Building a Todo Application with Bob
+# Lab 1: Building a To Do application with Bob
 
 ## Overview
 
-In this lab, you'll learn to use Bob's AI-powered features to build a complete full-stack todo application from scratch. You'll experience Bob's different modes, auto-approvals, literate coding, and GitHub integration.
+In this lab, you'll learn to use Bob's AI-powered features to build a complete full-stack To Do application from scratch. You'll experience Bob's different modes, auto-approvals, and code generation.
 
-**Difficulty**: Beginner to Intermediate
 
 ## What You'll Build
 
-A full-stack todo application with:
+A full-stack To Do application with:
 - **Backend**: Python Flask REST API with SQLite database
 - **Frontend**: Modern JavaScript single-page application
-- **Features**: Create, read, update, and delete todos
-- **Version Control**: GitHub repository with proper commits
-
-## Learning Objectives
-
-By the end of this lab, you will:
-- ✅ Understand Bob's three modes (Plan, Code, Ask)
-- ✅ Use auto-approvals for rapid development
-- ✅ Practice literate coding techniques
-- ✅ Integrate GitHub using MCP servers
-- ✅ Build a complete full-stack application
-
-## Prerequisites
-
-Before starting, review [Lab 0: Bob Labs Prerequisites](../lab0-prerequisites/README.md).
-
-For this lab specifically, make sure you have:
-- [ ] IBM Bob access
-- [ ] Python 3.8+
-- [ ] Node.js 14+
-- [ ] A local workspace for Bob
-
-If you plan to complete the GitHub integration portion, also make sure you have:
-- [ ] Git
-- [ ] A GitHub account
-- [ ] GitHub MCP configured in Bob, if that is part of your workshop setup
+- **Features**: Create, read, update, and delete To Dos
 
 ## Lab Structure
 
@@ -48,11 +22,12 @@ If you plan to complete the GitHub integration portion, also make sure you have:
   
 ---
 
+
 ## Step 1: Introduction to Bob Modes
 
-### Understanding Bob's Modes
+### Understanding Bob Modes
 
-Bob has several distinct modes, each optimized for different tasks. Some examples are:
+Bob has several distinct modes, each optimized for different tasks. The three built-in modes you'll use in this lab are:
 
 #### 🎯 Plan Mode
 **When to use**: Planning, designing, strategizing
@@ -75,23 +50,17 @@ Bob has several distinct modes, each optimized for different tasks. Some example
 - Understand errors
 - Learn best practices
 
-> **🎯 Bob Differentiator: Customizable Modes**
-> Bob's mode system is one of its key differentiators. Unlike other AI assistants, Bob allows you to create custom modes tailored to your team's specific workflows. The three built-in modes you'll use in this lab are just the beginning.
+> **🎯 Bob Differentiator: [Customizable Modes](https://bob.ibm.com/docs/ide/configuration/custom-modes)**
 
-### Switching Between Modes
+Bob's mode system is one of its key differentiators. Bob allows you to create custom modes tailored to your team's specific workflows.
 
-In Bob's interface:
-1. Look for the mode selector (usually at the top)
-2. Click to see available modes
-3. Select the mode you need
-4. Bob will adapt its behavior accordingly
 
-### Your First Task: Project Planning
+### Step 1.1 : Plan your project
 
 **Switch to Plan Mode** and ask Bob:
 
 ```
-I want to create a todo application with a Python Flask backend and JavaScript frontend.
+I want to create a To Do application with a Python Flask backend and JavaScript frontend.
 Please help me plan:
 1. Project directory structure
 2. API endpoints needed
@@ -122,7 +91,7 @@ This collaborative approach ensures Bob builds exactly what you need, not what i
 After your clarifications, Bob should provide:
 - Directory structure with backend/ and frontend/ folders
 - REST API endpoints (GET, POST, PUT, DELETE)
-- Database schema for todos (id, title, description, completed, created_at)
+- Database schema for To Dos (id, title, description, completed, created_at)
 - Recommendations for Flask, SQLite, CORS, etc.
 
 **💡 Tip**: Take notes on Bob's recommendations. You'll use this plan in the next steps.
@@ -142,13 +111,13 @@ Change from Plan to Code mode in Bob's interface.
 **Prompt for Bob:**
 
 ```
-Create a Flask backend for the todo app with the following files:
+Create a Flask backend for the To Do app with the following files:
 1. app.py - Main Flask application with CORS enabled
-2. models.py - SQLAlchemy Todo model
+2. models.py - SQLAlchemy To Do model
 3. database.py - Database initialization
 4. requirements.txt - Python dependencies
 
-The Todo model should have: id, title, description, completed (boolean), created_at (timestamp)
+The To Do model should have: id, title, description, completed (boolean), created_at (timestamp)
 ```
 
 **What Bob Will Create:**
@@ -172,10 +141,10 @@ To enable auto-approvals:
 
 ```
 Implement the following REST API endpoints in app.py:
-- GET /api/todos - List all todos
-- POST /api/todos - Create a new todo
-- PUT /api/todos/<id> - Update a todo
-- DELETE /api/todos/<id> - Delete a todo
+- GET /api/To Dos - List all To Dos
+- POST /api/To Dos - Create a new To Do
+- PUT /api/To Dos/<id> - Update a To Do
+- DELETE /api/To Dos/<id> - Delete a To Do
 
 Include proper error handling and JSON responses.
 ```
@@ -188,32 +157,32 @@ Bob should have created something similar to this structure:
 ```python
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from models import Todo
+from models import To Do
 from database import db, init_db
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todos.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///To Dos.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 CORS(app)
 
 init_db(app)
 
-@app.route('/api/todos', methods=['GET'])
-def get_todos():
-    todos = Todo.query.all()
-    return jsonify([todo.to_dict() for todo in todos])
+@app.route('/api/To Dos', methods=['GET'])
+def get_To Dos():
+    To Dos = To Do.query.all()
+    return jsonify([To Do.to_dict() for To Do in To Dos])
 
-@app.route('/api/todos', methods=['POST'])
-def create_todo():
+@app.route('/api/To Dos', methods=['POST'])
+def create_To Do():
     data = request.get_json()
-    todo = Todo(
+    To Do = To Do(
         title=data.get('title'),
         description=data.get('description', ''),
         completed=False
     )
-    db.session.add(todo)
+    db.session.add(To Do)
     db.session.commit()
-    return jsonify(todo.to_dict()), 201
+    return jsonify(To Do.to_dict()), 201
 
 # Additional endpoints...
 ```
@@ -283,14 +252,14 @@ Now let's create the user interface using JavaScript.
 **Prompt for Bob (still in Code mode):**
 
 ```
-Create a frontend for the todo app with:
+Create a frontend for the To Do app with:
 1. index.html - Main HTML structure with a clean, modern design
 2. styles.css - Responsive CSS styling
 3. app.js - JavaScript for API interactions
 
 Include:
-- Input field for new todos
-- List to display todos
+- Input field for new To Dos
+- List to display To Dos
 - Buttons for complete and delete actions
 - Responsive design for mobile and desktop
 ```
@@ -318,7 +287,7 @@ Bob should create files similar to this:
 **app.js** (with literate coding):
 ```javascript
 /**
- * Todo Application - Frontend JavaScript
+ * To Do Application - Frontend JavaScript
  * 
  * This file handles all interactions between the user interface
  * and the Flask backend API. We use modern JavaScript features
@@ -326,10 +295,10 @@ Bob should create files similar to this:
  */
 
 // API base URL - points to our Flask backend
-const API_URL = 'http://localhost:5000/api/todos';
+const API_URL = 'http://localhost:5000/api/To Dos';
 
 /**
- * Fetches all todos from the backend API
+ * Fetches all To Dos from the backend API
  * 
  * This function demonstrates the async/await pattern:
  * - 'async' keyword allows us to use 'await' inside
@@ -338,34 +307,34 @@ const API_URL = 'http://localhost:5000/api/todos';
  * 
  * @returns {Promise<void>}
  */
-async function fetchTodos() {
+async function fetchTo Dos() {
     try {
         // Make GET request to backend
         const response = await fetch(API_URL);
         
         // Parse JSON response
-        const todos = await response.json();
+        const To Dos = await response.json();
         
-        // Update the UI with fetched todos
-        displayTodos(todos);
+        // Update the UI with fetched To Dos
+        displayTo Dos(To Dos);
     } catch (error) {
         // Handle any errors (network issues, server errors, etc.)
-        console.error('Error fetching todos:', error);
-        showError('Failed to load todos. Please try again.');
+        console.error('Error fetching To Dos:', error);
+        showError('Failed to load To Dos. Please try again.');
     }
 }
 
 /**
- * Creates a new todo item
+ * Creates a new To Do item
  * 
  * This function shows how to make a POST request with JSON data.
  * We use the Fetch API which returns promises, making it perfect
  * for async/await syntax.
  * 
- * @param {string} title - The todo title
- * @param {string} description - The todo description
+ * @param {string} title - The To Do title
+ * @param {string} description - The To Do description
  */
-async function createTodo(title, description) {
+async function createTo Do(title, description) {
     try {
         const response = await fetch(API_URL, {
             method: 'POST',
@@ -376,14 +345,14 @@ async function createTodo(title, description) {
         });
         
         if (response.ok) {
-            // Refresh the todo list
-            await fetchTodos();
+            // Refresh the To Do list
+            await fetchTo Dos();
             // Clear the input form
             clearForm();
         }
     } catch (error) {
-        console.error('Error creating todo:', error);
-        showError('Failed to create todo. Please try again.');
+        console.error('Error creating To Do:', error);
+        showError('Failed to create To Do. Please try again.');
     }
 }
 
@@ -452,7 +421,7 @@ Benefits:
 Use the GitHub MCP server to:
 1. Initialize a git repository in the current directory
 2. Create a .gitignore file for Python and Node.js
-3. Create an initial commit with message "Initial todo app implementation"
+3. Create an initial commit with message "Initial To Do app implementation"
 ```
 
 ### 4.3: Create GitHub Repository
@@ -460,7 +429,7 @@ Use the GitHub MCP server to:
 **Prompt for Bob:**
 
 ```
-Create a new GitHub repository called "bob-todo-app" and push the code.
+Create a new GitHub repository called "bob-To Do-app" and push the code.
 Include a README.md describing the project.
 ```
 
@@ -475,7 +444,7 @@ Include a README.md describing the project.
 ### 4.4: Verify on GitHub
 
 1. Go to your GitHub account
-2. Find the `bob-todo-app` repository
+2. Find the `bob-To Do-app` repository
 3. Verify all files are present
 4. Check the commit history
 
@@ -513,23 +482,23 @@ Open `frontend/index.html` in your browser.
 
 ### 5.3: Test CRUD Operations
 
-**Create a Todo:**
+**Create a To Do:**
 1. Enter a title: "Learn Bob"
 2. Enter a description: "Complete all three labs"
-3. Click "Add Todo"
-4. ✅ Todo appears in the list
+3. Click "Add To Do"
+4. ✅ To Do appears in the list
 
 **Mark as Complete:**
-1. Click the "Complete" button on a todo
-2. ✅ Todo shows as completed (strikethrough or checkmark)
+1. Click the "Complete" button on a To Do
+2. ✅ To Do shows as completed (strikethrough or checkmark)
 
-**Delete a Todo:**
-1. Click the "Delete" button on a todo
-2. ✅ Todo is removed from the list
+**Delete a To Do:**
+1. Click the "Delete" button on a To Do
+2. ✅ To Do is removed from the list
 
 **Refresh Page:**
 1. Refresh the browser
-2. ✅ Todos persist (stored in database)
+2. ✅ To Dos persist (stored in database)
 
 ### 5.4: Check Browser Console
 
@@ -544,14 +513,14 @@ Open browser developer tools (F12):
 # In backend directory
 python
 >>> from app import app, db
->>> from models import Todo
+>>> from models import To Do
 >>> with app.app_context():
-...     todos = Todo.query.all()
-...     for todo in todos:
-...         print(f"{todo.id}: {todo.title}")
+...     To Dos = To Do.query.all()
+...     for To Do in To Dos:
+...         print(f"{To Do.id}: {To Do.title}")
 ```
 
-✅ Todos are stored in the database
+✅ To Dos are stored in the database
 
 ---
 
@@ -569,13 +538,13 @@ You've successfully completed Lab 1! You've learned to:
 ## What You've Built
 
 ```
-bob-todo-app/
+bob-To Do-app/
 ├── backend/
 │   ├── app.py              # Flask REST API
 │   ├── models.py           # Database models
 │   ├── database.py         # DB initialization
 │   ├── requirements.txt    # Dependencies
-│   └── todos.db           # SQLite database
+│   └── To Dos.db           # SQLite database
 ├── frontend/
 │   ├── index.html         # UI structure
 │   ├── styles.css         # Styling
@@ -614,7 +583,7 @@ bob-todo-app/
 
 ### Enhance Your App
 Try these improvements:
-1. Add todo categories or tags
+1. Add To Do categories or tags
 2. Implement due dates
 3. Add user authentication
 4. Create a priority system
@@ -653,7 +622,7 @@ lsof -ti:5000 | xargs kill -9
 **Problem**: Database errors
 ```bash
 # Delete and recreate database
-rm todos.db
+rm To Dos.db
 python
 >>> from app import app, db
 >>> with app.app_context():
@@ -672,7 +641,7 @@ python
 - Check API_URL in `app.js` matches backend URL
 - Open browser dev tools and check Network tab
 
-**Problem**: Todos don't persist
+**Problem**: To Dos don't persist
 - Check browser console for errors
 - Verify database file exists
 - Test API endpoints directly using curl or Postman
@@ -706,4 +675,8 @@ How was this lab? We'd love to hear your thoughts:
 
 ---
 
-**Ready for the next challenge?** → [Start Lab 2: Code Translation](../lab2/README.md)
+- ✅ Understand Bob's three modes (Plan, Code, Ask)
+- ✅ Use auto-approvals for rapid development
+- ✅ Practice literate coding techniques
+- ✅ Integrate GitHub using MCP servers
+- ✅ Build a complete full-stack application
