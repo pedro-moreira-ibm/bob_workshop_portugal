@@ -36,6 +36,8 @@ Open this folder in IBM Bob.
 
 <img width="2532" height="1468" alt="image" src="https://github.com/user-attachments/assets/f9d06884-0c45-4cb0-a6ed-dbf9a682e140" />
 
+**✅ Checkpoint**: Your workspace is ready to start working.
+
 ## Step 2: Introduction to Bob Modes
 
 ### 2.1: Understanding Bob Modes
@@ -106,7 +108,7 @@ Bob might ask:
 
 This collaborative approach ensures Bob will build exactly what you need, and will not assume what you want.
 
-After your clarifications, Bob should provide a comprehensive plan that matches your requests.
+**✅ Checkpoint**: Bob provided you with a comprehensive plan that matches your requests.
 
 ---
 
@@ -156,9 +158,9 @@ Include proper error handling and JSON responses.
 
 ### 3.4 (Optional): Review Generated Code
 
-Bob should have created something similar to this structure:
+Example:
 
-**app.py** (Key sections):
+**app.py**:
 ```python
 from flask import Flask, request, jsonify
 from flask_cors import CORS
@@ -192,9 +194,9 @@ def create_To Do():
 # Additional endpoints...
 ```
 
-### 3.5: Create Unit Test Cases and Run them
+### 3.5: Create Unit Test Cases and run them
 
-Unit test cases are small checks that verify individual parts of an app work correctly, helping catch errors early before they affect the whole system.
+Unit test cases are small checks that verify if individual parts of an application are working correctly, helping catch errors early and before they affect the whole application.
 
 **Prompt for Bob:**
 
@@ -203,17 +205,17 @@ Create unit test cases for each of the api endpoints, and ensure at least 90% co
 ```
 
 
-### 3.6: Test Backend Setup
+### 3.6: Run the Backend
 
-Let's ask Bob to do a final test of our backend setup.
+Let's ask Bob to run the backend.
 
 **Prompt for Bob:**
 
 ```bash
-Run the backend application and test it with 1 sample curl command per each API endpoint.
+Run the backend application.
 ```
 
-The server should start on `http://localhost:5000`
+The backend application should be running successfully on http://localhost:5000
 
 **✅ Checkpoint**: Backend is running without errors.
 
