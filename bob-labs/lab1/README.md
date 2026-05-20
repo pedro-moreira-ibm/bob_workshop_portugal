@@ -40,8 +40,6 @@ If you plan to complete the GitHub integration portion, also make sure you have:
 
 ## Lab Structure
 
-## Lab Flow
-
 - [Introduction to Bob Modes](#step-1-introduction-to-bob-modes)
 - [Backend Development with Code Mode](#step-2-backend-development-with-code-mode)
 - [Frontend Development](#step-3-frontend-development)
