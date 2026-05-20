@@ -56,9 +56,7 @@ python3 -m pip install --upgrade pip
 
 For most attendees, the easiest Windows setup is:
 
-1. Install Python from [python.org](https://www.python.org/downloads/release/python-31210/)
-
-<img width="3579" height="1910" alt="image" src="https://github.com/user-attachments/assets/4b2809ae-0602-4dff-8077-81740fc5f99d" />
+1. Install Python from [python.org](https://www.python.org/downloads/release/pymanager-262/)
 
 <img width="3566" height="1884" alt="image" src="https://github.com/user-attachments/assets/40998d9c-79ff-4667-9e6c-298e4fa4be1d" />
 
