@@ -241,9 +241,7 @@ Does my company organize team building activities
 <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/9a3ab2f0-0dd6-40d7-8003-475d90668924" />
 </div>
 
-The agent recognized that to solve this task, it would not require one of the tools we previously tested. Instead, it found the answer on the "Employee-Benefits.pdf".
-
-Feel free to scroll up in the chat and/or repeat any prompts we already tested, and explore the reasoning behind the agent's answers.
+The agent successfully understood the user’s request and determined the appropriate steps to provide an accurate response. Unlike in the previous tests, the agent did not rely on the available tools. Instead, it recognized that the answer could be retrieved directly from the knowledge source, specifically the “Employee-Benefits” file.
 
 ### Deploy and make your Agent available
 
