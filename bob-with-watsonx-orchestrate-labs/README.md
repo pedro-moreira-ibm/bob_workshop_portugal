@@ -20,11 +20,13 @@ Workshop Flow
 └── Step 5: Access watsonx Orchestrate and Test the Agent
 ```
 
-- [Set up the python project](#Set-up-the-python-project)
-- [Configure the watsonx Orchestrate documentation MCP](#Configure-the-watsonx-Orchestrate-documentation-MCP)
-- [Use Bob to create a tool and an agent](#Use-Bob-to-create-a-tool-and-an-agent)
-- [Import the agent and tool into watsonx Orchestrate](#Import-the-agent-and-tool-into-watsonx-Orchestrate)
-- [Test your agent in watsonx Orchestrate](Test-your-agent-in-watsonx-Orchestrate)
+## Lab Flow
+
+- [Set up the python project](#step-1-set-up-the-python-project)
+- [Configure the watsonx Orchestrate documentation MCP](#step-2-configure-the-watsonx-orchestrate-documentation-mcp)
+- [Use Bob to create a tool and an agent](#step-3-use-bob-to-create-a-tool-and-an-agent)
+- [Import the agent and tool into watsonx Orchestrate](#step-4-import-the-agent-and-tool-into-watsonx-orchestrate)
+- [Test your agent in watsonx Orchestrate](#step-5-test-your-agent-in-watsonx-orchestrate)
 
 ---
 
