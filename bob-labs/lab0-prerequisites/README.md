@@ -31,7 +31,7 @@ If you are using another Linux distribution, install the equivalent packages for
 
 For most attendees, the easiest macOS setup is:
 
-1. Install Python from [python.org](https://www.python.org/downloads/)
+1. Install Python from [python.org]([https://www.python.org/downloads/](https://www.python.org/downloads/release/python-31210/))
 2. Install Node.js LTS from [nodejs.org](https://nodejs.org/)
 3. Open a new terminal and run:
 
@@ -50,7 +50,7 @@ python3 -m pip install --upgrade pip
 
 For most attendees, the easiest Windows setup is:
 
-1. Install Python from [python.org](https://www.python.org/downloads/)
+1. Install Python from [python.org]([https://www.python.org/downloads/](https://www.python.org/downloads/release/python-31210/))
 2. Install Node.js LTS from [nodejs.org](https://nodejs.org/)
 3. Open a new terminal and run:
 
