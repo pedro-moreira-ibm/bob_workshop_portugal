@@ -64,6 +64,10 @@ For most attendees, the easiest Windows setup is:
 
 <img width="3157" height="1931" alt="image" src="https://github.com/user-attachments/assets/33622ea0-bd89-420d-9026-0f6a2645fd0b" />
 
+**Do not select this box when prompted, this is not necessary for this tutorial**
+
+<img width="723" height="560" alt="image" src="https://github.com/user-attachments/assets/baee77c6-028c-485d-8226-4ef48acfa0ab" />
+
 3. Open a new terminal and run:
 
 ```powershell
