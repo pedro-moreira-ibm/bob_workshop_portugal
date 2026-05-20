@@ -35,7 +35,10 @@ For most attendees, the easiest macOS setup is:
 
 <img width="3572" height="1904" alt="image" src="https://github.com/user-attachments/assets/2bdc4d7f-dc7a-452f-8fcd-b0f5286d17f4" />
 
-2. Install Node.js LTS from [nodejs.org](https://nodejs.org/)
+2. Install Node.js LTS from [nodejs.org](https://nodejs.org/en/download)
+
+<img width="3494" height="1942" alt="image" src="https://github.com/user-attachments/assets/667bf7e4-ed01-4e96-b640-5bb3d54c1751" />
+
 3.  Open a new terminal and run:
 
 ```bash
@@ -59,7 +62,7 @@ For most attendees, the easiest Windows setup is:
 
 <img width="3566" height="1884" alt="image" src="https://github.com/user-attachments/assets/40998d9c-79ff-4667-9e6c-298e4fa4be1d" />
 
-2. Install Node.js LTS from [nodejs.org](https://nodejs.org/)
+2. Install Node.js LTS from [nodejs.org](https://nodejs.org/en/download)
 
 <img width="3157" height="1931" alt="image" src="https://github.com/user-attachments/assets/33622ea0-bd89-420d-9026-0f6a2645fd0b" />
 
