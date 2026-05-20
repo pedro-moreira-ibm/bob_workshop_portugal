@@ -70,7 +70,7 @@ Bob's mode system is one of its key differentiators. Bob allows you to create cu
 
 ### 2.2: Plan your project
 
-**Switch to Plan Mode** and ask Bob:
+Switch to **Plan Mode** and ask Bob:
 
 ```
 I want to create a To Do application with a Python Flask backend and JavaScript frontend.
@@ -88,7 +88,7 @@ Please help me plan:
 
 **Bob's Interactive Approach:**
 
-Before providing a plan, Bob will ask clarifying questions to understand your requirements better. This is a key differentiator—Bob lets you drive the process while making helpful suggestions.
+Before providing a plan, Bob will ask clarifying questions to understand your requirements better. This is a key differentiator - Bob lets you drive the process while making helpful suggestions.
 
 Bob might ask:
 - "How complex should the application be?"
@@ -104,26 +104,23 @@ Bob might ask:
 
 <img width="3394" height="1902" alt="image" src="https://github.com/user-attachments/assets/c986ef37-efdd-448b-8415-f2124bfaaeea" />
 
-This collaborative approach ensures Bob builds exactly what you need, not what it assumes you want.
-
-**Expected Response from Bob:**
+This collaborative approach ensures Bob will build exactly what you need, and will not assume what you want.
 
 After your clarifications, Bob should provide a comprehensive plan that matches your requests.
 
-
 ---
 
-## Step 3: Backend Development with Code Mode
+## Step 3: Backend development
 
-Now let's build the Flask backend using Bob's Code mode.
+Now let's build the backend for your application using Bob's Code mode.
 
 ### 3.1: Switch to Code Mode
 
-Change from Plan to Code mode in Bob's interface.
+Change from Plan to **Code mode**.
 
 <img width="3399" height="1906" alt="image" src="https://github.com/user-attachments/assets/3b06ce22-f6ba-463f-860d-1d6f427509e8" />
 
-### 3.2: Create Backend Structure
+### 3.2: Create the backend structure
 
 **Prompt for Bob:**
 
@@ -139,10 +136,7 @@ The To Do model should have: id, title, description, completed (boolean), create
 
 <img width="3379" height="1894" alt="image" src="https://github.com/user-attachments/assets/fb1e4254-f985-45b3-8980-619b8676c187" />
 
-**What Bob Will Create:**
-
-Bob should generate these files in the `backend/` directory. Review each file as Bob creates them.
-
+Bob should generate all the necessary files regarding your backend structure. Review each file as Bob creates them.
 
 ### 3.3: Implement REST API Endpoints
 
@@ -160,7 +154,7 @@ Include proper error handling and JSON responses.
 
 <img width="3401" height="1907" alt="image" src="https://github.com/user-attachments/assets/5b6faca1-c3ce-4a85-9690-3ecb76f4e5fa" />
 
-### 2.5: Review Generated Code
+### 3.4 (Optional): Review Generated Code
 
 Bob should have created something similar to this structure:
 
@@ -198,7 +192,9 @@ def create_To Do():
 # Additional endpoints...
 ```
 
-### 2.6: Create Unit Test Cases and Run them
+### 3.5: Create Unit Test Cases and Run them
+
+Unit test cases are small checks that verify individual parts of an app work correctly, helping catch errors early before they affect the whole system.
 
 **Prompt for Bob:**
 
@@ -206,41 +202,10 @@ def create_To Do():
 Create unit test cases for each of the api endpoints, and ensure at least 90% code coverage.
 ```
 
-### 2.7: Test Backend Setup
 
-**Important:** Always use a virtual environment to isolate project dependencies.
+### 3.6: Test Backend Setup
 
-Create a virtual environment and install dependencies:
-
-```bash
-# Navigate to backend directory
-cd backend
-
-# Create virtual environment
-python3 -m venv venv
-
-# Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the application
-python app.py
-```
-
-**Why use a virtual environment?**
-- Isolates project dependencies from system Python packages
-- Prevents version conflicts between different projects
-- Makes it easy to reproduce the exact environment on other machines
-- Keeps your system Python installation clean
-
-**Note:** Remember to activate the virtual environment every time you work on the project. You'll know it's activated when you see `(venv)` in your terminal prompt.
-
-Alternatively, you can ask Bob to do that for you.
+Let's ask Bob to do a final test of our backend setup.
 
 **Prompt for Bob:**
 
@@ -254,11 +219,11 @@ The server should start on `http://localhost:5000`
 
 ---
 
-## Step 3: Frontend Development
+## Step 4: Frontend Development
 
 Now let's create the user interface using JavaScript.
 
-### 3.1: Create Frontend Structure
+### 4.1: Create Frontend Structure
 
 **Prompt for Bob (still in Code mode):**
 
@@ -275,7 +240,7 @@ Include:
 - Responsive design for mobile and desktop
 ```
 
-### 3.2: Understanding Literate Coding
+### 4.2: Understanding Literate Coding
 
 **Literate coding** means writing code that explains itself through comments and clear structure.
 
@@ -291,7 +256,7 @@ In app.js, use literate coding to explain:
 Add detailed comments that would help a beginner understand the code.
 ```
 
-### 3.3: Review Frontend Code
+### 4.3 (Optional): Review Frontend Code
 
 Bob should create files similar to this:
 
@@ -372,126 +337,33 @@ async function createTo Do(title, description) {
 
 ### 3.4: Test Frontend
 
-Open `frontend/index.html` in your browser:
+Test the fronted of your app by right-clicking the `index.html` file and then selecting "Open with Live Server".
 
-```bash
-# From the lab1 directory
-cd frontend
+<img width="3423" height="1905" alt="image" src="https://github.com/user-attachments/assets/32e91123-8189-40b9-85f7-7fcb80f30b1f" />
 
-# Open in default browser
-# Windows:
-start index.html
-# macOS:
-open index.html
-# Linux:
-xdg-open index.html
-```
+<img width="3428" height="1910" alt="image" src="https://github.com/user-attachments/assets/3f0c75d7-c387-4e97-866c-6fba81726bc7" />
+
+<img width="3748" height="2135" alt="image" src="https://github.com/user-attachments/assets/9272bd5f-358a-45ef-9340-70d8c068b200" />
+
 
 **✅ Checkpoint**: Frontend loads and displays the UI.
 
 ---
 
-## Step 4: GitHub Integration with MCP
+## Step 4: Test the full app
 
-Now let's use Bob's GitHub MCP server to manage version control.
+Go ahead and start exploring and trying the frontend you opened in the previous step.
 
-### 4.1: Switch to Advanced Mode
-
-Before using GitHub MCP servers, switch to Advanced mode:
-
-1. Click the mode selector in Bob's interface
-2. Select **Advanced** mode (⚡ Advanced)
-3. Confirm the mode switch
-
-**Why Advanced mode is required:**
-- Advanced mode provides the same code editing capabilities as Code mode, plus advanced GitHub MCP server access
-- With Advanced mode, Bob can execute advanced GitHub operations (create repos, make commits, push code)
-
-Once in Advanced mode, you can use all the same code editing features while also accessing GitHub MCP integrations.
-
-### 4.2: Understanding MCP Servers
-
-> **🔧 Bob Differentiator: MCP Server Integration**
-> Bob's MCP (Model Context Protocol) integration is a powerful differentiator that allows you to connect external tools and services directly into your workflow. Unlike other AI assistants that work in isolation, Bob can integrate with your company's internal APIs, databases, documentation systems, and more. This means Bob adapts to YOUR environment, not the other way around.
-
-**MCP (Model Context Protocol)** allows Bob to interact with external services like GitHub.
-
-Benefits:
-- Bob can create repositories
-- Bob can make commits
-- Bob can push code
-- All through natural language commands
-- **Extensible**: Connect to any service with an MCP server (JIRA, databases, deployment tools, etc.)
-- **Seamless**: No context switching between tools
-
-### 4.2: Initialize Git Repository
-
-**Prompt for Bob:**
+If it's not working properly, it probably means the backend is not running, which you can solve by running the application.
 
 ```
-Use the GitHub MCP server to:
-1. Initialize a git repository in the current directory
-2. Create a .gitignore file for Python and Node.js
-3. Create an initial commit with message "Initial To Do app implementation"
-```
-
-### 4.3: Create GitHub Repository
-
-**Prompt for Bob:**
-
-```
-Create a new GitHub repository called "bob-To Do-app" and push the code.
-Include a README.md describing the project.
-```
-
-**What Bob Will Do:**
-1. Create `.gitignore` with appropriate entries
-2. Initialize git repository
-3. Add all files to staging
-4. Create initial commit
-5. Create GitHub repository (if MCP is configured)
-6. Push code to GitHub
-
-### 4.4: Verify on GitHub
-
-1. Go to your GitHub account
-2. Find the `bob-To Do-app` repository
-3. Verify all files are present
-4. Check the commit history
-
-**✅ Checkpoint**: Code is on GitHub with proper commits.
-
----
-
-## Step 5: Testing & Verification
-
-Let's test the complete application end-to-end.
-
-### 5.1: Start the Backend
-
-```bash
-# Navigate to backend directory
-cd backend
-
-# Activate virtual environment (if not already activated)
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-
 # Run the application
 python app.py
 ```
 
-Server should be running on `http://localhost:5000`
+<img width="3426" height="1898" alt="image" src="https://github.com/user-attachments/assets/0a64c41b-cf94-432e-843a-4e15eeaeecf2" />
 
-**💡 Tip:** You'll know the virtual environment is activated when you see `(venv)` at the beginning of your terminal prompt.
-
-### 5.2: Open the Frontend
-
-Open `frontend/index.html` in your browser.
-
-### 5.3: Test CRUD Operations
+**Examples of what you can try in your newly created app:**
 
 **Create a To Do:**
 1. Enter a title: "Learn Bob"
@@ -511,27 +383,6 @@ Open `frontend/index.html` in your browser.
 1. Refresh the browser
 2. ✅ To Dos persist (stored in database)
 
-### 5.4: Check Browser Console
-
-Open browser developer tools (F12):
-- ✅ No JavaScript errors
-- ✅ API calls succeed (200 status codes)
-- ✅ Data is properly formatted
-
-### 5.5: Verify Database
-
-```bash
-# In backend directory
-python
->>> from app import app, db
->>> from models import To Do
->>> with app.app_context():
-...     To Dos = To Do.query.all()
-...     for To Do in To Dos:
-...         print(f"{To Do.id}: {To Do.title}")
-```
-
-✅ To Dos are stored in the database
 
 ---
 
@@ -539,155 +390,6 @@ python
 
 You've successfully completed Lab 1! You've learned to:
 
-- ✅ Use Bob's Plan mode for planning
-- ✅ Use Bob's Code mode for implementation
-- ✅ Enable and use auto-approvals
+- ✅ Use Bob modes for different tasks
 - ✅ Apply literate coding principles
-- ✅ Integrate GitHub using MCP servers
-- ✅ Build a complete full-stack application
-
-## What You've Built
-
-```
-bob-To Do-app/
-├── backend/
-│   ├── app.py              # Flask REST API
-│   ├── models.py           # Database models
-│   ├── database.py         # DB initialization
-│   ├── requirements.txt    # Dependencies
-│   └── To Dos.db           # SQLite database
-├── frontend/
-│   ├── index.html         # UI structure
-│   ├── styles.css         # Styling
-│   └── app.js             # Frontend logic
-└── .gitignore             # Git ignore rules
-```
-
-## Key Takeaways
-
-### Bob's Modes
-- **Plan**: Perfect for planning and design decisions
-- **Code**: Best for implementation and file creation
-- **Ask**: Great for learning and understanding
-- **Custom Modes**: Create your own specialized modes
-
-### Auto-Approvals
-- Speeds up development significantly
-- Useful for creating multiple related files
-- Always review the generated code
-
-### Literate Coding
-- Makes code self-documenting
-- Helps team members understand your code
-- Useful for learning and teaching
-
-### GitHub MCP
-- Streamlines version control
-- Natural language git operations
-- Integrates seamlessly with Bob
-- **Extensible**: Part of Bob's MCP Server Integration capability
-
-> **💡 Behind the Scenes: Intelligent Resource Optimization**
-> While you've been building this app, Bob has been automatically selecting the right AI model for each task, using powerful models for complex architecture decisions and lighter models for simple file operations. This optimizes both quality and cost without adding extra steps to the workflow.
-
-## Next Steps
-
-### Enhance Your App
-Try these improvements:
-1. Add To Do categories or tags
-2. Implement due dates
-3. Add user authentication
-4. Create a priority system
-5. Add search and filter functionality
-
-### Continue Learning
-- **[Lab 2: Code Translation →](../lab2/README.md)** - Translate a Python script into JavaScript with Bob
-
-## Troubleshooting
-
-### Backend Issues
-
-**Problem**: `ModuleNotFoundError: No module named 'flask'`
-```bash
-# Ensure virtual environment is activated
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-**Problem**: `Address already in use`
-```bash
-# Kill the process using port 5000
-# Windows:
-netstat -ano | findstr :5000
-taskkill /PID <PID> /F
-
-# macOS/Linux:
-lsof -ti:5000 | xargs kill -9
-```
-
-**Problem**: Database errors
-```bash
-# Delete and recreate database
-rm To Dos.db
-python
->>> from app import app, db
->>> with app.app_context():
-...     db.create_all()
-```
-
-### Frontend Issues
-
-**Problem**: CORS errors in browser console
-- Ensure Flask-CORS is installed: `pip install flask-cors`
-- Verify CORS is enabled in `app.py`
-- Check backend is running on port 5000
-
-**Problem**: API calls fail
-- Verify backend is running
-- Check API_URL in `app.js` matches backend URL
-- Open browser dev tools and check Network tab
-
-**Problem**: To Dos don't persist
-- Check browser console for errors
-- Verify database file exists
-- Test API endpoints directly using curl or Postman
-
-### Git/GitHub Issues
-
-**Problem**: Git not initialized
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-```
-
-**Problem**: GitHub authentication fails
-- Verify GitHub MCP is configured in Bob
-- Check GitHub personal access token
-- Try manual git push to test credentials
-
-## Additional Resources
-
-- [Flask Documentation](https://flask.palletsprojects.com/)
-- [JavaScript Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-- [SQLAlchemy Documentation](https://docs.sqlalchemy.org/)
-
-## Feedback
-
-How was this lab? We'd love to hear your thoughts:
-- What worked well?
-- What was confusing?
-- What would you like to see added?
-
----
-
-- ✅ Understand Bob's three modes (Plan, Code, Ask)
-- ✅ Use auto-approvals for rapid development
-- ✅ Practice literate coding techniques
-- ✅ Integrate GitHub using MCP servers
 - ✅ Build a complete full-stack application
