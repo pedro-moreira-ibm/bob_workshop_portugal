@@ -419,7 +419,8 @@ In real projects, teams typically reduce these variations by providing more deta
 
 ---
 
-## Congratulations! 🎉
+
+# Congratulations 🎉 You’ve reached the end of the lab! 
 
 You've successfully completed Lab 1! You've learned to:
 
