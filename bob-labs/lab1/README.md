@@ -215,7 +215,10 @@ Let's ask Bob to run the backend.
 Run the backend application.
 ```
 
-The backend application should be running successfully on http://localhost:5000
+Bob should let you know that backend application is now running successfully on http://localhost:5000. 
+
+<img width="3432" height="1892" alt="image" src="https://github.com/user-attachments/assets/c65e73a7-f54e-4fbf-b996-8da7d1578e29" />
+
 
 **✅ Checkpoint**: Backend is running without errors.
 
