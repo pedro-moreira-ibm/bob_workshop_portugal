@@ -55,7 +55,7 @@ Bob has several distinct modes, each optimized for different tasks. The three bu
 Bob's mode system is one of its key differentiators. Bob allows you to create custom modes tailored to your team's specific workflows.
 
 
-### Step 1.1 : Plan your project
+### 1.1. : Plan your project
 
 **Switch to Plan Mode** and ask Bob:
 
