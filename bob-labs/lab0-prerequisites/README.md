@@ -84,10 +84,6 @@ If your machine uses `python` instead of `python3`, use:
 ```bash
 python --version
 python -m pip --version
-```
-
-Run also this:
-```
 node --version
 npm --version
 ```
