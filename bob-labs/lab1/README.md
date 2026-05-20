@@ -381,7 +381,7 @@ Explore and try the frontend you opened in the previous step.
 
 <img width="3787" height="2170" alt="image" src="https://github.com/user-attachments/assets/3b1c6356-c4b9-43bc-bc86-644f27933fd3" />
 
-⚠️**NOTE**⚠️: If your tests are not successful, it means the application's backend is not running anymore. You can ask Bob to rerun the backend for you like you did previously in step 3.6.
+⚠️**NOTE**⚠️: If your tests are not successful, it means the application's backend is not running anymore. You can ask Bob to rerun the backend for you like you did previously in step 3.6 and start your tests again.
 
 **Prompt for Bob:**
 
