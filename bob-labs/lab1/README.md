@@ -364,7 +364,7 @@ Right-click the `index.html` file and select "Reveal in Finder"
 
 Then just open the file in your browser of choice.
 
-<img width="2340" height="1000" alt="image" src="https://github.com/user-attachments/assets/bc0b4c8d-631e-46b9-aa54-6932c780013c" / 
+<img width="2340" height="1000" alt="image" src="https://github.com/user-attachments/assets/8ea0195b-bcb9-4b40-8b88-15086d537549" />
 
 The frontend should now be open, as shown below. Keep in mind that your frontend may look different, since the prompts we provided to Bob were not very detailed. This gave Bob flexibility to make certain implementation and design decisions independently.
 
