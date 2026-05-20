@@ -22,6 +22,21 @@ A full-stack To Do application with:
   
 ---
 
+## Step 1: Set up the python project
+
+In this step, you will prepare the project workspace.
+
+### 1.1: Create and open the project folder
+
+Create a new folder on your computer:
+
+```text
+bob-lab1
+```
+
+Open this folder in IBM Bob.
+
+<img width="2532" height="1468" alt="image" src="https://github.com/user-attachments/assets/f9d06884-0c45-4cb0-a6ed-dbf9a682e140" />
 
 ## Step 1: Introduction to Bob Modes
 
@@ -55,7 +70,7 @@ Bob has several distinct modes, each optimized for different tasks. The three bu
 Bob's mode system is one of its key differentiators. Bob allows you to create custom modes tailored to your team's specific workflows.
 
 
-### 1.1. : Plan your project
+### 1.1: Plan your project
 
 **Switch to Plan Mode** and ask Bob:
 
