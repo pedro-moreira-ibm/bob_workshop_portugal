@@ -110,11 +110,7 @@ This collaborative approach ensures Bob builds exactly what you need, not what i
 
 **Expected Response from Bob:**
 
-After your clarifications, Bob should provide:
-- Directory structure with backend/ and frontend/ folders
-- REST API endpoints (GET, POST, PUT, DELETE)
-- Database schema for To Dos (id, title, description, completed, created_at)
-- Recommendations for Flask, SQLite, CORS, etc.
+After your clarifications, Bob should provide a comprehensive plan that matches your requests.
 
 
 ---
