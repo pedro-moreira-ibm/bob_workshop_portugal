@@ -1,4 +1,4 @@
-# watsonx Orchestrate & Bob Workshop Portugal: Hands-On Labs
+# Workshop: watsonx Orchestrate & Bob Portugal
 
 This repository is structured as a guided workshop path across watsonx Orchestrate, Bob, and then both together.
 
