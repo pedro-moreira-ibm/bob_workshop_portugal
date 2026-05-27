@@ -204,9 +204,28 @@ Ask Bob to run the application again:
 Run the backend application.
 ```
 
-Then open the frontend.
+## 5.2: Open the frontend.
 
-You should now see the new feature integrated into the application.
+**For Windows Users**:
+
+Open your application's frontend by right-clicking the `index.html` file and then selecting "Open with Live Server".
+
+<img width="3423" height="1905" alt="image" src="https://github.com/user-attachments/assets/32e91123-8189-40b9-85f7-7fcb80f30b1f" />
+
+<img width="3428" height="1910" alt="image" src="https://github.com/user-attachments/assets/3f0c75d7-c387-4e97-866c-6fba81726bc7" />
+
+**For macOS Users**:
+
+Right-click the `index.html` file and select "Reveal in Finder"
+
+<img width="1914" height="1046" alt="image" src="https://github.com/user-attachments/assets/c61134bf-6dc1-4379-bbdb-ac1cc56fb489" />
+
+Then just open the file in your browser of choice.
+
+<img width="2340" height="1000" alt="image" src="https://github.com/user-attachments/assets/8ea0195b-bcb9-4b40-8b88-15086d537549" />
+
+
+**✅ Checkpoint**: Frontend loads and displays the User Interface.
 
 ---
 
@@ -230,20 +249,19 @@ This mirrors how developers commonly use AI assistants during real debugging wor
 
 ---
 
-# Step 2: Configure the Documentation Writer Mode
+# Step 6: Generate documentation
 
-In this step, you will add the Documentation Writer mode to Bob.
+When working with software, it’s essential to keep everything well documented - not only for clarity, but also to ensure maintainability and make future development easier.
 
-This mode is available in the Bob marketplace and was developed by IBM for documentation writting tasks.
+To achieve that, we will install a specific Bob mode specialized in writing documentation.
 
-
-## 2.1: Open the Mode marketplace in Bob
+## 6.1: Open the Mode marketplace in Bob
 
 Go to **Settings** and open the **Mode** tab.
 
 <img width="3393" height="1980" alt="image" src="https://github.com/user-attachments/assets/1ad9f355-7f25-437d-9180-6e4e90cccdad" />
 
-## 2.2: Search for the Documentation Writer mode
+## 6.2: Search for the Documentation Writer mode
 
 Search for:
 
@@ -251,7 +269,7 @@ Search for:
 Documentation Writer
 ```
 
-## 2.3: Install the mode
+## 6.3: Install the mode
 
 Click **Install**.
 
@@ -262,17 +280,31 @@ When prompted for the installation scope, you have 2 options:
 - Select **Project** if you only plan to use it for this lab. The mode will be available only for this project.
 
 
-## 2.4: Verify the mode is now available
+## 6.4: Switch to the Documentation Writer mode
 
 Click on the modes tab.
 
 <img width="3397" height="1976" alt="image" src="https://github.com/user-attachments/assets/0892c88d-c979-4e8a-a078-63e13b55f1ff" />
 
-Check that the Documentation Writer mode is now available.
+Select the Documentation Writer mode.
 
-<img width="3429" height="1975" alt="image" src="https://github.com/user-attachments/assets/9d9fb209-58eb-4364-8301-53a15df1ef7c" />
+<img width="3398" height="1990" alt="image" src="https://github.com/user-attachments/assets/537de38a-04bd-4a30-86a6-18561c6dd079" />
 
-**✅ Checkpoint:** The Documentation Writer mode is installed and available.
+
+## 6.5: Generate the documentation
+
+Ask Bob:
+
+```text
+Generate documentation for my backend app. Do not create a new file; instead, comment directly on the code.
+```
+
+<img width="3418" height="1965" alt="image" src="https://github.com/user-attachments/assets/186b2218-2c7a-4283-bc27-5815c5dc5b6d" />
+
+
+**✅ Checkpoint:** The Documentation Writer mode is installed and activated.
+
+
 
 
 # Congratulations 🎉 You’ve completed Lab 2!
