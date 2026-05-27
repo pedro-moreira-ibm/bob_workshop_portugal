@@ -30,6 +30,20 @@ By the end of this lab, you will:
 - ✅ Understand approval workflows and auto-approvals
 - ✅ Modify an existing full-stack application
 
+
+# Understanding Ask Mode vs Code Mode
+
+This lab demonstrated an important distinction between Bob modes:
+
+| Ask Mode | Code Mode |
+|---|---|
+| Understands and explains code | Modifies and generates code |
+| Helps with architecture analysis | Implements features |
+| Suggests implementation strategies | Executes changes |
+| Ideal for learning and planning | Ideal for development |
+
+Understanding when to use each mode is one of the key productivity gains when working with Bob.
+
 ## Lab Structure
 
 - [Set up the project](#step-1-set-up-the-project)
@@ -247,21 +261,6 @@ If the application does not work correctly, ask Bob to:
 - Apply the correction
 
 This mirrors how developers commonly use AI assistants during real debugging workflows.
-
----
-
-# Step 6: Understanding Ask Mode vs Code Mode
-
-This lab demonstrated an important distinction between Bob modes:
-
-| Ask Mode | Code Mode |
-|---|---|
-| Understands and explains code | Modifies and generates code |
-| Helps with architecture analysis | Implements features |
-| Suggests implementation strategies | Executes changes |
-| Ideal for learning and planning | Ideal for development |
-
-Understanding when to use each mode is one of the key productivity gains when working with Bob.
 
 ---
 
