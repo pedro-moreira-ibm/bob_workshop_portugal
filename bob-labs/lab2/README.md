@@ -13,7 +13,7 @@ The application used in this lab corresponds to the application developed in Lab
 
 ## Before Starting
 
-Download the application ZIP file here. Place it somewhere easily accessible on your computer, such as:
+Download the application ZIP file [here](application.zip). Place it somewhere easily accessible on your computer, such as:
 - Desktop
 - Documents folder
 - Downloads folder
