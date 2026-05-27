@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab, you'll learn how to use Bob to understand, document, and modify an existing application. Instead of building an application from scratch, you will work on a prebuilt To Do application and use Bob to explore the codebase, identify relevant files, and implement a new feature.
+In this lab, you'll learn how to use Bob to understand, document, and modify an existing application. Instead of building an application from scratch, you will work on a prebuilt application and use Bob to explore the codebase, identify relevant files, and implement a new feature.
 
 This reflects a very common real-world scenario, where developers often work on existing projects rather than starting from zero.
 
