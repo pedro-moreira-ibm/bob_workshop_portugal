@@ -1,4 +1,4 @@
-# Lab 2: Code Translation - Python to JavaScript
+# Lab 3: Code Translation - Python to JavaScript
 
 ## Overview
 
