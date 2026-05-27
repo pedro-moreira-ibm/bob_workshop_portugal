@@ -116,12 +116,14 @@ One of Bob’s strengths is helping developers identify where changes should hap
 Still in **Ask Mode**, ask Bob:
 
 ```text
-If I want to add a button that deletes all completed tasks, which files would I need to modify?
+If I want to add a button that deletes all completed tasks, which files would I need to modify and how?
 ```
 
-<img width="3402" height="1971" alt="image" src="https://github.com/user-attachments/assets/763b2e0e-cd4e-41a0-8fcd-482b7d244565" />
+<img width="3387" height="1972" alt="image" src="https://github.com/user-attachments/assets/1990cc0f-9473-4d1d-8386-82e3e2d0fb8c" />
 
 Bob will explain what files require changes to implement this feature. Notice that no code is being written yet — Bob is just helping you understand the implementation strategy first.
+
+<img width="3405" height="1986" alt="image" src="https://github.com/user-attachments/assets/4b1b7560-7489-4220-a297-b98a5aada59d" />
 
 This separation between planning and implementation is extremely important in real-world development workflows.
 
@@ -129,11 +131,47 @@ This separation between planning and implementation is extremely important in re
 
 ---
 
-# Step 4: Implementing a new feature
+# Step 4: Try the literate coding mode
 
-## 4.1: Switch to Code Mode
+Naturally, we could ask Bob to simply implement the new feature, specially because it already identified and planned the necessary changes.
 
-Now that we understand the project structure and implementation strategy, switch to **Code Mode**.
+However, let's take this opportunity to try a very interesting and useful feature in Bob: the literate coding mode.
+
+## 4.1: Open one of the files that required changes
+
+Open one of the files that Bob identified that required changes if we wanted to implement the new feature we suggested.
+
+In this case, we will open the Frontend/index.html.
+
+## 4.2: Activate the literate coding mode
+
+Click on the literate coding mode icon, with the target file open.
+
+<img width="3434" height="1977" alt="image" src="https://github.com/user-attachments/assets/651ed605-cdb6-42fc-b7e6-e47777658356" />
+
+## 4.3: Make the change that Bob suggested for that file
+
+If Bob told you the exact line where changes need to be made, select it and write what you want to implement.
+
+If it didn't (like in this case), simply select a random line and ask Bob to implement what he suggested.
+
+<img width="3429" height="1970" alt="image" src="https://github.com/user-attachments/assets/2fbbd2c3-27c8-443f-9f27-c9f8e828e872" />
+
+Then Click on 'Generate'.
+
+<img width="3370" height="1968" alt="image" src="https://github.com/user-attachments/assets/425f8a5d-2945-4545-913c-4b0b1b6675e2" />
+
+## 4.4: Review the changes and accept them
+
+<img width="3400" height="1977" alt="image" src="https://github.com/user-attachments/assets/fa0601e6-6b81-4e68-aa64-49383526427f" />
+
+---
+
+# Step 5: Finish implementing the new feature
+
+## 5.1: Switch to Code Mode
+
+In order to finish implementing this new feature, let's switch to **Code Mode**.
 
 <img width="3400" height="1974" alt="image" src="https://github.com/user-attachments/assets/56230a9a-b3c7-4577-b8f8-9725ab066908" />
 
@@ -151,16 +189,15 @@ Unlike Ask Mode, Code Mode can:
 Ask Bob:
 
 ```text
-Implement a new button that deletes all completed tasks.
+Finish implementing a new button that deletes all completed tasks.
 Modify all necessary frontend and backend files.
 ```
 
-<img width="3403" height="1976" alt="image" src="https://github.com/user-attachments/assets/9d037f17-c0ea-408a-9299-daeacefa230f" />
 
 Bob will typically:
 1. Analyze the existing codebase
 2. Create a task plan
-3. Identify the necessary files
+3. Identify the files that still need to be changed
 4. Propose code modifications
 
 This step demonstrates how Bob approaches multi-file changes in a structured way.
