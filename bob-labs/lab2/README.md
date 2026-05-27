@@ -51,6 +51,7 @@ Understanding when to use each mode is one of the key productivity gains when wo
 - [Identifying required file changes](#step-3-identifying-required-file-changes)
 - [Implementing a new feature](#step-4-implementing-a-new-feature)
 - [Testing the updated application](#step-5-testing-the-updated-application)
+- [Generate documentation](#generate-documentation)
 
 ---
 
