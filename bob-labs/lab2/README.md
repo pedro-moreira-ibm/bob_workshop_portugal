@@ -63,18 +63,61 @@ Extract the provided ZIP file and open the project folder in IBM Bob.
 ```text
 lab2-existing-app
 ```
-
-[INSERT SCREENSHOT HERE — extracting ZIP file]
-
-[INSERT SCREENSHOT HERE — opening project in Bob]
+<img width="3418" height="1984" alt="image" src="https://github.com/user-attachments/assets/4f3e7f4f-3c48-4403-831e-48a855736e6a" />
 
 **✅ Checkpoint**: The project is now open in your workspace.
 
 ---
 
+# Step 2: Configure the Documentation Writer Mode
+
+In this step, you will add the Documentation Writer mode to Bob.
+
+This mode is available in the Bob marketplace and was developed by IBM for documentation writting tasks.
+
+
+## 2.1: Open the Mode marketplace in Bob
+
+Go to **Settings** and open the **Mode** tab.
+
+<img width="3393" height="1980" alt="image" src="https://github.com/user-attachments/assets/1ad9f355-7f25-437d-9180-6e4e90cccdad" />
+
+## 2.2: Search for the Documentation Writer mode
+
+Search for:
+
+```text
+Documentation Writer
+```
+
+## 2.3: Install the mode
+
+Click **Install**.
+
+<img width="3346" height="1855" alt="image" src="https://github.com/user-attachments/assets/a7a6bfa4-d526-4221-b56a-80552e54003d" />
+
+When prompted for the installation scope, you have 2 options:
+- Select **Global** if you regularly work with documentation. The mode will be configured across all workspaces and you can reuse it in the future.
+- Select **Project** if you only plan to use it for this lab. The mode will be available only for this project.
+
+
+## 2.4: Verify the mode is now available
+
+Click on the modes tab.
+
+<img width="3397" height="1976" alt="image" src="https://github.com/user-attachments/assets/0892c88d-c979-4e8a-a078-63e13b55f1ff" />
+
+Check that the Documentation Writer mode is now available.
+
+<img width="3429" height="1975" alt="image" src="https://github.com/user-attachments/assets/9d9fb209-58eb-4364-8301-53a15df1ef7c" />
+
+**✅ Checkpoint:** The Documentation Writer mode is installed and available.
+
+---
+
 # Step 2: Understanding the existing application
 
-## 2.1: Analyze the project structure
+## 2.1: Analyze and document the project structure
 
 Before modifying an application, developers first need to understand:
 - What the application does
@@ -84,7 +127,7 @@ Before modifying an application, developers first need to understand:
 
 This is where Bob becomes especially useful.
 
-Switch to **Ask Mode** and ask Bob:
+Switch to **** and ask Bob:
 
 ```text
 Please analyze this application and explain:
