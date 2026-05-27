@@ -77,7 +77,7 @@ Please analyze this application and explain:
 1. The overall project structure
 2. Which files belong to the frontend and backend
 3. How the frontend communicates with the backend
-4. Which files would most likely need to be modified if I wanted to add a new feature
+4. Diagram
 ```
 
 [INSERT SCREENSHOT HERE — Bob explaining project structure]
