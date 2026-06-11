@@ -2,9 +2,9 @@
 
 ## Overview
 
-In this lab, you'll use Bob to analyze an existing application, identify security vulnerabilities, and implement fixes.
+In this lab, you'll use Bob to analyze an existing application, identify security vulnerabilities and implement fixes. 
 
-You'll learn how Bob recognizes common security issues such as SQL injection, Cross-Site Scripting (XSS), hardcoded secrets, missing input validation, and insecure error handling. You will then use Bob's different modes to understand the issues, plan the fixes, and implement secure code changes.
+You'll learn how Bob recognizes common security issues like SQL injection, XSS and hardcoded secrets and then use Bob's different modes to fix them.
 
 > 🔍 **Bob Findings: Automated Security Analysis in Action**  
 > This lab showcases **Bob Findings**, Bob’s automated security and code quality analysis engine.  
@@ -37,8 +37,6 @@ You will work with a vulnerable application that contains intentional security f
 The [`vulnerable-app/`](vulnerable-app/) directory contains an application with intentional security issues.
 
 Download or open the vulnerable application in your local workspace.
-
-<!-- Add screenshot here, if needed -->
 
 **✅ Checkpoint**: The vulnerable application is available in your workspace.
 
@@ -83,8 +81,6 @@ Bob should identify:
 - Missing input validation
 - Limited or insecure security controls
 
-<!-- Add screenshot here, if needed -->
-
 **✅ Checkpoint**: You understand the backend structure and where security risks may exist.
 
 ---
@@ -106,8 +102,6 @@ Bob should identify:
 - No input sanitization
 - Direct insertion of user data into the DOM
 - Potential XSS risks
-
-<!-- Add screenshot here, if needed -->
 
 **✅ Checkpoint**: You understand how the frontend renders user-generated content.
 
@@ -191,8 +185,6 @@ MEDIUM ISSUES:
    - Fix: Add validation middleware
    - Priority: 3
 ```
-
-<!-- Add screenshot here, if needed -->
 
 **✅ Checkpoint**: You have a structured overview of the main security vulnerabilities.
 
@@ -419,8 +411,6 @@ def search_todos():
     return jsonify([dict(row) for row in results])
 ```
 
-<!-- Add screenshot here, if needed -->
-
 **✅ Checkpoint**: SQL queries now use parameterized input instead of direct string formatting.
 
 ---
@@ -476,8 +466,6 @@ function displayTodo(todo) {
     document.getElementById('todo-list').appendChild(todoElement);
 }
 ```
-
-<!-- Add screenshot here, if needed -->
 
 **✅ Checkpoint**: User-generated content is now rendered safely using `textContent`.
 
@@ -539,8 +527,6 @@ Add `python-dotenv` to `requirements.txt`:
 python-dotenv
 ```
 
-<!-- Add screenshot here, if needed -->
-
 **✅ Checkpoint**: Secrets are now loaded from environment variables instead of being hardcoded.
 
 ---
@@ -558,11 +544,6 @@ You’ve successfully learned how to:
 
 - ✅ Use Ask Mode to understand existing code
 - ✅ Use Plan Mode to identify bugs and plan fixes
-- ✅ Understand common security vulnerabilities
 - ✅ Find and fix hardcoded secrets and credentials
-- ✅ Fix SQL injection vulnerabilities
-- ✅ Fix Cross-Site Scripting vulnerabilities
 - ✅ Implement security fixes
 - ✅ Apply secure coding best practices
-
-This workflow reflects how AI-assisted development can support security reviews, remediation planning, and safer software development in real enterprise environments.
