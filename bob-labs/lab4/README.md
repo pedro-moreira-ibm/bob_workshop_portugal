@@ -1,4 +1,4 @@
-# Lab 3: Code Translation - Python to JavaScript
+# Lab 4: Code Translation - Python to JavaScript
 
 ## Overview
 
@@ -692,4 +692,4 @@ How was this lab? We'd love to hear:
 
 ---
 
-**Congratulations on completing Bob Lab 2!** 🎓
+**Congratulations on completing Bob Lab 4!** 🎓
