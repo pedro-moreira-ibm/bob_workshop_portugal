@@ -30,6 +30,7 @@ This agentic workflow handles all the steps in creating a new bank account, such
 
 ## Architecture
 
+<img width="975" height="238" alt="image" src="https://github.com/user-attachments/assets/85ac1c31-668d-405e-9aad-f07b48e1a434" />
 
 The user interacts with the watsonx Orchestrate user interface, asking to open a new bank account. This request is sent to the **Account Opening Agent**, which uses an LLM for tasks such as interpreting instructions, reasoning through the problem, planning the next steps, and deciding whether a tool call is necessary.
 
@@ -62,7 +63,7 @@ This agentic workflow tool performs the following:
 
 Log in to IBM Cloud.
 
-<!-- Add screenshot here -->
+<img width="975" height="528" alt="image" src="https://github.com/user-attachments/assets/223537c7-1cbd-4af4-8831-501d88849088" />
 
 ## 2. Open the watsonx Orchestrate service
 
@@ -70,13 +71,13 @@ Navigate to the top-left hamburger menu, then go to **Resource List**.
 
 Open the **AI / Machine Learning** section. You should see a watsonx Orchestrate service. Click on it.
 
-<!-- Add screenshot here -->
+<img width="975" height="403" alt="image" src="https://github.com/user-attachments/assets/bae9f698-cbe4-4ed6-853e-1cf89fe3f96c" />
 
 ## 3. Launch watsonx Orchestrate
 
 Click **Launch watsonx Orchestrate**.
 
-<!-- Add screenshot here -->
+<img width="975" height="626" alt="image" src="https://github.com/user-attachments/assets/1251dc0c-0335-4c9a-a99b-e20240c4e402" />
 
 **✅ Checkpoint**: watsonx Orchestrate is open and ready to use.
 
@@ -92,7 +93,7 @@ You do this by defining the agent’s name and description, customizing its welc
 
 Click **Create new agent** to access the Agent Builder.
 
-<!-- Add screenshot here -->
+<img width="975" height="630" alt="image" src="https://github.com/user-attachments/assets/122cfad8-e774-495a-9d21-35e8253090ff" />
 
 ## 1.2: Add the agent name and description
 
@@ -102,11 +103,13 @@ Fill in the name and description of the agent as follows:
 
 ```text
 Name: Account Opening Agent
+```
+```text
 
 Description: You are an Account Opening Agent to help users open new bank accounts quickly and efficiently. Using the Create New Bank Account Agentic Workflow tool, you guide users through each step of the account opening process, starting with passport upload and automated detail extraction, followed by nationality checks using deterministic logic. You handle human-in-the-loop activities like form submissions and confirmation messages and generate personalized responses using AI prompts.
 ```
 
-<!-- Add screenshot here -->
+<img width="975" height="667" alt="image" src="https://github.com/user-attachments/assets/8a59a06c-6dd2-4f16-abab-ccf137cb4606" />
 
 ## 1.3: Create the agent
 
@@ -122,7 +125,7 @@ Hello, welcome to Account Opening Agent.
 
 Click the **Reset** icon in the Preview tab.
 
-<!-- Add screenshot here -->
+<img width="975" height="723" alt="image" src="https://github.com/user-attachments/assets/0d23d4c3-f7b9-4a7b-a9ec-069da59445b7" />
 
 ## 1.5: Add a preset prompt
 
@@ -138,7 +141,7 @@ Remove the remaining default messages.
 
 Then, click **Reset**.
 
-<!-- Add screenshot here -->
+<img width="975" height="735" alt="image" src="https://github.com/user-attachments/assets/35004e52-0e85-4334-881d-2c34857e156b" />
 
 ## 1.6: Configure the agent behavior
 
@@ -152,7 +155,7 @@ Write the following in the Behavior section:
 When the user requests to open a new bank account, call the tool "Create New Bank Account Agentic Workflow" and do not generate or display any additional output. The tool is fully responsible for handling the process and presenting the final response to the user. Your role is strictly to delegate the task to the tool. Do not repeat, summarize, or echo the tool’s output, as it already includes the necessary user-facing messages.
 ```
 
-<!-- Add screenshot here -->
+<img width="975" height="552" alt="image" src="https://github.com/user-attachments/assets/190a6a77-9a86-4653-9390-afbfc275e49a" />
 
 **✅ Checkpoint**: The Account Opening Agent has been created and configured.
 
@@ -172,7 +175,7 @@ Go to the **Toolset** section and click **Add tool** to create the agentic workf
 
 Click **Agentic workflow**.
 
-<!-- Add screenshot here -->
+<img width="966" height="599" alt="image" src="https://github.com/user-attachments/assets/d1980582-d670-4560-8dd0-65555cbc1eb4" />
 
 ## 2.3: Name the agentic workflow
 
@@ -182,11 +185,11 @@ Give it a name and then click **Start building**.
 Name: Create New Bank Account Agentic Workflow
 ```
 
-<!-- Add screenshot here -->
+<img width="975" height="552" alt="image" src="https://github.com/user-attachments/assets/9ed7a790-1c01-45e0-b622-74921decc9a8" />
 
 Your view will look like this:
 
-<!-- Add screenshot here -->
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/79cfe4de-bbe8-42de-ac8c-0946cc82cb68" />
 
 **✅ Checkpoint**: The Create New Bank Account Agentic Workflow tool has been created.
 
@@ -222,7 +225,7 @@ Go back to the agentic workflow in watsonx Orchestrate and drag the **User activ
 
 This User activity will be used to get input from the user on the passport.
 
-<!-- Add screenshot here -->
+<img width="975" height="745" alt="image" src="https://github.com/user-attachments/assets/04eb307e-9740-42ee-8f88-5ebe162a90b2" />
 
 ## 3.3: Rename the User activity
 
@@ -232,7 +235,7 @@ Click **User Activity 1** and rename it to:
 Upload Passport
 ```
 
-<!-- Add screenshot here -->
+<img width="975" height="603" alt="image" src="https://github.com/user-attachments/assets/cd16859a-1f0e-40e9-a8b0-00b9f98b2d0a" />
 
 ## 3.4: Add a message to the User activity
 
@@ -240,7 +243,7 @@ In the User activity, add a message by clicking the **+** icon.
 
 Then click **Present to user** and select **Message**.
 
-<!-- Add screenshot here -->
+<img width="963" height="526" alt="image" src="https://github.com/user-attachments/assets/5750ecbf-9521-4326-b191-87385b1a959d" />
 
 ## 3.5: Add the passport upload message
 
@@ -250,25 +253,26 @@ Click the message box you just created and add this message:
 To get started, please upload your passport image.
 ```
 
-<!-- Add screenshot here -->
+<img width="975" height="773" alt="image" src="https://github.com/user-attachments/assets/b29481c8-52ae-4c00-b697-5b8fcca511dd" />
 
 ## 3.6: Add the file upload interaction
 
 Add the **File upload** interaction to allow the user to upload their passport.
 
-<!-- Add screenshot here -->
+<img width="928" height="1027" alt="image" src="https://github.com/user-attachments/assets/9a0ca711-18c8-4a35-870b-db877c0ddb6b" />
 
 ## 3.7: Add a Document extractor activity
 
 After the User activity green box, click the **+** icon and add a **Document extractor** activity.
 
-<!-- Add screenshot here -->
+<img width="843" height="932" alt="image" src="https://github.com/user-attachments/assets/e18f0ef8-c03f-4004-834f-33400bfa5c7d" />
+<img width="843" height="932" alt="image" src="https://github.com/user-attachments/assets/adff928e-6f8b-4439-a067-a6757ea5a9b5" />
 
 ## 3.8: Select Structured format
 
 Since you are going to work with an ID, select **Structured format**.
 
-<!-- Add screenshot here -->
+<img width="961" height="364" alt="image" src="https://github.com/user-attachments/assets/647e5f54-af45-41a1-a485-fa1658bf8c66" />
 
 ## 3.9: Configure the Document Extractor activity
 
@@ -289,7 +293,7 @@ mistral-smalll-3-1-24b-instruct-2503
 >
 > This is possible due to the use of the AI Gateway.
 
-<!-- Add screenshot here -->
+<img width="975" height="481" alt="image" src="https://github.com/user-attachments/assets/86cfa9d3-68c9-4ae9-8c02-8aa070556aa0" />
 
 ## 3.10: Define the schema
 
@@ -299,13 +303,15 @@ This is helpful and can save a lot of time when configuring the fields you need 
 
 Select **Define schema** and then select **Passport**.
 
-<!-- Add screenshot here -->
+<img width="937" height="442" alt="image" src="https://github.com/user-attachments/assets/18c2f3d7-e6df-4d05-95ac-8a88f86ac68c" />
+<img width="937" height="557" alt="image" src="https://github.com/user-attachments/assets/01b0c9e6-45fc-4a43-a49b-74615c8a0151" />
 
 ## 3.11: Upload training passport images
 
 Upload **Passport Image 1** and **Passport Image 2**.
 
 These images will be used to train the document extractor.
+
 
 ## 3.12: Review the automatically added fields
 
@@ -321,7 +327,7 @@ Make sure you keep these fields:
 - Date of issue
 - Date of expiration
 
-<!-- Add screenshot here -->
+<img width="913" height="465" alt="image" src="https://github.com/user-attachments/assets/ecae1e53-f3ff-44b2-b75a-c07499f98723" />
 
 ## 3.13: Customize the nationality field
 
@@ -329,7 +335,7 @@ Notice that the nationality is written in the user’s native language and you w
 
 Hover on the **Nationality** field and click the pencil icon to customize it.
 
-<!-- Add screenshot here -->
+<img width="928" height="502" alt="image" src="https://github.com/user-attachments/assets/a9b42d9f-3bca-4602-b093-8c574e972a3a" />
 
 ## 3.14: Add a description and examples
 
