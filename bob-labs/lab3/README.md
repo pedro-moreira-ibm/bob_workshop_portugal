@@ -68,7 +68,7 @@ Ask Mode is useful when you want Bob to explain, analyze, or reason about code w
 Ask Bob:
 
 ```text
-Please analyze the code in lab2/vulnerable-app/backend/ and explain:
+Please analyze the code in lab3/vulnerable-app/backend/ and explain:
 1. What is the overall structure of the application?
 2. How are database queries constructed?
 3. How is user input handled?
@@ -94,7 +94,7 @@ Bob should identify:
 Ask Bob:
 
 ```text
-Analyze the frontend code in lab2/vulnerable-app/frontend/ and explain:
+Analyze the frontend code in lab3/vulnerable-app/frontend/ and explain:
 1. How is user input displayed in the UI?
 2. Are there any DOM manipulation methods that could be risky?
 3. How is data from the API rendered?
@@ -153,7 +153,7 @@ Change from **Ask Mode** to **Plan Mode**.
 Ask Bob:
 
 ```text
-Analyze the codebase in lab2/vulnerable-app/ for security vulnerabilities.
+Analyze the codebase in lab3/vulnerable-app/ for security vulnerabilities.
 Create a comprehensive report including:
 1. List of all security issues found
 2. Severity rating for each issue (Critical/High/Medium/Low)
@@ -552,7 +552,7 @@ python-dotenv
 
 ---
 
-# Congratulations 🎉 You’ve completed Lab 2!
+# Congratulations 🎉 You’ve completed Lab 3!
 
 You’ve successfully learned how to:
 
