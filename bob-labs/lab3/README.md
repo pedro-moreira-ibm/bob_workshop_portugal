@@ -23,15 +23,10 @@ You will work with a vulnerable application that contains intentional security f
 
 ## Lab Structure
 
-**Lab 2 Timeline: 45 minutes**
-
-```text
-Lab 2 Timeline
-├── Step 1: Code Exploration (10 min)
-├── Step 2: Bug Identification (10 min)
-├── Step 3: Security Analysis (15 min)
-└── Step 4: Implementing Fixes (10 min)
-```
+- [Code Exploration with Ask Mode](#step-1-code-exploration-with-ask-mode)
+- [Bug Identification with Plan Mode](#step-2-bug-identification-with-plan-mode)
+- [Security Vulnerability Deep Dive](#step-3-security-vulnerability-deep-dive)
+- [Implementing Fixes with Code Mode](#step-4-implementing-fixes-with-code-mode)
 
 ---
 
