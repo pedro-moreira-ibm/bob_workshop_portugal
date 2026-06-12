@@ -454,7 +454,7 @@ We currently support only Portuguese nationality. For other nationalities, pleas
 
 Your branch should look like the following:
 
-<!-- Add screenshot here -->
+<img width="666" height="839" alt="image" src="https://github.com/user-attachments/assets/e0285c28-d16d-41d5-a67e-8367f7e604cf" />
 
 **✅ Checkpoint**: The workflow can now route Portuguese and non-Portuguese users differently.
 
@@ -472,7 +472,7 @@ By including predefined options and a user-friendly layout, the form ensures tha
 
 In the **Portuguese** nationality branch, drag a **User activity** into the **+** button.
 
-<!-- Add screenshot here -->
+<img width="936" height="680" alt="image" src="https://github.com/user-attachments/assets/471113d9-1c88-4755-9567-e229031220c1" />
 
 ## 5.2: Rename the User activity
 
@@ -482,13 +482,13 @@ Click the User activity and rename it to:
 Account Creation Request
 ```
 
-<!-- Add screenshot here -->
+<img width="975" height="524" alt="image" src="https://github.com/user-attachments/assets/df7fbcc9-6326-4518-be0f-267b172d6e50" />
 
 ## 5.3: Add a form
 
 In the User activity, click the **Add+** button and then click **Add a form**.
 
-<!-- Add screenshot here -->
+<img width="904" height="495" alt="image" src="https://github.com/user-attachments/assets/a16aad96-fd98-46db-bdb4-777ca4fed006" />
 
 ## 5.4: Configure the form
 
@@ -516,7 +516,9 @@ Add the following fields.
 2. Annual Income — Number
 3. Account Type — Single Choice
 
-<!-- Add screenshot here -->
+<img width="913" height="385" alt="image" src="https://github.com/user-attachments/assets/554cfc78-d590-443d-b678-40d6492050dc" />
+<img width="411" height="1350" alt="image" src="https://github.com/user-attachments/assets/1a678807-27c3-4514-adba-5a2d6a2b2e54" />
+
 
 ## 5.5: Map extracted passport variables to the form
 
@@ -530,7 +532,7 @@ For the following fields, click the **x** icon next to `--Select variable--` to 
 - Date of Issue — `date_of_issue`
 - Date of Expiration — `date_of_expiration`
 
-<!-- Add screenshot here -->
+<img width="975" height="539" alt="image" src="https://github.com/user-attachments/assets/f4063fbe-fe7c-4cf4-a07a-aae9706ff97e" />
 
 ## 5.6: Configure Account Type options
 
@@ -540,13 +542,13 @@ For the **Account Type** field, on the Source variable, click the `</>` icon and
 ["Current","Saving"]
 ```
 
-<!-- Add screenshot here -->
+<img width="501" height="853" alt="image" src="https://github.com/user-attachments/assets/b31c4af2-70a7-4232-bb1d-743f04025e10" />
 
 ## 5.7: Set required fields
 
 For the **Phone Number** and **Annual Income** fields, enable the **Required field** option.
 
-<!-- Add screenshot here -->
+<img width="566" height="718" alt="image" src="https://github.com/user-attachments/assets/c079b348-1c2e-490c-885c-a086a31253b0" />
 
 ## 5.8: Close the form
 
@@ -554,7 +556,7 @@ Close the form.
 
 Your form should have 10 fields.
 
-<!-- Add screenshot here -->
+<img width="991" height="535" alt="image" src="https://github.com/user-attachments/assets/7f1fa5e2-cd9a-428a-9263-7f9013e2d75b" />
 
 **✅ Checkpoint**: The workflow now includes a human-in-the-loop form for account creation details.
 
@@ -572,7 +574,9 @@ Click the **+** icon after the form activity.
 
 On **Add a flow activity**, select **Generative prompt**.
 
-<!-- Add screenshot here -->
+<img width="858" height="460" alt="image" src="https://github.com/user-attachments/assets/410ea078-5a7a-4329-a266-84f7c738d0c7" />
+<img width="845" height="391" alt="image" src="https://github.com/user-attachments/assets/a5f71cb4-087b-4280-9330-fe871477c5bc" />
+
 
 ## 6.2: Select the model
 
@@ -582,7 +586,7 @@ In the model drop-down, choose:
 GPT-OSS 120B – OpenAI (via Goq)
 ```
 
-<!-- Add screenshot here -->
+<img width="975" height="426" alt="image" src="https://github.com/user-attachments/assets/91c5fe26-d587-4d01-9ae2-423f0bb7883d" />
 
 ## 6.3: Add the System prompt
 
@@ -592,7 +596,7 @@ In the **System prompt**, write the following:
 You are an assistant that generates the final confirmation message for account creation. Your task is to take the provided user details and produce a complete, ready-to-send message. Do not provide instructions or code, only return the final text output.
 ```
 
-<!-- Add screenshot here -->
+<img width="975" height="311" alt="image" src="https://github.com/user-attachments/assets/e41f47a4-306e-44a2-98c3-4b69de066f78" />
 
 ## 6.4: Add the User prompt
 
@@ -617,19 +621,21 @@ In the User prompt, add this variable:
 
 - `full_name`
 
-<!-- Add screenshot here -->
+<img width="969" height="242" alt="image" src="https://github.com/user-attachments/assets/f23de455-b9ca-4d10-bd32-ebf7314ff98d" />
+<img width="944" height="554" alt="image" src="https://github.com/user-attachments/assets/aa2dbbe5-8f39-4e37-aced-d405d169f7a7" />
+
 
 ## 6.6: Review the Generative prompt
 
 Your Generative prompt should look like the following:
 
-<!-- Add screenshot here -->
+<img width="975" height="577" alt="image" src="https://github.com/user-attachments/assets/ee280e3c-65ad-45c5-bef8-4fa31a895834" />
 
 ## 6.7: Add test values
 
 Give each input variable a test value, such as your name.
 
-<!-- Add screenshot here -->
+<img width="975" height="568" alt="image" src="https://github.com/user-attachments/assets/a37ab9f2-06d7-4039-ab34-055de59fd28f" />
 
 ## 6.8: Generate a preview
 
@@ -641,7 +647,8 @@ Close the window and then click the **+** icon after the Generative prompt.
 
 Add a new **User activity Message**.
 
-<!-- Add screenshot here -->
+<img width="975" height="623" alt="image" src="https://github.com/user-attachments/assets/0216fa3c-cc87-427c-b1c7-2fce7399dc64" />
+<img width="982" height="549" alt="image" src="https://github.com/user-attachments/assets/4a37fb78-b425-4380-a2e9-d8414bf3dcf9" />
 
 ## 6.10: Rename the confirmation message activity
 
@@ -653,7 +660,9 @@ Confirmation Message
 
 Then click the **x** on the Output message section to map it to your Generative prompt value.
 
-<!-- Add screenshot here -->
+<img width="975" height="594" alt="image" src="https://github.com/user-attachments/assets/81b3eda2-0b34-4e65-9b85-2b8c91661975" />
+<img width="978" height="575" alt="image" src="https://github.com/user-attachments/assets/65a6f0e3-1f8f-42db-99fa-000f8991f490" />
+
 
 ## 6.11: Review the full workflow
 
@@ -661,7 +670,7 @@ You have now completed the entire agentic workflow.
 
 It should look like this:
 
-<!-- Add screenshot here -->
+<img width="639" height="1350" alt="image" src="https://github.com/user-attachments/assets/39f446f6-0bb5-426f-a3f0-136df9ba7397" />
 
 ## 6.12: Deploy the agent
 
@@ -698,7 +707,7 @@ In the Agents drop-down, select:
 Account Opening Agent
 ```
 
-<!-- Add screenshot here -->
+<img width="975" height="740" alt="image" src="https://github.com/user-attachments/assets/57a1eac6-87b8-46c9-9e02-cf6a560e58a2" />
 
 Click:
 
@@ -750,11 +759,11 @@ Add the following information:
 
 Then click **Submit**.
 
-<!-- Add screenshot here -->
+<img width="975" height="1112" alt="image" src="https://github.com/user-attachments/assets/c70a934b-7f24-4394-bb1d-e1ffb36b1f15" />
 
 The agentic workflow generates a successful output.
 
-<!-- Add screenshot here -->
+<img width="975" height="1112" alt="image" src="https://github.com/user-attachments/assets/def01d7e-60e7-4e6f-87c1-abbef8e1bb7e" />
 
 **✅ Checkpoint**: The supported nationality path works correctly and returns a confirmation message.
 
