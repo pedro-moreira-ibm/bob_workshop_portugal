@@ -350,13 +350,13 @@ Input: POLSKIE / POLISH, Output: Poland
 Input: ESPAÑOLA, Output: Spain
 ```
 
-<!-- Add screenshot here -->
+<img width="975" height="581" alt="image" src="https://github.com/user-attachments/assets/675de8fb-9bf0-4d4d-b782-e117bc776362" />
 
 ## 3.15: Apply and review the changes
 
 Click the **Show on document** button to apply the changes and observe that the output is now correct.
 
-<!-- Add screenshot here -->
+<img width="957" height="551" alt="image" src="https://github.com/user-attachments/assets/83072dbe-cc6e-4df1-b72c-3446da2fd57e" />
 
 ## 3.16: Review the other fields
 
@@ -380,7 +380,7 @@ You’ll insert a Branch, define a condition, and then display a message for oth
 
 Add **Branch** flow control after the Document Extractor activity.
 
-<!-- Add screenshot here -->
+<img width="771" height="794" alt="image" src="https://github.com/user-attachments/assets/1f80dd90-ba35-4007-92b8-89b7da3bb8b5" />
 
 ## 4.2: Rename the branch and paths
 
@@ -402,7 +402,7 @@ Click **Path 2** and rename it to:
 Other nationalities
 ```
 
-<!-- Add screenshot here -->
+<img width="838" height="592" alt="image" src="https://github.com/user-attachments/assets/1d107398-5647-44b0-902c-70051f32b7ce" />
 
 ## 4.3: Edit the Portuguese condition
 
@@ -416,13 +416,13 @@ Make the condition:
 nationality == Portugal
 ```
 
-<!-- Add screenshot here -->
+<img width="944" height="1257" alt="image" src="https://github.com/user-attachments/assets/6881abef-3dac-4762-9404-1f07f088ff15" />
 
 ## 4.5: Add a User activity for unsupported nationalities
 
 In the **Other nationalities** path, drag a **User activity** into the **Add+** section.
 
-<!-- Add screenshot here -->
+<img width="932" height="550" alt="image" src="https://github.com/user-attachments/assets/d19cdfe3-0931-40f9-99d4-28e01fec80de" />
 
 ## 4.6: Rename the User activity
 
@@ -432,7 +432,7 @@ Rename the User activity to:
 Unsupported
 ```
 
-<!-- Add screenshot here -->
+<img width="915" height="489" alt="image" src="https://github.com/user-attachments/assets/b4987f63-219a-470f-a520-76678bf56b5b" />
 
 ## 4.7: Add a message to the User activity
 
@@ -440,7 +440,7 @@ Click the **+** icon on the User activity.
 
 Then click **Present to user** and select **Message**.
 
-<!-- Add screenshot here -->
+<img width="932" height="500" alt="image" src="https://github.com/user-attachments/assets/f2db9fa1-98f3-49ae-8992-484eb12873d6" />
 
 ## 4.8: Add the unsupported nationality message
 
@@ -450,7 +450,7 @@ Add this output message:
 We currently support only Portuguese nationality. For other nationalities, please visit the branch.
 ```
 
-<!-- Add screenshot here -->
+<img width="964" height="475" alt="image" src="https://github.com/user-attachments/assets/2f89a131-f66b-4638-82cc-04aef1a319ff" />
 
 Your branch should look like the following:
 
