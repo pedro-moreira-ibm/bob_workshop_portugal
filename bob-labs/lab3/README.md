@@ -74,6 +74,8 @@ The main files for this lab are:
 
 Change to **Ask Mode**.
 
+<img width="3357" height="1977" alt="image" src="https://github.com/user-attachments/assets/06232be3-7b7d-4f42-8607-43d04d9c4146" />
+
 Ask Mode is useful when you want Bob to explain the current state of the codebase before making changes.
 
 ## 2.2: Ask Bob for a high-level analysis
@@ -81,14 +83,18 @@ Ask Mode is useful when you want Bob to explain the current state of the codebas
 Ask Bob:
 
 ```text
-Please analyze the application in lab3/vulnerable-app and explain:
+Please analyze this application  and explain:
 1. What files are present and what role each file plays
 2. Which parts of the application are backend, configuration, and data model
 3. What looks risky or inconsistent in the current project structure
 4. Which issues should be treated as security-relevant versus organizational
 ```
 
+<img width="3339" height="1972" alt="image" src="https://github.com/user-attachments/assets/5a9c6314-81e1-40b5-8c00-0106d2d22058" />
+
 Bob should quickly identify that this sample has both security problems and structural inconsistencies.
+
+<img width="3819" height="2258" alt="image" src="https://github.com/user-attachments/assets/cd0b3d88-464d-4f1c-835d-132dc1932959" />
 
 **✅ Checkpoint**: You understand the current codebase before attempting fixes.
 
@@ -97,9 +103,10 @@ Bob should quickly identify that this sample has both security problems and stru
 Ask Bob:
 
 ```text
-Explain the search_todos() function in lab3/vulnerable-app/database.py.
+Explain the search_todos() function in database.py.
 Why is it vulnerable, and how would you rewrite it safely?
 ```
+<img width="3339" height="1976" alt="image" src="https://github.com/user-attachments/assets/b36edb4f-1c95-49b0-87e4-acc26d2567f8" />
 
 Bob should identify the raw SQL string formatting and recommend parameterized queries.
 
@@ -110,7 +117,7 @@ Bob should identify the raw SQL string formatting and recommend parameterized qu
 Ask Bob:
 
 ```text
-Review lab3/vulnerable-app/models.py and lab3/vulnerable-app/config.py.
+Review models.py and config.py.
 Which values are sensitive, and what should be moved to environment variables or example files?
 ```
 
@@ -126,6 +133,8 @@ Bob should call out the hardcoded credentials and the need to separate real secr
 
 Change to **Plan Mode**.
 
+<img width="3327" height="1970" alt="image" src="https://github.com/user-attachments/assets/42d0bbfd-4f14-41a3-9308-27ca912f187d" />
+
 Plan Mode is useful here because you are not fixing a single bug. You are prioritizing a group of related security and project hygiene issues.
 
 ## 3.2: Request a security remediation plan
@@ -133,7 +142,7 @@ Plan Mode is useful here because you are not fixing a single bug. You are priori
 Ask Bob:
 
 ```text
-Analyze lab3/vulnerable-app and create a prioritized remediation plan.
+Analyze the application and create a prioritized remediation plan.
 Include:
 1. Security issues by severity
 2. Structural or naming issues that make maintenance harder
@@ -142,7 +151,9 @@ Include:
 5. A validation strategy after the fixes
 ```
 
-Bob should produce a ranked plan instead of jumping straight into code changes.
+Bob should produce a ranked plan. It may then ask to switch to code mode in order to start working on solutions. For now, we can decline that and focus on first reviewing and commenting the plan.
+
+<img width="3332" height="1973" alt="image" src="https://github.com/user-attachments/assets/b9924ce7-691a-4bbe-83fd-5b129246c173" />
 
 **✅ Checkpoint**: You have a clear, prioritized remediation plan.
 
@@ -152,7 +163,7 @@ Bob should produce a ranked plan instead of jumping straight into code changes.
 
 ## 4.1: SQL injection in the search endpoint
 
-The highest-risk issue is in [`vulnerable-app/database.py`](vulnerable-app/database.py):
+The highest-risk issue is in [`database.py`](vulnerable-app/database.py):
 
 ```python
 sql = f"SELECT * FROM todos WHERE title LIKE '%{query}%'"
@@ -163,7 +174,7 @@ This is dangerous because user input is inserted directly into the SQL string.
 
 ## 4.2: Hardcoded secrets in source control
 
-The current values in [`vulnerable-app/models.py`](vulnerable-app/models.py) include credentials and application secrets that should never live in source code.
+The current values in [`models.py`](vulnerable-app/models.py) include credentials and application secrets that should never live in source code.
 
 Typical fixes include:
 - Moving secrets to environment variables
@@ -172,7 +183,7 @@ Typical fixes include:
 
 ## 4.3: Weak validation and error handling
 
-[`vulnerable-app/database.py`](vulnerable-app/database.py) also exposes internal errors directly to clients and accepts request payloads with little or no validation.
+[`database.py`](vulnerable-app/database.py) also exposes internal errors directly to clients and accepts request payloads with little or no validation.
 
 That creates risk even when the issue is not a classic injection vulnerability.
 
@@ -186,6 +197,8 @@ That creates risk even when the issue is not a classic injection vulnerability.
 
 Change to **Code Mode**.
 
+<img width="3362" height="1978" alt="image" src="https://github.com/user-attachments/assets/ba6abc92-a850-466d-8c9b-b3335c6d869d" />
+
 Code Mode can now use your analysis and remediation plan to modify the project.
 
 ## 5.2: Fix the SQL injection issue
@@ -193,9 +206,11 @@ Code Mode can now use your analysis and remediation plan to modify the project.
 Ask Bob:
 
 ```text
-Fix the SQL injection vulnerability in lab3/vulnerable-app/database.py.
+Fix the SQL injection vulnerability in database.py.
 Use parameterized SQLAlchemy queries and keep the endpoint behavior the same.
 ```
+
+<img width="3314" height="1970" alt="image" src="https://github.com/user-attachments/assets/c90ce687-5fd6-4072-80b4-377a4da42cae" />
 
 **✅ Checkpoint**: The search endpoint no longer interpolates raw user input into SQL.
 
@@ -204,7 +219,7 @@ Use parameterized SQLAlchemy queries and keep the endpoint behavior the same.
 Ask Bob:
 
 ```text
-Refactor secret handling in lab3/vulnerable-app.
+Refactor secret handling in the application.
 1. Remove hardcoded secrets from models.py
 2. Create or update a .env.example file with placeholders
 3. Load secrets from environment variables
@@ -218,21 +233,12 @@ Refactor secret handling in lab3/vulnerable-app.
 Ask Bob:
 
 ```text
-Improve request validation and error handling in lab3/vulnerable-app/database.py.
+Improve request validation and error handling in database.py.
 Do not expose internal stack traces or raw exception details to API clients.
 ```
 
 **✅ Checkpoint**: The API now validates input and returns safer error responses.
 
-## 5.5: Optional cleanup pass
-
-If you want Bob to improve the sample structure as well, ask:
-
-```text
-Clean up the file organization in lab3/vulnerable-app so filenames better match their contents, while keeping the lab easy to follow.
-```
-
-This is optional, but it is a good way to use Bob on a repo that needs both security fixes and basic cleanup.
 
 ---
 
@@ -243,7 +249,7 @@ This is optional, but it is a good way to use Bob on a repo that needs both secu
 Ask Bob:
 
 ```text
-Run the vulnerable-app project after the fixes and verify:
+Run the application project after the fixes and verify:
 1. The API still starts
 2. The search endpoint works
 3. Invalid input is handled safely
