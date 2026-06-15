@@ -20,8 +20,6 @@ Make sure you have:
 - A terminal
 - A local workspace where Bob can create files and run commands
 
-If you want the original consolidated setup guide, see [Lab 0: Prerequisites (Legacy)](../lab0-prerequisites-old/README.md).
-
 Download the application ZIP file [here](application.zip). Place it somewhere easily accessible on your computer, such as:
 - Desktop
 - Documents folder
