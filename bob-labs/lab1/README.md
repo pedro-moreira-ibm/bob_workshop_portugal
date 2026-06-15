@@ -13,8 +13,6 @@ Make sure you have:
 - A terminal
 - A local workspace where Bob can create files and run commands
 
-If you want the original consolidated setup guide, see [Lab 0: Prerequisites (Legacy)](../lab0-prerequisites-old/README.md).
-
 
 ## What You'll Build
 
