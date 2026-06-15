@@ -174,6 +174,7 @@ Modernize the conditional logic in PaymentService.java.
 Use Java 17 features where appropriate, such as pattern matching or switch expressions, while keeping the behavior the same.
 ```
 
+
 ## 4.2: Improve collection and stream usage
 
 Open [`legacy/src/main/java/com/example/ecommerce/service/OrderService.java`](legacy/src/main/java/com/example/ecommerce/service/OrderService.java).
@@ -240,16 +241,10 @@ Summarize the migration changes completed so far, the remaining risks, and the n
 
 If your environment is ready, ask Bob to run the relevant build or test commands for the migrated target structure.
 
-Typical examples:
+Switch to **Advanced Mode** and ask:
 
 ```bash
-cd legacy && mvn test
-```
-
-or, if Bob created a separate target:
-
-```bash
-cd modernized && mvn test
+Please run the relevant build or test commands for the migrated target structure.
 ```
 
 **✅ Checkpoint**: You have validated the migration path and captured the remaining work.
