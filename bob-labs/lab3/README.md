@@ -258,6 +258,8 @@ Run the application project after the fixes and verify:
 
 Bob may run commands, create test files, inspect outputs, and make a final correction pass if needed.
 
+<img width="3319" height="1970" alt="image" src="https://github.com/user-attachments/assets/c91f09b5-d093-479c-b826-9771a6e91c86" />
+
 ## 6.2: Review the final state
 
 Before finishing, confirm that:
