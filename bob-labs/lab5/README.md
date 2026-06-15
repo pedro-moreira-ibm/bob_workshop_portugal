@@ -55,6 +55,8 @@ By the end of this lab, you will:
 
 Download the legacy application ZIP file [here](legacy-app.zip). Extract it to a new local folder and open the extracted project in IBM Bob before starting the lab.
 
+<img width="3330" height="1985" alt="image" src="https://github.com/user-attachments/assets/9d22db97-cc06-46fe-b0e3-d7ef7a3839a0" />
+
 The sample includes models and services such as:
 - [`legacy/src/main/java/com/example/ecommerce/model/Product.java`](legacy/src/main/java/com/example/ecommerce/model/Product.java)
 - [`legacy/src/main/java/com/example/ecommerce/model/Order.java`](legacy/src/main/java/com/example/ecommerce/model/Order.java)
