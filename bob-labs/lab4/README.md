@@ -16,12 +16,8 @@ Make sure you have:
 - A local workspace where Bob can create files and run commands
 
 Helpful but not required:
-- Completion of Labs 1 to 3
 - Basic familiarity with Python and JavaScript
 
-If you want the original consolidated setup guide, see [Lab 0: Prerequisites (Legacy)](../lab0-prerequisites-old/README.md).
-
-Download the lab files ZIP [here](data-processor.zip). Extract it to a new local folder and open that extracted folder in IBM Bob before starting the exercise.
 
 ## What You'll Translate
 
@@ -53,6 +49,8 @@ By the end of this lab, you will:
 # Step 1: Review the Python source
 
 ## 1.1: Open the source file
+
+Download the lab files ZIP [here](data-processor.zip). Extract it to a new local folder and open that extracted folder in IBM Bob before starting the exercise.
 
 After extracting [`data-processor.zip`](data-processor.zip), open [`source/data_processor.py`](source/data_processor.py).
 
