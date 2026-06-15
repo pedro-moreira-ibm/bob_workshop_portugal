@@ -21,6 +21,8 @@ Helpful but not required:
 
 If you want the original consolidated setup guide, see [Lab 0: Prerequisites (Legacy)](../lab0-prerequisites-old/README.md).
 
+Download the lab files ZIP [here](data-processor.zip). Extract it to a new local folder and open that extracted folder in IBM Bob before starting the exercise.
+
 ## What You'll Translate
 
 You will translate the Python source file [`source/data_processor.py`](source/data_processor.py) into a Node.js implementation in [`solution/`](solution/).
@@ -52,7 +54,7 @@ By the end of this lab, you will:
 
 ## 1.1: Open the source file
 
-Open [`source/data_processor.py`](source/data_processor.py).
+After extracting [`data-processor.zip`](data-processor.zip), open [`source/data_processor.py`](source/data_processor.py).
 
 Review the code structure and pay attention to:
 - Class-based design

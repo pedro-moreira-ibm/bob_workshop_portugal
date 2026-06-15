@@ -23,6 +23,8 @@ Helpful but not required:
 
 If you want the original consolidated setup guide, see [Lab 0: Prerequisites (Legacy)](../lab0-prerequisites-old/README.md).
 
+Download the vulnerable application ZIP file [here](vulnerable-app.zip). Extract it to a new local folder and open the extracted `vulnerable-app` folder in IBM Bob.
+
 ## What You'll Learn
 
 By the end of this lab, you will:
@@ -45,9 +47,9 @@ By the end of this lab, you will:
 
 # Step 1: Open the vulnerable application
 
-## 1.1: Open the lab folder in Bob
+## 1.1: Download and open the lab folder in Bob
 
-Open [`vulnerable-app/`](vulnerable-app/) in IBM Bob.
+Download [`vulnerable-app.zip`](vulnerable-app.zip), extract it locally, and open the extracted [`vulnerable-app/`](vulnerable-app/) folder in IBM Bob.
 
 The files in this sample are intentionally messy. Use that as part of the exercise rather than assuming the project is already well organized.
 
