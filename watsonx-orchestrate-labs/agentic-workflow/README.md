@@ -209,10 +209,10 @@ You define the agentic workflow to ask the user to upload a passport, train the 
 
 Download these synthetic passport images:
 
-- Passport Image 1, name it: `passport-1.jpg`
-- Passport Image 2, name it: `passport-2.png`
-- Passport Image 3, name it: `passport-3.png`
-- Passport Image 4, name it: `passport-4.png`
+- [Passport Image 1](<assets/Passport Image 1.jpg>), name it: `passport-1.jpg`
+- [Passport Image 2](<assets/Passport Image 2.png>), name it: `passport-2.png`
+- [Passport Image 3](<assets/Passport Image 3.png>), name it: `passport-3.png`
+- [Passport Image 4](<assets/Passport Image 4.png>), name it: `passport-4.png`
 
 > **Note**  
 > The first two images, `passport-1.jpg` and `passport-2.png`, will be used for training.  

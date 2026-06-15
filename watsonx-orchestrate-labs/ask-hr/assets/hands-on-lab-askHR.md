@@ -28,7 +28,7 @@ In this lab we will build an HR agent in watsonx Orchestrate, leveraging tools a
 
 ### Open watsonx Orchestrate
 
-- Log in to [IBM Cloud](cloud.ibm.com).
+- Log in to [IBM Cloud](https://cloud.ibm.com).
   
   <img width="3694" height="1974" alt="image" src="https://github.com/user-attachments/assets/2c61dc7d-f71e-41c2-ba8f-6124c9ee94a9" />
 

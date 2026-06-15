@@ -13,6 +13,15 @@ The application used in this lab corresponds to the application developed in Lab
 
 ## Before Starting
 
+Make sure you have:
+- IBM Bob access
+- Python 3.8+
+- Node.js 14+
+- A terminal
+- A local workspace where Bob can create files and run commands
+
+If you want the original consolidated setup guide, see [Lab 0: Prerequisites (Legacy)](../lab0-prerequisites-old/README.md).
+
 Download the application ZIP file [here](application.zip). Place it somewhere easily accessible on your computer, such as:
 - Desktop
 - Documents folder
@@ -51,7 +60,7 @@ Understanding when to use each mode is one of the key productivity gains when wo
 - [Identifying required file changes](#step-3-identifying-required-file-changes)
 - [Implementing a new feature](#step-4-implementing-a-new-feature)
 - [Testing the updated application](#step-5-testing-the-updated-application)
-- [Generate documentation](#generate-documentation)
+- [Generate documentation](#step-6-generate-documentation)
 
 ---
 
@@ -83,7 +92,7 @@ Before modifying an application, developers first need to understand:
 
 This is where Bob becomes especially useful.
 
-Switch to **** and ask Bob:
+Switch to **Ask Mode** and ask Bob:
 
 ```text
 Please analyze this application and explain:
@@ -184,7 +193,7 @@ Unlike Ask Mode, Code Mode can:
 
 ---
 
-## 4.2: Ask Bob to implement the feature
+## 5.2: Ask Bob to implement the feature
 
 Ask Bob:
 
@@ -204,7 +213,7 @@ This step demonstrates how Bob approaches multi-file changes in a structured way
 
 ---
 
-## 4.3: Reviewing Bob’s proposed changes
+## 5.3: Reviewing Bob’s proposed changes
 
 Before modifying files, Bob may ask for approval depending on your settings.
 
@@ -218,7 +227,7 @@ This approval flow is important because it keeps developers in control of the ge
 
 ---
 
-## 4.4: Apply the generated changes
+## 5.4: Apply the generated changes
 
 Approve the generated changes and let Bob update the application files.
 

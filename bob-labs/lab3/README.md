@@ -1,549 +1,272 @@
-# Lab 3: Security Analysis & Code Fixes with Bob
+# Lab 3: Security Analysis and Code Fixes with Bob
 
 ## Overview
 
-In this lab, you'll use Bob to analyze an existing application, identify security vulnerabilities and implement fixes. 
+In this lab, you'll use Bob to inspect an intentionally vulnerable application, identify the highest-risk issues, and guide a remediation workflow from analysis to code fixes.
 
-You'll learn how Bob recognizes common security issues like SQL injection, XSS and hardcoded secrets and then use Bob's different modes to fix them.
+This lab is intentionally closer to a real inherited codebase than to a clean greenfield project. Part of the exercise is using Bob to understand what is there, what is missing, and what should be fixed first.
 
-> 🔍 **Bob Findings: Automated Security Analysis in Action**  
-> This lab showcases **Bob Findings**, Bob’s automated security and code quality analysis engine.  
->
-> Bob Findings provides continuous, proactive analysis with severity ratings, actionable remediation guidance, and practical code examples. It’s like having a security expert reviewing your code in real time, providing clear recommendations and proactive insights to reduce risk, improve code quality, and minimize technical debt.
+> 🔍 **Bob Findings in Practice**  
+> This lab is a good fit for Bob Findings because the sample includes multiple classes of issues across application code, configuration, and project structure.
 
-## What You'll Analyze
+## Before Starting
 
-You will work with a vulnerable application that contains intentional security flaws, including:
+Make sure you have:
+- IBM Bob access
+- Python 3.8+
+- A terminal
+- A local workspace where Bob can create files and run commands
 
-- SQL injection vulnerabilities in database queries
-- Cross-Site Scripting (XSS) in frontend code
-- Hardcoded secrets and credentials
-- Missing input validation
-- Insecure error handling
+Helpful but not required:
+- Completion of Labs 1 and 2
+- Basic familiarity with Flask and REST APIs
+
+If you want the original consolidated setup guide, see [Lab 0: Prerequisites (Legacy)](../lab0-prerequisites-old/README.md).
+
+## What You'll Learn
+
+By the end of this lab, you will:
+- ✅ Use Ask Mode to inspect an unfamiliar and imperfect codebase
+- ✅ Use Plan Mode to prioritize security remediation work
+- ✅ Identify SQL injection, hardcoded secrets, and weak error handling
+- ✅ Use Code Mode to apply secure fixes
+- ✅ Validate the remediated application flow
 
 ## Lab Structure
 
-- [Code Exploration with Ask Mode](#step-1-code-exploration-with-ask-mode)
-- [Bug Identification with Plan Mode](#step-2-bug-identification-with-plan-mode)
-- [Security Vulnerability Deep Dive](#step-3-security-vulnerability-deep-dive)
-- [Implementing Fixes with Code Mode](#step-4-implementing-fixes-with-code-mode)
+- [Open the vulnerable application](#step-1-open-the-vulnerable-application)
+- [Explore the codebase with Ask Mode](#step-2-explore-the-codebase-with-ask-mode)
+- [Create a remediation plan with Plan Mode](#step-3-create-a-remediation-plan-with-plan-mode)
+- [Review the key vulnerabilities](#step-4-review-the-key-vulnerabilities)
+- [Implement fixes with Code Mode](#step-5-implement-fixes-with-code-mode)
+- [Test and validate the result](#step-6-test-and-validate-the-result)
 
 ---
 
-# Step 1: Code Exploration with Ask Mode
+# Step 1: Open the vulnerable application
 
-## 1.1: Download the vulnerable app
+## 1.1: Open the lab folder in Bob
 
-The [`vulnerable-app/`](vulnerable-app/) directory contains an application with intentional security issues.
+Open [`vulnerable-app/`](vulnerable-app/) in IBM Bob.
 
-Download or open the vulnerable application in your local workspace.
+The files in this sample are intentionally messy. Use that as part of the exercise rather than assuming the project is already well organized.
 
-**✅ Checkpoint**: The vulnerable application is available in your workspace.
+**✅ Checkpoint**: The vulnerable application is open in your Bob workspace.
 
----
+## 1.2: Review the files you will analyze
 
-## 1.2: Understand the vulnerable codebase
+The main files for this lab are:
+- [`vulnerable-app/database.py`](vulnerable-app/database.py) for the Flask API and several backend vulnerabilities
+- [`vulnerable-app/models.py`](vulnerable-app/models.py) for hardcoded secrets
+- [`vulnerable-app/config.py`](vulnerable-app/config.py) for an environment-template style configuration file
+- [`vulnerable-app/app.js`](vulnerable-app/app.js) for the data model definition
 
-Before fixing security issues, it is important to understand how the application is structured and where potential vulnerabilities may exist.
+> **Note**  
+> The naming inside this sample is inconsistent on purpose. Bob should help you identify these mismatches quickly.
 
-You will use Bob to explore both the backend and the frontend code.
-
----
-
-## 1.3: Switch to Ask Mode
-
-Open Bob and switch to **Ask Mode**.
-
-Ask Mode is useful when you want Bob to explain, analyze, or reason about code without modifying files.
-
-> 💡 **Key Learning**  
-> Ask Mode is perfect for understanding unfamiliar code and getting explanations of how things work.
+**✅ Checkpoint**: You know which files to keep in context during the lab.
 
 ---
 
-## 1.4: Explore the backend
+# Step 2: Explore the codebase with Ask Mode
+
+## 2.1: Switch to Ask Mode
+
+Change to **Ask Mode**.
+
+Ask Mode is useful when you want Bob to explain the current state of the codebase before making changes.
+
+## 2.2: Ask Bob for a high-level analysis
 
 Ask Bob:
 
 ```text
-Please analyze the code in lab3/vulnerable-app/backend/ and explain:
-1. What is the overall structure of the application?
-2. How are database queries constructed?
-3. How is user input handled?
-4. What security measures are in place?
+Please analyze the application in lab3/vulnerable-app and explain:
+1. What files are present and what role each file plays
+2. Which parts of the application are backend, configuration, and data model
+3. What looks risky or inconsistent in the current project structure
+4. Which issues should be treated as security-relevant versus organizational
 ```
 
-Bob should identify:
+Bob should quickly identify that this sample has both security problems and structural inconsistencies.
 
-- A Flask application with REST API endpoints
-- Direct string concatenation or formatting in SQL queries
-- Hardcoded database credentials
-- Missing input validation
-- Limited or insecure security controls
+**✅ Checkpoint**: You understand the current codebase before attempting fixes.
 
-**✅ Checkpoint**: You understand the backend structure and where security risks may exist.
-
----
-
-## 1.5: Explore the frontend
+## 2.3: Inspect the SQL injection issue
 
 Ask Bob:
 
 ```text
-Analyze the frontend code in lab3/vulnerable-app/frontend/ and explain:
-1. How is user input displayed in the UI?
-2. Are there any DOM manipulation methods that could be risky?
-3. How is data from the API rendered?
+Explain the search_todos() function in lab3/vulnerable-app/database.py.
+Why is it vulnerable, and how would you rewrite it safely?
 ```
 
-Bob should identify:
+Bob should identify the raw SQL string formatting and recommend parameterized queries.
 
-- Use of `innerHTML` for rendering user content
-- No input sanitization
-- Direct insertion of user data into the DOM
-- Potential XSS risks
+**✅ Checkpoint**: You understand the most critical backend vulnerability.
 
-**✅ Checkpoint**: You understand how the frontend renders user-generated content.
-
----
-
-## 1.6: Ask about specific functions
+## 2.4: Inspect the secrets handling
 
 Ask Bob:
 
 ```text
-Explain the search_todos() function in app.py.
-What does it do and are there any security concerns?
+Review lab3/vulnerable-app/models.py and lab3/vulnerable-app/config.py.
+Which values are sensitive, and what should be moved to environment variables or example files?
 ```
 
-Bob should explain that the function uses string formatting to build SQL queries, which makes it vulnerable to SQL injection attacks.
+Bob should call out the hardcoded credentials and the need to separate real secrets from templates.
 
-**✅ Checkpoint**: You have identified a specific vulnerable backend function.
-
----
-
-# Step 2: Bug Identification with Plan Mode
-
-Now let's use **Plan Mode** to systematically identify all the issues and create a structured remediation plan.
-
-## 2.1: Switch to Plan Mode
-
-Change from **Ask Mode** to **Plan Mode**.
-
-> 💡 **Key Learning**  
-> Plan Mode is useful for analysis, planning, and creating structured approaches to complex problems.  
->
-> The generated to-do list serves as your roadmap for the implementation phase.
+**✅ Checkpoint**: You understand the configuration and secret-management problems.
 
 ---
 
-## 2.2: Request a security analysis
+# Step 3: Create a remediation plan with Plan Mode
 
-> 💡 **Using Bob Findings**  
-> Bob Findings can automatically scan your code for security vulnerabilities, code quality issues, and compliance violations.  
->
-> The analysis you're about to request demonstrates Bob's security vulnerability detection capabilities, which go beyond basic static analysis by providing context-aware recommendations.
+## 3.1: Switch to Plan Mode
+
+Change to **Plan Mode**.
+
+Plan Mode is useful here because you are not fixing a single bug. You are prioritizing a group of related security and project hygiene issues.
+
+## 3.2: Request a security remediation plan
 
 Ask Bob:
 
 ```text
-Analyze the codebase in lab3/vulnerable-app/ for security vulnerabilities.
-Create a comprehensive report including:
-1. List of all security issues found
-2. Severity rating for each issue (Critical/High/Medium/Low)
-3. Potential impact of each vulnerability
-4. Recommended fix for each issue
-5. Priority order for fixes
-```
-
-Bob should provide a structured analysis similar to this:
-
-```text
-SECURITY ANALYSIS REPORT
-========================
-
-CRITICAL ISSUES:
-1. Hardcoded Database Credentials (config.py)
-   - Impact: Full database access if code is exposed
-   - Fix: Use environment variables
-   - Priority: 1
-
-2. SQL Injection (app.py, search_todos function)
-   - Impact: Unauthorized data access, data manipulation
-   - Fix: Use parameterized queries
-   - Priority: 1
-
-HIGH ISSUES:
-3. Cross-Site Scripting (app.js, displayTodo function)
-   - Impact: Script injection, session hijacking
-   - Fix: Use textContent instead of innerHTML
-   - Priority: 2
-
-MEDIUM ISSUES:
-4. Missing Input Validation
-   - Impact: Invalid data in database
-   - Fix: Add validation middleware
-   - Priority: 3
-```
-
-**✅ Checkpoint**: You have a structured overview of the main security vulnerabilities.
-
----
-
-## 2.3: Create a fix plan
-
-Ask Bob:
-
-```text
-Based on the security analysis, create a detailed plan for fixing these issues.
+Analyze lab3/vulnerable-app and create a prioritized remediation plan.
 Include:
-1. Order of fixes, from most critical first
-2. Files that need to be modified
-3. Specific code changes required
-4. Testing strategy
+1. Security issues by severity
+2. Structural or naming issues that make maintenance harder
+3. Files that need to be updated
+4. A recommended implementation order
+5. A validation strategy after the fixes
 ```
 
-Bob should create a detailed to-do list with the fixes needed.
+Bob should produce a ranked plan instead of jumping straight into code changes.
 
-This demonstrates Bob's ability to break down complex problems into actionable steps.
-
-> ⚠️ **Important**  
-> Review the to-do list Bob created, but do not implement the fixes yet.  
->
-> First, you will examine each vulnerability type in detail in the next step. This ensures you understand what you are fixing and why.
-
-**✅ Checkpoint**: You have a clear remediation plan before modifying the code.
+**✅ Checkpoint**: You have a clear, prioritized remediation plan.
 
 ---
 
-# Step 3: Security Vulnerability Deep Dive
+# Step 4: Review the key vulnerabilities
 
-This step provides a detailed explanation of each vulnerability type.
+## 4.1: SQL injection in the search endpoint
 
-If you are already familiar with these security concepts, you can skip directly to [Step 4: Implementing Fixes with Code Mode](#step-4-implementing-fixes-with-code-mode).
-
-## What you'll learn in this deep dive
-
-- How SQL injection attacks work
-- How XSS vulnerabilities can be exploited
-- Why hardcoded secrets are dangerous
-- Best practices for secure coding
-
----
-
-## 3.1: SQL injection vulnerability
-
-**Location:**
-
-```text
-vulnerable-app/backend/app.py
-```
-
-Vulnerable code:
+The highest-risk issue is in [`vulnerable-app/database.py`](vulnerable-app/database.py):
 
 ```python
-@app.route('/api/todos/search', methods=['GET'])
-def search_todos():
-    query = request.args.get('q')
-    # VULNERABLE: Direct string formatting in SQL
-    sql = f"SELECT * FROM todos WHERE title LIKE '%{query}%'"
-    results = db.session.execute(sql)
-    return jsonify([dict(row) for row in results])
+sql = f"SELECT * FROM todos WHERE title LIKE '%{query}%'"
+result = db.session.execute(sql)
 ```
 
-### The problem
+This is dangerous because user input is inserted directly into the SQL string.
 
-An attacker could send a malicious query such as:
+## 4.2: Hardcoded secrets in source control
 
-```text
-?q='; DROP TABLE todos; --
-```
+The current values in [`vulnerable-app/models.py`](vulnerable-app/models.py) include credentials and application secrets that should never live in source code.
 
-This could result in a SQL statement like:
+Typical fixes include:
+- Moving secrets to environment variables
+- Creating a `.env.example` file with placeholders only
+- Loading configuration safely at runtime
 
-```sql
-SELECT * FROM todos WHERE title LIKE '%'; DROP TABLE todos; --%'
-```
+## 4.3: Weak validation and error handling
 
-This is dangerous because the attacker-controlled input becomes part of the SQL query.
+[`vulnerable-app/database.py`](vulnerable-app/database.py) also exposes internal errors directly to clients and accepts request payloads with little or no validation.
 
-A successful SQL injection attack can lead to:
-- Unauthorized data access
-- Data modification
-- Data deletion
-- Full database compromise
+That creates risk even when the issue is not a classic injection vulnerability.
 
-**✅ Key takeaway**: User input should never be inserted directly into SQL queries. Use parameterized queries instead.
+**✅ Checkpoint**: You understand what you are fixing and why it matters.
 
 ---
 
-## 3.2: Cross-Site Scripting vulnerability
+# Step 5: Implement fixes with Code Mode
 
-**Location:**
-
-```text
-vulnerable-app/frontend/app.js
-```
-
-Vulnerable code:
-
-```javascript
-function displayTodo(todo) {
-    const todoElement = document.createElement('div');
-
-    // VULNERABLE: innerHTML with user content
-    todoElement.innerHTML = `
-        <h3>${todo.title}</h3>
-        <p>${todo.description}</p>
-    `;
-
-    document.getElementById('todo-list').appendChild(todoElement);
-}
-```
-
-### The problem
-
-An attacker could create a todo with the following title:
-
-```html
-<img src=x onerror="alert('XSS Attack!')">
-```
-
-If this content is inserted using `innerHTML`, the browser may execute it as code.
-
-This is dangerous because an attacker may be able to:
-- Execute malicious JavaScript
-- Steal session data
-- Modify the page content
-- Redirect users to malicious websites
-
-**✅ Key takeaway**: Avoid using `innerHTML` with user-generated content. Prefer safe DOM manipulation methods such as `textContent`.
-
----
-
-## 3.3: Hardcoded secrets vulnerability
-
-**Location:**
-
-```text
-vulnerable-app/backend/config.py
-```
-
-Vulnerable code:
-
-```python
-# VULNERABLE: Hardcoded credentials
-DATABASE_URL = "postgresql://admin:SuperSecret123@localhost/todos"
-API_KEY = "sk_live_abc123xyz789"
-SECRET_KEY = "my-secret-key-12345"
-```
-
-### The problem
-
-Hardcoded secrets are dangerous because:
-
-- Credentials are visible in source code
-- Anyone with code access may gain access to sensitive systems
-- Credentials cannot be changed without code changes
-- Different environments may accidentally share the same credentials
-- Secrets may be exposed if the repository is pushed publicly
-
-**✅ Key takeaway**: Secrets should be stored in environment variables, not directly in source code.
-
----
-
-# Step 4: Implementing Fixes with Code Mode
-
-Now let's fix the vulnerabilities using Bob's Code Mode.
-
-## 4.1: Switch to Code Mode
+## 5.1: Switch to Code Mode
 
 Change to **Code Mode**.
 
-Code Mode can:
-- Modify files
-- Create new code
-- Refactor existing logic
-- Apply fixes directly to the project
+Code Mode can now use your analysis and remediation plan to modify the project.
 
----
-
-## 4.2: Fix the SQL injection vulnerability
+## 5.2: Fix the SQL injection issue
 
 Ask Bob:
 
 ```text
-Fix the SQL injection vulnerability in vulnerable-app/backend/app.py.
-Replace the string formatting with parameterized queries using SQLAlchemy.
+Fix the SQL injection vulnerability in lab3/vulnerable-app/database.py.
+Use parameterized SQLAlchemy queries and keep the endpoint behavior the same.
 ```
 
-Before:
+**✅ Checkpoint**: The search endpoint no longer interpolates raw user input into SQL.
 
-```text
-Location: vulnerable-app/backend/app.py
-```
-
-```python
-@app.route('/api/todos/search', methods=['GET'])
-def search_todos():
-    query = request.args.get('q')
-    sql = f"SELECT * FROM todos WHERE title LIKE '%{query}%'"
-    results = db.session.execute(sql)
-    return jsonify([dict(row) for row in results])
-```
-
-After:
-
-```text
-Location: vulnerable-app/backend/app.py
-```
-
-```python
-from sqlalchemy import text
-
-@app.route('/api/todos/search', methods=['GET'])
-def search_todos():
-    query = request.args.get('q', '')
-
-    sql = text("SELECT * FROM todos WHERE title LIKE :query")
-    results = db.session.execute(sql, {"query": f"%{query}%"})
-
-    return jsonify([dict(row) for row in results])
-```
-
-**✅ Checkpoint**: SQL queries now use parameterized input instead of direct string formatting.
-
----
-
-## 4.3: Fix the Cross-Site Scripting vulnerability
+## 5.3: Fix secret management
 
 Ask Bob:
 
 ```text
-Fix the XSS vulnerability in vulnerable-app/frontend/app.js.
-Replace innerHTML usage with safe DOM manipulation using textContent.
-Update all functions that display user-generated content.
+Refactor secret handling in lab3/vulnerable-app.
+1. Remove hardcoded secrets from models.py
+2. Create or update a .env.example file with placeholders
+3. Load secrets from environment variables
+4. Keep the sample easy to run locally
 ```
 
-Before:
+**✅ Checkpoint**: Sensitive configuration is no longer stored directly in source code.
 
-```text
-Location: vulnerable-app/frontend/app.js
-```
-
-```javascript
-function displayTodo(todo) {
-    const todoElement = document.createElement('div');
-
-    todoElement.innerHTML = `
-        <h3>${todo.title}</h3>
-        <p>${todo.description}</p>
-    `;
-
-    document.getElementById('todo-list').appendChild(todoElement);
-}
-```
-
-After:
-
-```text
-Location: vulnerable-app/frontend/app.js
-```
-
-```javascript
-function displayTodo(todo) {
-    const todoElement = document.createElement('div');
-
-    const title = document.createElement('h3');
-    title.textContent = todo.title;
-
-    const description = document.createElement('p');
-    description.textContent = todo.description;
-
-    todoElement.appendChild(title);
-    todoElement.appendChild(description);
-
-    document.getElementById('todo-list').appendChild(todoElement);
-}
-```
-
-**✅ Checkpoint**: User-generated content is now rendered safely using `textContent`.
-
----
-
-## 4.4: Fix the hardcoded secrets vulnerability
+## 5.4: Improve validation and error responses
 
 Ask Bob:
 
 ```text
-Fix the hardcoded secrets in vulnerable-app/backend/config.py.
-1. Move secrets to environment variables
-2. Create a .env.example file with placeholder values
-3. Add python-dotenv to requirements.txt
-4. Update the code to load from environment
+Improve request validation and error handling in lab3/vulnerable-app/database.py.
+Do not expose internal stack traces or raw exception details to API clients.
 ```
 
-Before:
+**✅ Checkpoint**: The API now validates input and returns safer error responses.
+
+## 5.5: Optional cleanup pass
+
+If you want Bob to improve the sample structure as well, ask:
 
 ```text
-Location: vulnerable-app/backend/config.py
+Clean up the file organization in lab3/vulnerable-app so filenames better match their contents, while keeping the lab easy to follow.
 ```
 
-```python
-# VULNERABLE: Hardcoded credentials
-DATABASE_URL = "postgresql://admin:SuperSecret123@localhost/todos"
-API_KEY = "sk_live_abc123xyz789"
-SECRET_KEY = "my-secret-key-12345"
-```
-
-After:
-
-```text
-Location: vulnerable-app/backend/config.py
-```
-
-```python
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-DATABASE_URL = os.getenv("DATABASE_URL")
-API_KEY = os.getenv("API_KEY")
-SECRET_KEY = os.getenv("SECRET_KEY")
-```
-
-Create a `.env.example` file:
-
-```text
-DATABASE_URL=postgresql://username:password@localhost/database_name
-API_KEY=your_api_key_here
-SECRET_KEY=your_secret_key_here
-```
-
-Add `python-dotenv` to `requirements.txt`:
-
-```text
-python-dotenv
-```
-
-**✅ Checkpoint**: Secrets are now loaded from environment variables instead of being hardcoded.
+This is optional, but it is a good way to use Bob on a repo that needs both security fixes and basic cleanup.
 
 ---
 
-> 🎯 **Bob Findings in Action**  
-> In this lab, you experienced Bob's automated security analysis capabilities.  
->
-> Bob Findings continuously monitors your code for vulnerabilities and provides actionable remediation guidance. This proactive approach helps you catch security issues before they reach production, reducing risk and technical debt.
+# Step 6: Test and validate the result
+
+## 6.1: Ask Bob to validate the application
+
+Ask Bob:
+
+```text
+Run the vulnerable-app project after the fixes and verify:
+1. The API still starts
+2. The search endpoint works
+3. Invalid input is handled safely
+4. Secrets are no longer exposed in code or responses
+```
+
+Bob may run commands, inspect outputs, and make a final correction pass if needed.
+
+## 6.2: Review the final state
+
+Before finishing, confirm that:
+- The most critical issues were fixed first
+- The project is easier to understand than when you started
+- The validation strategy matches the implemented changes
+
+**✅ Checkpoint**: You have completed a full security-analysis and remediation workflow with Bob.
 
 ---
 
 # Congratulations 🎉 You’ve completed Lab 3!
 
-You’ve successfully learned how to:
-
-- ✅ Use Ask Mode to understand existing code
-- ✅ Use Plan Mode to identify bugs and plan fixes
-- ✅ Find and fix hardcoded secrets and credentials
-- ✅ Implement security fixes
-- ✅ Apply secure coding best practices
+You’ve successfully used Bob to:
+- ✅ Analyze a vulnerable application
+- ✅ Prioritize issues by severity
+- ✅ Apply safer implementation patterns
+- ✅ Improve both security and maintainability

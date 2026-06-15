@@ -4,6 +4,17 @@
 
 In this lab, you'll learn to use Bob's AI-powered features to build a complete full-stack To Do application from scratch. You'll experience Bob's different modes, auto-approvals, and code generation.
 
+## Before Starting
+
+Make sure you have:
+- IBM Bob access
+- Python 3.8+
+- Node.js 14+
+- A terminal
+- A local workspace where Bob can create files and run commands
+
+If you want the original consolidated setup guide, see [Lab 0: Prerequisites (Legacy)](../lab0-prerequisites-old/README.md).
+
 
 ## What You'll Build
 
@@ -14,10 +25,10 @@ A full-stack To Do application with:
 
 ## Lab Structure
 
-- [Introduction to Bob Modes](#step-1-introduction-to-bob-modes)
-- [Backend Development with Code Mode](#step-2-backend-development-with-code-mode)
-- [Frontend Development](#step-3-frontend-development)
-- [GitHub Integration with MCP](#step-4-github-integration-with-mcp)
+- [Set up your project](#step-1-set-up-your-project)
+- [Introduction to Bob Modes](#step-2-introduction-to-bob-modes)
+- [Backend Development](#step-3-backend-development)
+- [Frontend Development](#step-4-frontend-development)
 - [Testing & Verification](#step-5-testing--verification)
   
 ---
