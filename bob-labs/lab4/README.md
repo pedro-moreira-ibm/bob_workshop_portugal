@@ -203,38 +203,18 @@ This is useful because translation is not only about syntax. It is also about ch
 
 # Step 4: Verify and compare both versions
 
-## 4.1: Run the Python version
-
-Ask Bob:
-
-```bash
-python3 source/data_processor.py
-```
-
-If your machine uses `python` instead of `python3`, use:
-
-```bash
-python source/data_processor.py
-```
-
-## 4.2: Run the JavaScript version
-
-Ask Bob:
-
-```bash
-cd solution && npm install && node data_processor.js
-```
-
-## 4.3: Compare the outputs
+## 4.1: Run and compare the two versions of data_processor
 
 Ask Bob:
 
 ```text
-Compare the outputs from the Python and JavaScript versions.
-Confirm whether both implementations create equivalent CSV-processing and JSON-export behavior.
+Please run both versions of data_processor: python and javascript.
+Compare their outputs and confirm whether both implementations create equivalent CSV-processing and JSON-export behavior.
 ```
 
-Review the generated console output and result files together.
+Review the generated output and result files together.
+
+<img width="3425" height="1968" alt="image" src="https://github.com/user-attachments/assets/9895cb4f-93f1-48de-b278-dc3213fa961c" />
 
 **✅ Checkpoint**: Both implementations behave consistently.
 
