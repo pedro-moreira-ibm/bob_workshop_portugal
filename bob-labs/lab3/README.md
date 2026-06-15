@@ -18,12 +18,7 @@ Make sure you have:
 - A local workspace where Bob can create files and run commands
 
 Helpful but not required:
-- Completion of Labs 1 and 2
 - Basic familiarity with Flask and REST APIs
-
-If you want the original consolidated setup guide, see [Lab 0: Prerequisites (Legacy)](../lab0-prerequisites-old/README.md).
-
-Download the vulnerable application ZIP file [here](vulnerable-app.zip). Extract it to a new local folder and open the extracted `vulnerable-app` folder in IBM Bob.
 
 ## What You'll Learn
 
