@@ -8,8 +8,6 @@ This repository is structured as a guided workshop path across watsonx Orchestra
 2. Move into [Bob Labs](bob-labs/) to work through the Bob-focused tutorials from prerequisites through Java modernization.
 3. Finish with [Bob with watsonx Orchestrate](bob-with-watsonx-orchestrate-labs/README.md) to combine both platforms in a final agent-and-tool workflow.
 
-<img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/a3ec6b18-1fc1-45e1-af30-ccf72ff3dd2e" />
-
 ## What You Will Practice
 
 - Building and testing agents in watsonx Orchestrate
