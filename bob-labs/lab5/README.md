@@ -16,12 +16,7 @@ Make sure you have:
 - A local workspace where Bob can create files and run commands
 
 Helpful but not required:
-- Completion of Labs 1 to 4
 - Familiarity with Java, Maven, and object-oriented design
-
-If you want the original consolidated setup guide, see [Lab 0: Prerequisites (Legacy)](../lab0-prerequisites-old/README.md).
-
-Download the legacy application ZIP file [here](legacy-app.zip). Extract it to a new local folder and open the extracted project in IBM Bob before starting the lab.
 
 ## What You'll Modernize
 
@@ -56,9 +51,9 @@ By the end of this lab, you will:
 
 # Step 1: Review the legacy application
 
-## 1.1: Open the legacy project
+## 1.1: Download and open the lab folder in Bob
 
-After extracting [`legacy-app.zip`](legacy-app.zip), open [`legacy/`](legacy/) in Bob and review the source files under `src/main/java`.
+Download the legacy application ZIP file [here](legacy-app.zip). Extract it to a new local folder and open the extracted project in IBM Bob before starting the lab.
 
 The sample includes models and services such as:
 - [`legacy/src/main/java/com/example/ecommerce/model/Product.java`](legacy/src/main/java/com/example/ecommerce/model/Product.java)
