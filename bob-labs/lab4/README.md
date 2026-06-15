@@ -52,6 +52,8 @@ By the end of this lab, you will:
 
 Download the lab files ZIP [here](data-processor.zip). Extract it to a new local folder and open that extracted folder in IBM Bob before starting the exercise.
 
+<img width="3330" height="1985" alt="image" src="https://github.com/user-attachments/assets/9d22db97-cc06-46fe-b0e3-d7ef7a3839a0" />
+
 Review the code structure and pay attention to:
 - Class-based design
 - Type hints
@@ -66,6 +68,8 @@ Review the code structure and pay attention to:
 
 Change to **Ask Mode**.
 
+<img width="3329" height="1974" alt="image" src="https://github.com/user-attachments/assets/39cb0392-0b45-4311-a9ba-696fa95fae8d" />
+
 ## 1.3: Ask Bob to explain the code
 
 Ask Bob:
@@ -78,7 +82,9 @@ Analyze source/data_processor.py and explain:
 4. Which parts may need special handling in JavaScript
 ```
 
-Bob should identify file I/O, list processing, JSON export, and the `DataProcessor` class design.
+<img width="3336" height="1974" alt="image" src="https://github.com/user-attachments/assets/23cc2c86-ae98-46ea-9373-9902059ec489" />
+
+Bob should identify file Input/Output, list processing, JSON export, and the `DataProcessor` class design.
 
 **✅ Checkpoint**: You understand the Python implementation before translating it.
 
@@ -106,6 +112,8 @@ Bob should highlight differences such as:
 ## 2.1: Switch to Plan Mode
 
 Change to **Plan Mode**.
+
+<img width="3332" height="1972" alt="image" src="https://github.com/user-attachments/assets/497c6390-d321-45af-a9ca-e73e360d43fc" />
 
 ## 2.2: Create a translation mapping
 
@@ -143,6 +151,8 @@ This keeps the translated version separate from the source file.
 
 Change to **Code Mode**.
 
+<img width="3332" height="1978" alt="image" src="https://github.com/user-attachments/assets/62076dd7-70b2-4ac7-aae0-87aaaddb0ce6" />
+
 ## 3.2: Create or update the package configuration
 
 Ask Bob:
@@ -151,6 +161,8 @@ Ask Bob:
 Create or update solution/package.json for the JavaScript translation.
 Use Node.js, set data_processor.js as the entry point, and add the dependencies needed for CSV parsing.
 ```
+
+<img width="3340" height="1975" alt="image" src="https://github.com/user-attachments/assets/85c8117e-b255-414e-b2a9-7c76dac7e93d" />
 
 **✅ Checkpoint**: The JavaScript project configuration is ready.
 
@@ -169,6 +181,8 @@ Include:
 ```
 
 Bob should generate the translated implementation in the `solution/` folder.
+
+<img width="3817" height="2269" alt="image" src="https://github.com/user-attachments/assets/51cac5e4-650e-462b-96a1-5280d5c61ae5" />
 
 **✅ Checkpoint**: The JavaScript version has been created.
 
