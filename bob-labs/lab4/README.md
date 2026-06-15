@@ -48,11 +48,9 @@ By the end of this lab, you will:
 
 # Step 1: Review the Python source
 
-## 1.1: Open the source file
+## 1.1: Download and open the lab folder in Bob
 
 Download the lab files ZIP [here](data-processor.zip). Extract it to a new local folder and open that extracted folder in IBM Bob before starting the exercise.
-
-After extracting [`data-processor.zip`](data-processor.zip), open [`source/data_processor.py`](source/data_processor.py).
 
 Review the code structure and pay attention to:
 - Class-based design
