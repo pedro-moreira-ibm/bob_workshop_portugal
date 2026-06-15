@@ -256,7 +256,7 @@ Run the application project after the fixes and verify:
 4. Secrets are no longer exposed in code or responses
 ```
 
-Bob may run commands, inspect outputs, and make a final correction pass if needed.
+Bob may run commands, create test files, inspect outputs, and make a final correction pass if needed.
 
 ## 6.2: Review the final state
 
