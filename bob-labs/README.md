@@ -1,3 +1,5 @@
+<img width="2879" height="951" alt="image" src="https://github.com/user-attachments/assets/e5542b28-1f82-49d2-971e-2d920a012940" />
+
 ## Hands-on Labs
 
 ### Lab 1: Generate a Full-Stack Application
