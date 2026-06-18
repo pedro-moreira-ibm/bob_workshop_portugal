@@ -26,7 +26,7 @@
 - Translate the logic into JavaScript.
 - Validate the translated version.
 
-### Lab 5: Modernize Legacy Java Code *(Optional)*
+### Lab 5: Modernize Legacy Java Code
 
 - Analyze a legacy Java 8 application.
 - Identify modernization opportunities.
